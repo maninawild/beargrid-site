@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1fr_2fr] lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-            <Image src="/logos/bear-grid-logo.png" alt="Bear Grid logo" width={52} height={45} />
+            <Image src="/logos/bear-grid-logo.png" alt="Bear Grid logo" width={52} height={45} className="h-auto w-[52px]" />
             <span className="text-lg font-semibold tracking-[0.18em]">BEAR GRID</span>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-6 text-neutral-300">

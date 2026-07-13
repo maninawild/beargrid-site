@@ -12,7 +12,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/logos/bear-grid-logo.png" alt="Bear Grid logo" width={54} height={48} priority />
+          <Image src="/logos/bear-grid-logo.png" alt="Bear Grid logo" width={54} height={47} priority className="h-auto w-[54px]" />
           <span className="text-lg font-semibold tracking-[0.18em] text-neutral-950">BEAR GRID</span>
         </Link>
 
