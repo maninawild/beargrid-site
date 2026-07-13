@@ -7,29 +7,62 @@ function isImagePath(value: string) {
 }
 
 export function Hero({ page }: { page: SitePage }) {
+  const isHome = page.slug === "";
+
   return (
-    <section className="relative overflow-hidden bg-neutral-950 text-white">
+    <section id="top" className={`relative overflow-hidden ${isHome ? "h-[442px] bg-white text-white" : "bg-neutral-950 text-white"}`}>
       {page.heroImage ? (
         <Image
           src={page.heroImage}
           alt={page.heroImageAlt ?? ""}
           fill
           priority={page.slug === ""}
-          className="object-cover opacity-45"
+          className={isHome ? "object-cover object-center" : "object-cover opacity-55"}
           sizes="100vw"
         />
       ) : (
         <div className="absolute inset-0 bg-[linear-gradient(120deg,#0a0a0a,#181818_45%,#5a0f12)]" />
       )}
-      <div className="relative mx-auto min-h-[420px] max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="max-w-3xl">
-          {page.eyebrow ? <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-red-300">{page.eyebrow}</p> : null}
-          <h1 className="text-balance text-5xl font-semibold leading-tight tracking-normal sm:text-6xl lg:text-7xl">
-            {page.heroTitle}
-          </h1>
-          {page.heroText ? <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-100 sm:text-xl">{page.heroText}</p> : null}
+      {isHome ? (
+        <>
+          <button
+            type="button"
+            aria-label="Previous slide"
+            className="absolute left-[14%] top-1/2 hidden h-20 w-20 -translate-y-1/2 items-center justify-center text-8xl font-light text-white lg:flex"
+          >
+            ‹
+          </button>
+          <div className="absolute right-[-40px] top-[140px] max-w-[620px] text-right md:right-[8%]">
+            {page.eyebrow ? (
+              <p className="ml-auto mb-2 w-fit bg-black px-4 pb-1 text-[37px] font-normal italic leading-[48px] tracking-[1.85px] text-white">
+                {page.eyebrow}
+              </p>
+            ) : null}
+            <h1
+              aria-label="WHAT SOUND LOOKS LIKE"
+              className="grid justify-items-end gap-3 text-[44px] font-normal leading-none tracking-[2.6px] text-white md:text-[54px]"
+            >
+              <span className="w-fit bg-black px-5 py-1">WHAT SOUND</span>
+              <span className="w-fit bg-black px-5 py-1">LOOKS LIKE</span>
+            </h1>
+          </div>
+          <div className="absolute bottom-10 right-10 flex gap-4">
+            <span className="h-3 w-3 rounded-full bg-white" />
+            <span className="h-3 w-3 rounded-full bg-white/70" />
+            <span className="h-3 w-3 rounded-full bg-white/70" />
+          </div>
+        </>
+      ) : (
+        <div className="relative mx-auto min-h-[420px] max-w-[1000px] px-5 py-24">
+          <div className="max-w-3xl">
+            {page.eyebrow ? <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-red-300">{page.eyebrow}</p> : null}
+            <h1 className="text-balance text-5xl font-semibold leading-tight tracking-normal sm:text-6xl lg:text-7xl">
+              {page.heroTitle}
+            </h1>
+            {page.heroText ? <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-100 sm:text-xl">{page.heroText}</p> : null}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }
@@ -57,6 +90,58 @@ export function ProductGrid() {
 }
 
 export function Sections({ page }: { page: SitePage }) {
+  if (page.slug === "") {
+    const intro = page.sections[0];
+    const partners = page.sections[1];
+
+    return (
+      <main>
+        <section className="bg-white">
+          <div className="mx-auto w-full max-w-[850px] px-5 pb-20 pt-8">
+            <h2 className="text-center text-[29px] font-bold leading-normal tracking-normal text-neutral-950">{intro.title}</h2>
+            <div className="mx-auto mt-3 max-w-[717px] text-center text-[24px] leading-normal text-neutral-900">
+              {intro.body?.map((paragraph) => (
+                <p key={paragraph} className="mb-8">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            {intro.image ? (
+              <Image
+                src={intro.image}
+                alt={intro.imageAlt ?? ""}
+                width={695}
+                height={514}
+                className="mx-auto mt-7 h-auto w-full max-w-[695px]"
+                sizes="(min-width: 768px) 695px, 100vw"
+              />
+            ) : null}
+            {intro.cta ? (
+              <Link
+                href={intro.cta.href}
+                className="mt-16 inline-flex h-10 w-full max-w-[384px] items-center justify-center border border-neutral-950 bg-white px-4 text-center text-sm font-normal text-neutral-950 transition hover:bg-neutral-100"
+              >
+                {intro.cta.label}
+              </Link>
+            ) : null}
+          </div>
+        </section>
+        <section className="bg-white">
+          <div className="mx-auto w-full max-w-[850px] px-5 pb-24">
+            <h2 className="text-center text-[30px] font-bold tracking-normal text-neutral-950">{partners.title}</h2>
+            <div className="mt-32 grid items-center gap-x-28 gap-y-40 sm:grid-cols-2">
+              {partners.cards?.map((card) => (
+                <div key={card.title} className="flex min-h-24 items-center justify-center">
+                  <Image src={card.body} alt={card.title} width={360} height={140} className="h-auto max-h-[119px] w-auto max-w-[359px]" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <main>
       {page.sections.map((section, index) => (

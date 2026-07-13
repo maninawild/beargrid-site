@@ -2,29 +2,54 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navItems } from "@/data/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActive(href: string) {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname === href || pathname.startsWith(`${href}/`);
+  }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white">
+      <div className="mx-auto flex max-w-[1152px] items-center justify-between px-5 py-3 lg:h-[129px] lg:px-0 lg:py-0">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src="/logos/bear-grid-logo.png" alt="Bear Grid logo" width={54} height={47} priority className="h-auto w-[54px]" />
-          <span className="text-lg font-semibold tracking-[0.18em] text-neutral-950">BEAR GRID</span>
+          <Image
+            src="/logos/bear-grid-logo.png"
+            alt="Bear Grid logo"
+            width={135}
+            height={118}
+            priority
+            className="h-auto w-[54px] lg:w-[135px]"
+            style={{ height: "auto" }}
+          />
+          <span className="text-lg font-bold tracking-normal text-neutral-950 lg:text-[22px]">BEAR GRID</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-xs font-semibold tracking-[0.14em] text-neutral-700 lg:flex">
+        <nav className="hidden h-full items-center text-[18px] font-bold tracking-normal text-neutral-950 lg:flex">
           {navItems.map((item) => (
-            <div key={item.label} className="group relative py-3">
-              <Link href={item.href} className="transition hover:text-red-700">
+            <div key={item.label} className="group relative flex h-full items-center">
+              <Link
+                href={item.href}
+                className={`relative flex h-[69px] items-center whitespace-nowrap px-4 transition hover:bg-[#eee8e5] ${
+                  isActive(item.href) ? "bg-[#eee8e5]" : ""
+                }`}
+              >
                 {item.label}
+                {isActive(item.href) ? (
+                  <span className="absolute -bottom-[14px] left-1/2 h-7 w-7 -translate-x-1/2 rotate-45 border-b border-r border-neutral-400 bg-[#eee8e5]" />
+                ) : null}
               </Link>
               {item.children ? (
                 <div
-                  className={`invisible absolute top-full min-w-64 border border-neutral-200 bg-white p-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 ${
+                  className={`invisible absolute top-[100px] z-20 min-w-64 border border-neutral-200 bg-white p-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 ${
                     item.label === "ABOUT US" ? "right-0" : "left-0"
                   }`}
                 >
@@ -41,6 +66,7 @@ export function Header() {
               ) : null}
             </div>
           ))}
+          <span className="flex h-[69px] items-center px-4">More</span>
         </nav>
 
         <button

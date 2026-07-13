@@ -1,275 +1,141 @@
 # Bear Grid Wix Site Audit
 
 Source website: https://beargrid.wixsite.com/mysite  
-Audit date: 2026-07-13  
-Rebuild target: independent Next.js / TypeScript / Tailwind site, deployable to Vercel.
+Fresh audit date: 2026-07-13  
+Purpose: visual and functional parity audit for the independent Next.js rebuild.
+
+## Audit Method
+
+- Reopened the live Wix site rather than relying on the previous audit.
+- Followed all visible internal navigation links.
+- Captured/inspected source and local pages at:
+  - 1440x900
+  - 1280x800
+  - 1024x768
+  - 390x844
+  - 375x812
+- Compared header, hero, page structure, images, typography, forms, footer, and responsive behavior.
+
+## Intentional Exclusion
+
+The live Wix site includes a Wix platform advertisement banner: "This website was built on Wix. Create yours today." This is not Bear Grid brand content and is not reproduced in the independent rebuild.
 
 ## Public Pages
 
-| Wix page title | Wix URL | New route | Notes |
+| Page | Wix URL | Rebuilt route | Source role |
 | --- | --- | --- | --- |
-| Smart Sensors \| Bear Grid Solutions | `/mysite` | `/` | Home page with hero, intro, CTA, partners. |
-| WHAT WE DO \| BearGrid Solutions | `/mysite/sectors` | `/sectors` | Industry/application sectors. |
-| SOLUTIONS \| BearGrid Solutions | `/mysite/solutions` | `/solutions` | Main solutions overview and product cards. |
-| Bear Device \| BearGrid Solutions | `/mysite/bear-grid-device` | `/bear-grid-device` | Product detail page. |
-| Bear Grid Platform \| BearGrid Solutions | `/mysite/copy-of-bear-device` | `/copy-of-bear-device` | Product detail page. |
-| AI Interface \| BearGrid Solutions | `/mysite/copy-of-bear-grid-platform` | `/copy-of-bear-grid-platform` | R&D / AI interface page. |
-| ASP Bear Grid \| BearGrid Solutions | `/mysite/coming-soon-03` | `/coming-soon-03` | Use case page with contact form. |
-| BG Smart Tower Security Solution \| BearGrid Solutions | `/mysite/copy-of-asp-bear-grid` | `/copy-of-asp-bear-grid` | Use case page with contact form. |
-| ABOUT US \| BearGrid Solutions | `/mysite/about` | `/about` | Company/team page. |
-| NEWS \| BearGrid Solutions | `/mysite/news` | `/news` | Two news entries. |
-| JOBS and OPPORTUNITIES \| BearGrid Solutions | `/mysite/jobs` | `/jobs` | Openings and application form. |
-| GET IN TOUCH \| BearGrid Solutions | `/mysite/contacts` | `/contacts` | Contact page and email. |
-
-## Navigation
-
-Desktop navigation:
-
-- HOME
-- WHAT WE DO
-- SOLUTIONS
-  - Bear Device
-  - Bear Grid Platform
-  - AI Interface
-- USE CASES
-  - ASP Bear Grid
-  - BG Smart Tower Security Solution
-- ABOUT US
-  - NEWS
-  - JOBS and OPPORTUNITIES
-- GET IN TOUCH
-
-The Wix site also includes "Back to Top" anchors on pages. The rebuild keeps top-level routes and dropdown logic, with a mobile menu for small screens.
-
-## Page Inventory
-
-### Home
-
-Hero:
-
-- Eyebrow: "To know"
-- Main headline: "WHAT SOUND LOOKS LIKE"
-- Intro: "Bear Grid is a Start Up Research Lab developing technical solutions for security, surveillance and drilling systems based on Artificial Intelligence Algorithms that classify sounds and seismic activity."
-
-Sections:
-
-- "WHAT IS BEAR GRID?"
-- "Real time Seismic Data acquisition system is a universal solution."
-- CTA: "LEARN MORE ABOUT BEAR GRID SOLUTIONS" linking to Solutions.
-- Partners: AccountNL.com, YES!DELFT, KREW, one additional logo.
-
-Images:
-
-- Bear Grid logo
-- Sound-wave hero photo
-- Bear Grid system image
-- Partner logos
-
-### What We Do
-
-Hero:
-
-- "CUTTING OFF SECURITY RISKS"
-- "Artificial Intelligence solutions can succeed where others have failed."
-
-Body content:
-
-- AI solutions and engineered systems with seismological sensors for on-ground activity monitoring.
-- Concealed/hidden system compared with traditional security.
-- Integration with smart homes, smart cities, manufacturing, space, environmental, and energy applications.
-
-Sector cards:
-
-- Home Security
-- Environmental Monitoring
-- Geological Exploration
-- Private Estates
-- Transport and Smart Mobility
-- Law Enforcement & Border Security
-- Farms
-- Business
-- Strategic Objects
-
-### Solutions
-
-Hero:
-
-- "OUR SOLUTIONS"
-- BEAR TECHNOLOGY as AI seismic classification security system.
-
-Sections:
-
-- Easy installation and data acquisition from security sensors/devices.
-- Universal and adjustable platform.
-- Bear Grid develops technical solutions for security, surveillance, quality control, and seismic AI classification.
-- Products: Bear Grid device, Bear Grid Platform, Artificial Intelligence Interface.
-
-### Bear Device
-
-Content:
-
-- Portable system of property intruder classification.
-- PC/smartphone interface.
-- DIY kit with three sensors, main processing unit, and interface.
-- Integration with existing home security systems.
-- Feature list: simple installation, lower maintenance, integration, high accuracy alerts - 97%, perimeter security, wide usage, customization.
-- Defense/security detail: people quantity, activity type, location/speed, animals, transport type/weight/quantity.
-
-Images:
-
-- Interface screenshot
-- Map/interface screenshot
-- Mobile screenshot
-- Dashboard screenshot
-- Audio wave icon/product image
-
-### Bear Grid Platform
-
-Content:
-
-- Adaptive and adjustable engineering solution for real-time seismological data acquisition.
-- Designed for geological exploration research.
-- Low-cost adaptive access to seismological data.
-- Features: easy installation, adjustability, low power, low maintenance, low cable quantity, maintenance-free operation, system integration.
-
-Images:
-
-- Platform/sensor image
-
-### AI Interface
-
-Content:
-
-- Research and development page.
-- Bear Grid engineers solve technical complications of seismic-analysis-based systems.
-- Platform can be adapted for specific customer requirements.
-- Methods include machine learning algorithms, Big Data analysis, and site experiments.
-
-### ASP Bear Grid
-
-Content:
-
-- Adaptive Security Platform Bear Grid.
-- Software-based IoT home security integration platform.
-- Connects cameras, seismic sensors, and other IoT devices to server-hosted apps.
-- Features: short deployment stages, simple root-of-trust integration, no complexity.
-
-Form:
-
-- Name
-- Email
-- Subject
-- Message
-- Button: "Get in touch"
-- Success message: "We will be back to you shortly!"
-
-Social:
-
-- LinkedIn icon present, destination not visible in extracted HTML.
-
-### BG Smart Tower Security Solution
-
-Content:
-
-- Mobile and autonomous outpost platform.
-- Reliable, cost-effective security solution for construction projects, property, and perimeter security.
-- Pairs cameras with smart seismic sensors.
-- Claims preserved from source: 70% more energy-effective, lowest false alerts, GDPR compliant.
-- Specifications include thermal/optical turret analytics camera, 6-36 seismic sensors, scenario prediction, intrusion/crime detection, power options, 0.2 kWh low consumption.
-
-Form:
-
-- Same contact form as ASP Bear Grid.
-
-Social:
-
-- LinkedIn icon present, destination not visible in extracted HTML.
-
-### About
-
-Content:
-
-- "Meet The Team"
-- "WHO WE ARE?"
-- Bear Grid Inc description.
-- Looking for partners, investors, expertise.
-- Team roles: Hardware Engineer, Full Stack Developer, Algorithms Engineer, Seismologist Consultant.
-- Links: Bear Grid News, Contact Us.
-- Footer copyright: © 2020 BEAR GRID INC.
-
-### News
-
-Entries:
-
-- 2021 May: YES!DELFT Accelerator Validation Lab at Delft, Netherlands.
-- 2020 October: first Bear Grid Device development completed and ready to be tested on the ground.
-
-External link:
-
-- YES!DELFT Accelerator / Validation Lab: `https://www.yesdelft.com`
-
-### Jobs and Opportunities
-
-Intro:
-
-- Work and study with Bear Grid.
-- Collaboration with teams, research institutions, security companies, and startups.
-- Remote / on-site project opportunities.
-
-Openings:
-
-- SMM Manager Intern
-- Marketing Research Specialist
-- Administrative Support Intern
-
-Application form:
-
-- First Name
-- Last Name
-- Email
-- Phone
-- Link to CV/LinkedIn
-- Position select
-- Button: "Apply"
-- Success message: "Thank you! We will be in touch soon."
-
-### Contact
-
-Content:
-
-- "CONTACT US"
-- "Interested in a solutions of Bear Grid?"
-- "Experience a challenge that needs being solved?"
-- "E-mail us now."
-- Email: `office@beargridsolutions.com`
-
-Form behavior visible on Wix:
-
-- Send button
-- Success message: "Thank you! Message received."
-- Individual input labels were not exposed in the extracted text on the contact page.
+| Home | `/mysite` | `/` | Main brand intro, carousel hero, product explanation, partners |
+| What We Do | `/mysite/sectors` | `/sectors` | Sectors and security applications |
+| Solutions | `/mysite/solutions` | `/solutions` | Main solution/product overview |
+| Bear Device | `/mysite/bear-grid-device` | `/bear-grid-device` | Product detail |
+| Bear Grid Platform | `/mysite/copy-of-bear-device` | `/copy-of-bear-device` | Product detail |
+| AI Interface | `/mysite/copy-of-bear-grid-platform` | `/copy-of-bear-grid-platform` | R&D / AI interface |
+| ASP Bear Grid | `/mysite/coming-soon-03` | `/coming-soon-03` | Use case with contact form |
+| BG Smart Tower Security Solution | `/mysite/copy-of-asp-bear-grid` | `/copy-of-asp-bear-grid` | Use case with contact form |
+| About Us | `/mysite/about` | `/about` | Company/team page |
+| News | `/mysite/news` | `/news` | News entries |
+| Jobs and Opportunities | `/mysite/jobs` | `/jobs` | Openings and application form |
+| Get in Touch | `/mysite/contacts` | `/contacts` | Contact details and form |
+
+## Header and Navigation
+
+Source desktop behavior:
+
+- Tall white header, approximately 129px excluding the Wix ad banner.
+- Large Bear Grid bear logo, approximately 135x118.
+- Brand text: "BEAR GRID", black, bold, about 22px.
+- Navigation is black, bold, about 18px.
+- Active item has a light beige background and a small downward triangle.
+- Items visible: HOME, WHAT WE DO, SOLUTIONS, USE CASES, ABOUT US, GET IN TOUCH, More.
+- Dropdowns exist for SOLUTIONS, USE CASES, ABOUT US.
+- Header behaves as sticky/fixed in full-page screenshot stitching.
+
+Rebuild status:
+
+- Tall desktop header implemented.
+- Large source logo restored on desktop.
+- Active beige tab and triangle implemented.
+- Nav links kept functional.
+- Mobile uses an accessible menu button; source Wix mobile view appears to retain a desktop canvas/min-width behavior in the test browser, so the rebuild keeps a responsive mobile menu while preserving Bear Grid styling.
+
+## Home Page
+
+Source sections:
+
+1. Header / navigation
+2. Carousel hero
+   - Height about 442px.
+   - Aerial field image.
+   - White arrow on left.
+   - Slide dots at bottom right.
+   - Black text plaques with white text:
+     - "To know"
+     - "WHAT SOUND"
+     - "LOOKS LIKE"
+   - Adjacent carousel slide visible off-canvas in DOM.
+3. "WHAT IS BEAR GRID?"
+   - Centered heading, about 29px bold.
+   - Centered paragraph, about 24px.
+   - Exact text preserved.
+   - Diagram image, about 695x514 on desktop.
+   - Outline button: "LEARN MORE ABOUT BEAR GRID SOLUTIONS".
+4. "PARTNERS"
+   - Centered heading, about 30px bold.
+   - Two-column logo arrangement on desktop.
+5. Footer/back-to-top area.
+
+Rebuild changes applied:
+
+- Removed generic "Use cases" contact band that was not present on the Wix homepage.
+- Reworked hero into a source-like carousel presentation with black text plaques, arrow, dots, and aerial image.
+- Reworked home intro into a centered Wix-like rhythm.
+- Restored partner logo spacing and local images.
+- Reworked footer away from the earlier dark generic footer.
+
+## Other Pages
+
+The non-home pages retain the rebuilt content structure from the first pass, with the shared header/footer now closer to Wix. Remaining visual differences are documented in `docs/visual-parity-report.md`.
+
+## Forms
+
+Forms found:
+
+- Contact/use-case form:
+  - Name
+  - Email
+  - Subject
+  - Message
+  - Submit button
+  - Success state
+- Jobs form:
+  - First Name
+  - Last Name
+  - Email
+  - Phone
+  - Link to CV/LinkedIn
+  - Position select
+  - Submit button
+  - Success state
+
+No public Wix form recipient/destination was exposed. The rebuild keeps frontend validation and serverless endpoints but intentionally does not send or store submissions.
+
+## External Links and Contact
+
+- Contact email: `office@beargridsolutions.com`
+- YES!DELFT reference appears on the News page.
+- LinkedIn icon asset appears in source media, but no reliable public destination URL was exposed in the extracted HTML.
 
 ## Metadata
 
-Home page metadata extracted from Wix:
+Home metadata from source:
 
 - Title: `Smart Sensors | Bear Grid Solutions`
-- Description: `Bear Grid Labs is team researching and developing solutions for security and surveillance systems based on sound, tone and noise AI classification. We making a security systems smart, effective and low-cost.`
-- Open Graph title: `Smart Sensors | Bear Grid Solutions`
+- Description: Bear Grid Labs security/surveillance/sound AI classification description.
 - Open Graph site name: `BearGrid Solutions`
-- Open Graph type: `website`
-- Open Graph image: Wix media image `00f349_3d710bc2ae964fb1b52fe7a341d344ff~mv2.png`
+- Open Graph image: Bear Grid source image from Wix media.
 
-The rebuild adds per-page titles/descriptions, canonical paths, Open Graph metadata, Twitter cards, `sitemap.ts`, and `robots.ts`.
+Rebuild status:
 
-## Mobile Layout Notes
-
-The Wix page exposes a collapsed responsive layout and "More" menu text. The rebuild implements a dedicated tappable mobile menu, responsive grids, non-overlapping forms, and no horizontal overflow.
-
-## Forms and Intended Recipients
-
-No confirmed external submission destination was visible in the public Wix extraction.
-
-- Contact / use-case forms should eventually route to Bear Grid, likely `office@beargridsolutions.com`.
-- Jobs form should eventually route to Bear Grid recruiting/contact, likely `office@beargridsolutions.com`.
-- Current rebuild includes validation and serverless API endpoints but intentionally does not send or store submissions.
+- Per-page titles and descriptions are present.
+- Canonical URLs are configured for the future `beargridsolutions.com` domain.
+- Sitemap and robots routes exist.
