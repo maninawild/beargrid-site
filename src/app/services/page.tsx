@@ -23,7 +23,7 @@ export default function ServicesPage() {
         <div>
           <h2>Start with the decision, not the deliverable.</h2>
           <p>We define the real question, identify what must be learned, and build a focused path from uncertainty to evidence and action. Engagements can support one critical decision or a broader venture and innovation programme.</p>
-          <Link className="company-button dark" href="/#contact">Discuss a concrete question</Link>
+          <Link className="company-button dark" href="/contact?intent=project">Discuss your project</Link>
         </div>
       </section>
     </main>

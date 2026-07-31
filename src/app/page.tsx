@@ -1,36 +1,61 @@
 import type { Metadata } from "next";
-import { Hero, Sections } from "@/components/PageSections";
-import { baseUrl, pages } from "@/data/site";
-
-const historyPage = pages.history;
+import { CompanyHome, services } from "@/components/CompanyPages";
+import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: historyPage.title,
-  description: historyPage.description,
+  title: "Independent R&D Consultancy | Bear Grid",
+  description: "Bear Grid helps founders, R&D teams, investors and institutions assess complex technology, validate ventures and structure innovation programmes.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     siteName: "BearGrid Solutions",
-    title: historyPage.title,
-    description: historyPage.description,
+    title: "Independent R&D Consultancy | Bear Grid",
+    description: "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
     url: baseUrl,
-    images: [historyPage.heroImage ?? "/media/bear-grid-system.png"],
+    images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: historyPage.title,
-    description: historyPage.description,
-    images: [historyPage.heroImage ?? "/media/bear-grid-system.png"],
+    title: "Independent R&D Consultancy | Bear Grid",
+    description: "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
+    images: ["/og.png"],
   },
 };
 
 export default function Home() {
   return (
     <>
-      <Hero page={historyPage} />
-      <Sections page={historyPage} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        name: "Bear Grid",
+        url: baseUrl,
+        areaServed: "Worldwide",
+        serviceType: ["Technology assessment", "R&D strategy", "Venture validation", "Innovation partnerships"],
+        description: "Independent R&D consultancy for founders, companies, investors and institutions.",
+      }).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": services.map((service) => ({
+          "@type": "Service",
+          name: service.title,
+          description: service.body,
+          provider: { "@type": "Organization", name: "Bear Grid", url: baseUrl },
+          areaServed: "Worldwide",
+        })),
+      }).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          ["When should we involve Bear Grid?", "When a technical or venture decision carries meaningful cost, uncertainty or coordination risk and needs an independent, evidence-led assessment."],
+          ["What does an initial engagement look like?", "Most work starts with a tightly scoped assessment: a defined question, targeted review, direct working sessions and a practical recommendation."],
+          ["Does Bear Grid build products?", "Bear Grid can support product and venture execution, but begins by validating what should be built, why it matters and which risks must be resolved first."],
+        ].map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })),
+      }).replace(/</g, "\\u003c") }} />
+      <CompanyHome />
     </>
   );
 }

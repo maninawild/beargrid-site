@@ -60,7 +60,7 @@ export default async function ContentPage({ params }: Props) {
       {page.form ? (
         <section className="bg-white">
           <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-            {page.form === "jobs" ? <JobForm /> : <ContactForm compact={page.slug === "contacts"} />}
+            {page.form === "jobs" ? <JobForm /> : <ContactForm />}
           </div>
         </section>
       ) : null}

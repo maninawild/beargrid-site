@@ -52,8 +52,8 @@ test("mobile navigation and CTA destinations work", async ({ page }) => {
   await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeVisible();
   await page.getByRole("button", { name: "Close company navigation" }).press("Escape");
   await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeHidden();
-  await expect(page.getByRole("link", { name: "Discuss a project" })).toHaveAttribute("href", "/contact");
-  await expect(page.getByRole("link", { name: "Write on WhatsApp" })).toHaveAttribute("target", "_blank");
+  await expect(page.getByRole("link", { name: "Discuss your project" }).first()).toHaveAttribute("href", "/contact?intent=project");
+  await expect(page.getByRole("link", { name: "Contact Bear Grid on WhatsApp" })).toHaveAttribute("target", "_blank");
 });
 
 test("contact form validates and submits", async ({ page }) => {
@@ -63,12 +63,11 @@ test("contact form validates and submits", async ({ page }) => {
     body: JSON.stringify({ message: "Thank you. Your application has been sent." }),
   }));
   await page.goto("/contact");
-  await page.getByLabel("Name *").fill("QA Test");
-  await page.getByLabel("Email *").fill("qa@example.com");
-  await page.getByLabel("What would you like to discuss? *").fill("Website QA");
-  await page.getByLabel("Area of interest *").selectOption({ label: "Technology Project" });
-  await page.getByLabel(/I consent/).check();
-  await page.getByRole("button", { name: "Send application" }).click();
+  await page.getByRole("textbox", { name: "Name", exact: true }).fill("QA Test");
+  await page.getByRole("textbox", { name: "Company", exact: true }).fill("Bear Grid QA");
+  await page.getByRole("textbox", { name: "Email", exact: true }).fill("qa@example.com");
+  await page.getByRole("textbox", { name: "Short project description", exact: true }).fill("A sufficiently detailed project description for final quality assurance.");
+  await page.getByRole("button", { name: "Submit project details" }).click();
   await expect(page.getByRole("status")).toContainText("application has been sent");
 });
 

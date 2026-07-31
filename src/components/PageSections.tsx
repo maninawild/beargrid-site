@@ -24,7 +24,14 @@ export function Hero({ page }: { page: SitePage }) {
   if (page.slug === "") {
     return (
       <section className="home-hero" aria-label="WHAT SOUND LOOKS LIKE">
-        <div className="parallax-image" />
+        <Image
+          className="parallax-image"
+          src="/media/wix/home-hero.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+        />
         <div className="hero-copy">
           <span className="hero-eyebrow">To know</span>
           <h1><span>WHAT SOUND</span><span>LOOKS LIKE</span></h1>

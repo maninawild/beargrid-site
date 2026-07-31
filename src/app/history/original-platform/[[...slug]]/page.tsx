@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactForm } from "@/components/Forms";
 import { Hero, Sections } from "@/components/PageSections";
 import { baseUrl, getPageBySlug, pages, publicPages } from "@/data/site";
 
@@ -45,9 +45,24 @@ export default async function OriginalPlatformPage({ params }: { params: Promise
   if (!page) notFound();
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+          { "@type": "ListItem", position: 2, name: "History", item: `${baseUrl}/history` },
+          { "@type": "ListItem", position: 3, name: "Original platform", item: `${baseUrl}/history/original-platform` },
+          ...(slug?.length ? [{ "@type": "ListItem", position: 4, name: page.navTitle, item: `${baseUrl}/history/original-platform/${slug[0]}` }] : []),
+        ],
+      }).replace(/</g, "\\u003c") }} />
       <Hero page={page} />
       <Sections page={page} />
-      {(page.form || !slug?.length) ? <section className="legacy-contact"><a className="whatsapp-link" href="https://wa.me/message/4OIGQ3FHUZQSD1" target="_blank" rel="noopener noreferrer">Write on WhatsApp</a><ContactForm /></section> : null}
+      {(page.form || !slug?.length) ? (
+        <section className="legacy-contact">
+          <p>Questions about the original platform or current Bear Grid work?</p>
+          <Link className="outline-button" href="/contact">Contact Bear Grid</Link>
+        </section>
+      ) : null}
     </>
   );
 }
