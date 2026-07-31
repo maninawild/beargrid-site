@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { SiteShell } from "@/components/SiteShell";
 import { baseUrl } from "@/data/site";
 import "./globals.css";
 
@@ -18,28 +17,28 @@ const mono = Roboto_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Smart Sensors | Bear Grid Solutions",
+    default: "Bear Grid | Technology, Strategy & Venture Building",
     template: "%s",
   },
   description:
-    "Bear Grid Labs is team researching and developing solutions for security and surveillance systems based on sound, tone and noise AI classification.",
+    "Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     siteName: "BearGrid Solutions",
-    title: "Smart Sensors | Bear Grid Solutions",
+    title: "Bear Grid | Technology, Strategy & Venture Building",
     description:
-      "Bear Grid Labs is team researching and developing solutions for security and surveillance systems based on sound, tone and noise AI classification.",
-    images: ["/media/bear-grid-system.png"],
+      "Technology strategy, venture building, product validation, risk management and partnership development.",
+    images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Smart Sensors | Bear Grid Solutions",
+    title: "Bear Grid | Technology, Strategy & Venture Building",
     description:
-      "Bear Grid Labs is team researching and developing solutions for security and surveillance systems based on sound, tone and noise AI classification.",
-    images: ["/media/bear-grid-system.png"],
+      "Technology strategy, venture building, product validation, risk management and partnership development.",
+    images: ["/og.png"],
   },
 };
 
@@ -54,9 +53,7 @@ export default function RootLayout({
       className={`${inter.variable} ${mono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <Header />
-        <div className="flex-1">{children}</div>
-        <Footer />
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

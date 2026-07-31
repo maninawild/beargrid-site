@@ -2,6 +2,9 @@ import { expect, test } from "@playwright/test";
 
 const routes = [
   "/",
+  "/services",
+  "/technology",
+  "/technology/platform",
   "/sectors",
   "/solutions",
   "/bear-grid-device",
@@ -40,7 +43,7 @@ test.describe("Bear Grid site", () => {
 
   test("desktop More menu is keyboard accessible and closes with Escape", async ({ page }) => {
     await page.setViewportSize({ width: 1024, height: 768 });
-    await page.goto("/");
+    await page.goto("/technology/platform");
     const more = page.getByRole("button", { name: "More" });
     await more.click();
     await expect(page.getByRole("menu")).toBeVisible();
@@ -50,10 +53,25 @@ test.describe("Bear Grid site", () => {
 
   test("mobile menu exposes every destination", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto("/");
+    await page.goto("/technology/platform");
     await page.getByRole("button", { name: "Open navigation menu" }).click();
     await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeVisible();
     await expect(page.getByRole("link", { name: "Bear Device" }).first()).toHaveAttribute("href", "/bear-grid-device");
+  });
+
+  test("modern company navigation and mobile menu work", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/");
+    await page.getByRole("button", { name: "Open company navigation" }).click();
+    const menu = page.getByRole("navigation", { name: "Company mobile navigation" });
+    await expect(menu).toBeVisible();
+    await expect(menu.getByRole("link", { name: "Services" })).toHaveAttribute("href", "/services");
+    await expect(menu.getByRole("link", { name: /Original Platform/ })).toHaveAttribute("href", "/technology/platform");
+  });
+
+  test("legacy pages link back to Current Bear Grid", async ({ page }) => {
+    await page.goto("/bear-grid-device");
+    await expect(page.getByRole("link", { name: "Current Bear Grid" })).toHaveAttribute("href", "/");
   });
 
   test("contact form validates and submits to its endpoint", async ({ page }) => {
