@@ -1,0 +1,817 @@
+[
+  {
+    "route": "home",
+    "size": [
+      1440,
+      900
+    ],
+    "headings": [
+      "Technology, venture and business strategy for complex markets.",
+      "Advisory",
+      "Technology",
+      "Technical thinking joined with commercial action.",
+      "Focused support for consequential decisions.",
+      "Original Technology Platform",
+      "Designed around the question at hand.",
+      "Built from technology work, not theory alone.",
+      "Start with a concrete question."
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 135,
+        "rh": 77,
+        "rw": 88,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=384&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 540,
+        "rw": 720,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 1440,
+    "scrollHeight": 5069,
+    "scrollWidth": 1425
+  },
+  {
+    "route": "technology",
+    "size": [
+      1440,
+      900
+    ],
+    "headings": [
+      "AI-enabled sensing, monitoring and security systems.",
+      "Bear Grid Platform",
+      "Bear Device",
+      "Real-time acquisition",
+      "Clear activity alerts",
+      "Where the platform was designed to work.",
+      "Technology enquiries and collaboration"
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 536,
+        "rw": 714,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 121,
+        "rw": 731,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-sound-icons.png&w=1920&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 531,
+        "rw": 731,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-classification.png&w=1920&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 0,
+        "rw": 0,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fplatform-sensor-exact.png&w=750&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 0,
+        "rw": 0,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-mobile.png&w=1920&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-home.jpg&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-estates.jpg&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-farms.jpg&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-environment.jpg&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-transport.jpg&w=3840&q=75"
+      },
+      {
+        "complete": false,
+        "naturalWidth": 0,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-border.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 1440,
+    "scrollHeight": 4667,
+    "scrollWidth": 1425
+  },
+  {
+    "route": "home",
+    "size": [
+      1280,
+      800
+    ],
+    "headings": [
+      "Technology, venture and business strategy for complex markets.",
+      "Advisory",
+      "Technology",
+      "Technical thinking joined with commercial action.",
+      "Focused support for consequential decisions.",
+      "Original Technology Platform",
+      "Designed around the question at hand.",
+      "Built from technology work, not theory alone.",
+      "Start with a concrete question."
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 256,
+        "rh": 77,
+        "rw": 88,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=384&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 704,
+        "rh": 479,
+        "rw": 638,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 1280,
+    "scrollHeight": 4851,
+    "scrollWidth": 1265
+  },
+  {
+    "route": "technology",
+    "size": [
+      1280,
+      800
+    ],
+    "headings": [
+      "AI-enabled sensing, monitoring and security systems.",
+      "Bear Grid Platform",
+      "Bear Device",
+      "Real-time acquisition",
+      "Clear activity alerts",
+      "Where the platform was designed to work.",
+      "Technology enquiries and collaboration"
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 742,
+        "rh": 536,
+        "rw": 714,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 809,
+        "rh": 121,
+        "rw": 731,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-sound-icons.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 827,
+        "rh": 531,
+        "rw": 731,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-classification.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 359,
+        "rh": 332,
+        "rw": 359,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fplatform-sensor-exact.png&w=750&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 709,
+        "rh": 510,
+        "rw": 419,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-mobile.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 202,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-home.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 202,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-estates.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 202,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-farms.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 202,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-environment.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 202,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-transport.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 202,
+        "rh": 450,
+        "rw": 391,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-border.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 1280,
+    "scrollHeight": 5055,
+    "scrollWidth": 1265
+  },
+  {
+    "route": "home",
+    "size": [
+      1024,
+      768
+    ],
+    "headings": [
+      "Technology, venture and business strategy for complex markets.",
+      "Advisory",
+      "Technology",
+      "Technical thinking joined with commercial action.",
+      "Focused support for consequential decisions.",
+      "Original Technology Platform",
+      "Designed around the question at hand.",
+      "Built from technology work, not theory alone.",
+      "Start with a concrete question."
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 256,
+        "rh": 77,
+        "rw": 88,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=384&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 563,
+        "rh": 366,
+        "rw": 487,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 1024,
+    "scrollHeight": 4877,
+    "scrollWidth": 1009
+  },
+  {
+    "route": "technology",
+    "size": [
+      1024,
+      768
+    ],
+    "headings": [
+      "AI-enabled sensing, monitoring and security systems.",
+      "Bear Grid Platform",
+      "Bear Device",
+      "Real-time acquisition",
+      "Clear activity alerts",
+      "Where the platform was designed to work.",
+      "Technology enquiries and collaboration"
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 593,
+        "rh": 430,
+        "rw": 573,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 809,
+        "rh": 98,
+        "rw": 589,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-sound-icons.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 827,
+        "rh": 428,
+        "rw": 589,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-classification.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 359,
+        "rh": 323,
+        "rw": 349,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fplatform-sensor-exact.png&w=750&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 709,
+        "rh": 427,
+        "rw": 350,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-mobile.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 162,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-home.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 162,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-estates.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 162,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-farms.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 162,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-environment.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 162,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-transport.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 162,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-border.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 37,
+        "rw": 42,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 1024,
+    "scrollHeight": 4475,
+    "scrollWidth": 1009
+  },
+  {
+    "route": "home",
+    "size": [
+      390,
+      844
+    ],
+    "headings": [
+      "Technology, venture and business strategy for complex markets.",
+      "Advisory",
+      "Technology",
+      "Technical thinking joined with commercial action.",
+      "Focused support for consequential decisions.",
+      "Original Technology Platform",
+      "Designed around the question at hand.",
+      "Built from technology work, not theory alone.",
+      "Start with a concrete question."
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 256,
+        "rh": 61,
+        "rw": 70,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=384&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 390,
+        "rh": 254,
+        "rw": 339,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 390,
+    "scrollHeight": 6499,
+    "scrollWidth": 375
+  },
+  {
+    "route": "technology",
+    "size": [
+      390,
+      844
+    ],
+    "headings": [
+      "AI-enabled sensing, monitoring and security systems.",
+      "Bear Grid Platform",
+      "Bear Device",
+      "Real-time acquisition",
+      "Clear activity alerts",
+      "Where the platform was designed to work.",
+      "Technology enquiries and collaboration"
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 390,
+        "rh": 251,
+        "rw": 335,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 809,
+        "rh": 55,
+        "rw": 335,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-sound-icons.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 827,
+        "rh": 243,
+        "rw": 335,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-classification.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 359,
+        "rh": 310,
+        "rw": 335,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fplatform-sensor-exact.png&w=750&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 709,
+        "rh": 408,
+        "rw": 335,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-mobile.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 187,
+        "rh": 383,
+        "rw": 333,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-home.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 187,
+        "rh": 383,
+        "rw": 333,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-estates.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 187,
+        "rh": 383,
+        "rw": 333,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-farms.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 187,
+        "rh": 383,
+        "rw": 333,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-environment.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 187,
+        "rh": 383,
+        "rw": 333,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-transport.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 187,
+        "rh": 383,
+        "rw": 333,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-border.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 390,
+    "scrollHeight": 7247,
+    "scrollWidth": 375
+  },
+  {
+    "route": "home",
+    "size": [
+      375,
+      812
+    ],
+    "headings": [
+      "Technology, venture and business strategy for complex markets.",
+      "Advisory",
+      "Technology",
+      "Technical thinking joined with commercial action.",
+      "Focused support for consequential decisions.",
+      "Original Technology Platform",
+      "Designed around the question at hand.",
+      "Built from technology work, not theory alone.",
+      "Start with a concrete question."
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 256,
+        "rh": 61,
+        "rw": 70,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=384&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 375,
+        "rh": 243,
+        "rw": 324,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 375,
+    "scrollHeight": 6631,
+    "scrollWidth": 364
+  },
+  {
+    "route": "technology",
+    "size": [
+      375,
+      812
+    ],
+    "headings": [
+      "AI-enabled sensing, monitoring and security systems.",
+      "Bear Grid Platform",
+      "Bear Device",
+      "Real-time acquisition",
+      "Clear activity alerts",
+      "Where the platform was designed to work.",
+      "Technology enquiries and collaboration"
+    ],
+    "images": [
+      {
+        "complete": true,
+        "naturalWidth": 64,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=128&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 375,
+        "rh": 240,
+        "rw": 320,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 809,
+        "rh": 53,
+        "rw": 320,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-sound-icons.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 827,
+        "rh": 233,
+        "rw": 320,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-classification.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 359,
+        "rh": 296,
+        "rw": 320,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fplatform-sensor-exact.png&w=750&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 709,
+        "rh": 390,
+        "rw": 320,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fdevice-mobile.png&w=1920&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 179,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-home.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 179,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-estates.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 179,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-farms.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 179,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-environment.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 179,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-transport.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 179,
+        "rh": 366,
+        "rw": 318,
+        "src": "/_next/image?url=%2Fmedia%2Fwix%2Fsector-border.jpg&w=3840&q=75"
+      },
+      {
+        "complete": true,
+        "naturalWidth": 48,
+        "rh": 32,
+        "rw": 37,
+        "src": "/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75"
+      }
+    ],
+    "innerWidth": 375,
+    "scrollHeight": 7127,
+    "scrollWidth": 360
+  }
+]

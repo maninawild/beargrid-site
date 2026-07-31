@@ -4,19 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
-const modernRoutes = new Set(["/", "/services", "/technology"]);
-const modernNav = [
+const navigation = [
   ["Home", "/"],
-  ["Services", "/services"],
+  ["Expertise", "/#expertise"],
   ["Technology", "/technology"],
   ["About", "/#about"],
-  ["Contact", "/#contact"],
+  ["Contact", "/contact"],
 ] as const;
 
-function ModernHeader() {
+export function SiteShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -29,79 +26,53 @@ function ModernHeader() {
   }, []);
 
   return (
-    <header className="company-header">
-      <div className="company-header-inner">
-        <Link className="company-brand" href="/">
-          <Image src="/logos/bear-grid-logo.png" alt="Bear Grid" width={52} height={46} priority />
-          <span>BEAR GRID</span>
-        </Link>
-        <nav className="company-nav" aria-label="Company navigation">
-          {modernNav.map(([label, href]) => (
-            <Link className={pathname === href ? "active" : ""} href={href} key={label}>{label}</Link>
-          ))}
-          <Link className="platform-link" href="/technology/platform">Original Platform ↗</Link>
-        </nav>
-        <button
-          className="company-menu-button"
-          type="button"
-          aria-label="Open company navigation"
-          aria-expanded={open}
-          aria-controls="company-mobile-nav"
-          onClick={() => setOpen((value) => !value)}
-        >
-          <span />
-          <span />
-        </button>
-      </div>
-      {open ? (
-        <nav className="company-mobile-nav" id="company-mobile-nav" aria-label="Company mobile navigation">
-          {modernNav.map(([label, href]) => <Link href={href} key={label} onClick={() => setOpen(false)}>{label}</Link>)}
-          <Link className="platform-link" href="/technology/platform" onClick={() => setOpen(false)}>Original Platform ↗</Link>
-        </nav>
-      ) : null}
-    </header>
-  );
-}
-
-function ModernFooter() {
-  return (
-    <footer className="company-footer">
-      <div>
-        <Link className="company-brand" href="/">
-          <Image src="/logos/bear-grid-logo.png" alt="" width={38} height={34} />
-          <span>BEAR GRID</span>
-        </Link>
-        <p>Technology. Strategy. Venture Building.</p>
-      </div>
-      <div className="footer-links">
-        <Link href="/services">Services</Link>
-        <Link href="/technology">Technology</Link>
-        <a href="mailto:office@beargridsolutions.com">office@beargridsolutions.com</a>
-      </div>
-    </footer>
-  );
-}
-
-export function SiteShell({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  const modern = modernRoutes.has(pathname);
-
-  if (modern) {
-    return (
-      <>
-        <ModernHeader />
-        <div className="flex-1">{children}</div>
-        <ModernFooter />
-      </>
-    );
-  }
-
-  return (
     <>
-      <div className="legacy-return"><Link href="/">← Current Bear Grid</Link></div>
-      <Header />
+      <header className="final-header">
+        <div className="final-header-inner">
+          <Link className="final-brand" href="/" onClick={() => setOpen(false)}>
+            <Image src="/logos/bear-grid-logo.png" alt="" width={54} height={47} priority />
+            <span>BEAR GRID</span>
+          </Link>
+          <nav className="final-nav" aria-label="Primary navigation">
+            {navigation.map(([label, href]) => (
+              <Link className={pathname === href ? "active" : ""} href={href} key={label}>{label}</Link>
+            ))}
+          </nav>
+          <button
+            className="final-menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded={open}
+            aria-controls="final-mobile-navigation"
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span /><span />
+          </button>
+        </div>
+        {open ? (
+          <nav className="final-mobile-nav" id="final-mobile-navigation" aria-label="Mobile navigation">
+            {navigation.map(([label, href]) => (
+              <Link href={href} key={label} onClick={() => setOpen(false)}>{label}</Link>
+            ))}
+          </nav>
+        ) : null}
+      </header>
       <div className="flex-1">{children}</div>
-      <Footer />
+      <footer className="final-footer">
+        <div>
+          <Link className="final-brand" href="/">
+            <Image src="/logos/bear-grid-logo.png" alt="" width={44} height={39} />
+            <span>BEAR GRID</span>
+          </Link>
+          <p>Technology, venture and business strategy.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <Link href="/#expertise">Expertise</Link>
+          <Link href="/technology">Technology</Link>
+          <Link href="/contact">Contact</Link>
+          <a href="mailto:office@beargridsolutions.com">office@beargridsolutions.com</a>
+        </nav>
+      </footer>
     </>
   );
 }
