@@ -65,7 +65,7 @@ export function CompanyHome() {
           <p>Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.</p>
           <div className="company-actions">
             <Link className="company-button dark" href="/services">Explore Services</Link>
-            <Link className="company-button" href="/technology/platform">View Technology Platform</Link>
+            <Link className="company-button" href="/history/original-platform">View Technology Platform</Link>
           </div>
         </div>
       </section>
@@ -94,7 +94,7 @@ export function CompanyHome() {
         </div>
         <div>
           <p>Bear Grid was founded around AI-enabled sensing, monitoring and security systems. The original platform, technical research and application concepts remain available as part of the company’s technology portfolio.</p>
-          <Link className="company-button light" href="/technology/platform">Explore Bear Grid Technology</Link>
+          <Link className="company-button light" href="/history/original-platform">Explore Bear Grid Technology</Link>
         </div>
       </section>
 
@@ -117,7 +117,7 @@ export function CompanyHome() {
           <span>Partnerships</span>
           <span>Investment opportunities</span>
         </div>
-        <a className="company-button dark" href="mailto:office@beargridsolutions.com">office@beargridsolutions.com</a>
+        <Link className="company-button dark" href="/contact">Contact Bear Grid</Link>
       </section>
     </main>
   );

@@ -24,7 +24,7 @@ export default function TechnologyPage() {
         </div>
         <div>
           <p>Bear Grid began as a deep-tech company developing AI-enabled sensing, security and monitoring systems. The research, platform and application concepts remain available as an active part of the company’s technology portfolio.</p>
-          <Link className="company-button dark" href="/technology/platform">Enter Original Platform</Link>
+          <Link className="company-button dark" href="/history/original-platform">Enter Original Platform</Link>
         </div>
       </section>
       <section className="technology-visual">

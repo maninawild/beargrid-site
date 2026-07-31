@@ -125,7 +125,7 @@ function HistoryPage({ page }: { page: SitePage }) {
           microseismic sensors for security systems. Explore the{" "}
           <Link
             className="font-semibold underline decoration-2 underline-offset-4"
-            href="/technology/platform"
+            href="/history/original-platform"
             style={{ textDecoration: "underline", textDecorationThickness: "2px", textUnderlineOffset: "4px" }}
           >
             Original Bear Grid Platform
@@ -151,7 +151,7 @@ function HistoryPage({ page }: { page: SitePage }) {
           , the startup assembled a unique database of footstep patterns and developed the{" "}
           <Link
             className="font-semibold underline decoration-2 underline-offset-4"
-            href="/bear-grid-device"
+            href="/history/original-platform/bear-device"
             style={{ textDecoration: "underline", textDecorationThickness: "2px", textUnderlineOffset: "4px" }}
           >
             Bear Grid Device

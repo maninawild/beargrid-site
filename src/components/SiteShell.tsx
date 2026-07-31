@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const modernRoutes = new Set(["/", "/services", "/technology"]);
+const modernRoutes = new Set(["/services", "/technology"]);
 const modernNav = [
   ["Home", "/"],
   ["Services", "/services"],
@@ -39,7 +39,7 @@ function ModernHeader() {
           {modernNav.map(([label, href]) => (
             <Link className={pathname === href ? "active" : ""} href={href} key={label}>{label}</Link>
           ))}
-          <Link className="platform-link" href="/technology/platform">Original Platform ↗</Link>
+          <Link className="platform-link" href="/history/original-platform">Original Platform ↗</Link>
         </nav>
         <button
           className="company-menu-button"
@@ -56,7 +56,7 @@ function ModernHeader() {
       {open ? (
         <nav className="company-mobile-nav" id="company-mobile-nav" aria-label="Company mobile navigation">
           {modernNav.map(([label, href]) => <Link href={href} key={label} onClick={() => setOpen(false)}>{label}</Link>)}
-          <Link className="platform-link" href="/technology/platform" onClick={() => setOpen(false)}>Original Platform ↗</Link>
+          <Link className="platform-link" href="/history/original-platform" onClick={() => setOpen(false)}>Original Platform ↗</Link>
         </nav>
       ) : null}
     </header>
@@ -76,7 +76,7 @@ function ModernFooter() {
       <div className="footer-links">
         <Link href="/services">Services</Link>
         <Link href="/technology">Technology</Link>
-        <a href="mailto:office@beargridsolutions.com">office@beargridsolutions.com</a>
+        <Link href="/contact">Contact</Link>
       </div>
     </footer>
   );
@@ -98,7 +98,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div className="legacy-return"><Link href="/">← Current Bear Grid</Link></div>
+      {pathname !== "/" ? <div className="legacy-return"><Link href="/">← Current Bear Grid</Link></div> : null}
       <Header />
       <div className="flex-1">{children}</div>
       <Footer />

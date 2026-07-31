@@ -7,14 +7,14 @@ import { useEffect, useRef, useState } from "react";
 import { navItems } from "@/data/site";
 
 const moreItems = [
-  { label: "Bear Device", href: "/bear-grid-device" },
-  { label: "Bear Grid Platform", href: "/copy-of-bear-device" },
-  { label: "AI Interface", href: "/copy-of-bear-grid-platform" },
-  { label: "ASP Bear Grid", href: "/coming-soon-03" },
-  { label: "BG Smart Tower Security Solution", href: "/copy-of-asp-bear-grid" },
+  { label: "Bear Device", href: "/history/original-platform/bear-device" },
+  { label: "Bear Grid Platform", href: "/history/original-platform/bear-grid-platform" },
+  { label: "AI Interface", href: "/history/original-platform/ai-interface" },
+  { label: "ASP Bear Grid", href: "/history/original-platform/coming-soon-03" },
+  { label: "BG Smart Tower Security Solution", href: "/history/original-platform/copy-of-asp-bear-grid" },
   { label: "HISTORY", href: "/history" },
-  { label: "NEWS", href: "/news" },
-  { label: "JOBS and OPPORTUNITIES", href: "/jobs" },
+  { label: "NEWS", href: "/history/original-platform/news" },
+  { label: "JOBS and OPPORTUNITIES", href: "/history/original-platform/jobs" },
 ];
 
 export function Header() {
@@ -55,7 +55,7 @@ export function Header() {
         <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map((item) => (
             <div className="nav-entry" key={item.label}>
-              <Link className={isActive(item.href) ? "active" : ""} href={item.href}>
+              <Link className={isActive(item.href) ? "active" : ""} aria-current={isActive(item.href) ? "page" : undefined} href={item.href}>
                 {item.label}
               </Link>
               {item.children ? (
@@ -91,7 +91,7 @@ export function Header() {
         <button
           className="mobile-toggle"
           type="button"
-          aria-label="Open navigation menu"
+          aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
           onClick={() => setMobileOpen((value) => !value)}
