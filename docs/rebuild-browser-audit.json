@@ -1,0 +1,640 @@
+[
+  {
+    "page": "home",
+    "url": "http://127.0.0.1:4173/",
+    "title": "Smart Sensors | Bear Grid Solutions",
+    "height": 2357,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "WHAT SOUNDLOOKS LIKE",
+      "WHAT IS BEAR GRID?",
+      "PARTNERS"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Bear Grid system overview diagram from the original Wix site.",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fbear-grid-system.png&w=750&q=75",
+        "sourceWidth": 750,
+        "sourceHeight": 555,
+        "renderedWidth": 695,
+        "renderedHeight": 514,
+        "top": 921,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "AccountNL.com",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Faccountnl-logo.png&w=384&q=75",
+        "sourceWidth": 384,
+        "sourceHeight": 99,
+        "renderedWidth": 359,
+        "renderedHeight": 93,
+        "top": 1784,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "YES!DELFT",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fyesdelft-logo.png&w=384&q=75",
+        "sourceWidth": 384,
+        "sourceHeight": 89,
+        "renderedWidth": 359,
+        "renderedHeight": 83,
+        "top": 1789,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "KREW",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fkrew-logo.png&w=384&q=75",
+        "sourceWidth": 384,
+        "sourceHeight": 156,
+        "renderedWidth": 359,
+        "renderedHeight": 120,
+        "top": 1992,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Partner logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fid-kzglfmw-logo.png&w=384&q=75",
+        "sourceWidth": 238,
+        "sourceHeight": 238,
+        "renderedWidth": 359,
+        "renderedHeight": 120,
+        "top": 1992,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "sectors",
+    "url": "http://127.0.0.1:4173/sectors",
+    "title": "WHAT WE DO | BearGrid Solutions",
+    "height": 1861,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "CUTTING OFF SECURITY RISKS"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-home.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 641,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-environment.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 641,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-geology.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 641,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-estates.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 998,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-transport.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 998,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-border.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 998,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-farms.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 1354,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-business.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 1354,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsector-strategic.jpg&w=384&q=75",
+        "sourceWidth": 245,
+        "sourceHeight": 282,
+        "renderedWidth": 306,
+        "renderedHeight": 352,
+        "top": 1354,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "solutions",
+    "url": "http://127.0.0.1:4173/solutions",
+    "title": "SOLUTIONS | BearGrid Solutions",
+    "height": 1974,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "OUR SOLUTIONS",
+      "PRODUCTS",
+      "Bear Grid device",
+      "Bear Grid Platform",
+      "Artificial Intelligence Interface"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Bear Grid solutions technical diagram from the original site.",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fsolutions-exact.png&w=828&q=75",
+        "sourceWidth": 790,
+        "sourceHeight": 593,
+        "renderedWidth": 790,
+        "renderedHeight": 593,
+        "top": 580,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Ficons%2Faudio-wave.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 51,
+        "renderedWidth": 132,
+        "renderedHeight": 70,
+        "top": 1382,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "bear-grid-device",
+    "url": "http://127.0.0.1:4173/bear-grid-device",
+    "title": "Bear Device | BearGrid Solutions",
+    "height": 4496,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR DEVICE",
+      "OTHER PRODUCTS",
+      "Bear Grid device",
+      "Bear Grid Platform",
+      "Artificial Intelligence Interface"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Sound classification icons",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fdevice-sound-icons.png&w=828&q=75",
+        "sourceWidth": 809,
+        "sourceHeight": 134,
+        "renderedWidth": 930,
+        "renderedHeight": 154,
+        "top": 596,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Sound and security classification diagram",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fdevice-classification.png&w=828&q=75",
+        "sourceWidth": 827,
+        "sourceHeight": 601,
+        "renderedWidth": 930,
+        "renderedHeight": 676,
+        "top": 1471,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Bear Grid Device mobile alert screen",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fdevice-mobile.png&w=750&q=75",
+        "sourceWidth": 709,
+        "sourceHeight": 863,
+        "renderedWidth": 710,
+        "renderedHeight": 864,
+        "top": 2202,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Bear Grid Device capabilities",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fdevice-capabilities.png&w=750&q=75",
+        "sourceWidth": 714,
+        "sourceHeight": 537,
+        "renderedWidth": 710,
+        "renderedHeight": 534,
+        "top": 3121,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Ficons%2Faudio-wave.png&w=256&q=75",
+        "sourceWidth": 0,
+        "sourceHeight": 0,
+        "renderedWidth": 124,
+        "renderedHeight": 70,
+        "top": 3913,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "copy-of-bear-device",
+    "url": "http://127.0.0.1:4173/copy-of-bear-device",
+    "title": "Bear Grid Platform | BearGrid Solutions",
+    "height": 1860,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID PLATFORM",
+      "Core Platform Features",
+      "OTHER PRODUCTS",
+      "Bear Grid device",
+      "Bear Grid Platform",
+      "Artificial Intelligence Interface"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Bear Grid Platform sensor diagram from the original site.",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fplatform-sensor-exact.png&w=640&q=75",
+        "sourceWidth": 359,
+        "sourceHeight": 332,
+        "renderedWidth": 359,
+        "renderedHeight": 332,
+        "top": 460,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Ficons%2Faudio-wave.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 51,
+        "renderedWidth": 132,
+        "renderedHeight": 70,
+        "top": 1268,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "copy-of-bear-grid-platform",
+    "url": "http://127.0.0.1:4173/copy-of-bear-grid-platform",
+    "title": "AI Interface | BearGrid Solutions",
+    "height": 1341,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "RESEARCH AND DEVELOPMENT",
+      "OTHER PRODUCTS",
+      "Bear Grid device",
+      "Bear Grid Platform",
+      "Artificial Intelligence Interface"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Ficons%2Faudio-wave.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 51,
+        "renderedWidth": 132,
+        "renderedHeight": 70,
+        "top": 749,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "coming-soon-03",
+    "url": "http://127.0.0.1:4173/coming-soon-03",
+    "title": "ASP Bear Grid | BearGrid Solutions",
+    "height": 2323,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "Adaptive Security Platform Bear Grid",
+      "Short deployment stages for all devices",
+      "Simple root-of-trust integration",
+      "No complexity",
+      "Reach us now"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Fmedia%2Fwix%2Fasp-security-exact.jpg&w=640&q=75",
+        "sourceWidth": 505,
+        "sourceHeight": 505,
+        "renderedWidth": 505,
+        "renderedHeight": 505,
+        "top": 628,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "copy-of-asp-bear-grid",
+    "url": "http://127.0.0.1:4173/copy-of-asp-bear-grid",
+    "title": "BG Smart Tower Security Solution | BearGrid Solutions",
+    "height": 2203,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "BG Smart Tower Security solution",
+      "Quick installation",
+      "Low power consumption",
+      "Cheap upkeep and maintenance",
+      "Fully GDPR compliant",
+      "Lowest false alerts",
+      "SPECIFICATIONS",
+      "Reach us now"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "about",
+    "url": "http://127.0.0.1:4173/about",
+    "title": "ABOUT US | BearGrid Solutions",
+    "height": 961,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "WHO WE ARE?",
+      "WHO ELSE IS WORKING ON BEAR GRID PRODUCT DEVELOPMENT?"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "news",
+    "url": "http://127.0.0.1:4173/news",
+    "title": "NEWS | BearGrid Solutions",
+    "height": 800,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "Bear Grid News",
+      "2021 May.",
+      "2020 October."
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "jobs",
+    "url": "http://127.0.0.1:4173/jobs",
+    "title": "JOBS and OPPORTUNITIES | BearGrid Solutions",
+    "height": 1913,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "Work and study with us!",
+      "CURRENT OPENINGS",
+      "SMM Manager Intern!",
+      "Marketing Research Specialist",
+      "Administrative Support Intern",
+      "How to Apply",
+      "Come Work With Us"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "contacts",
+    "url": "http://127.0.0.1:4173/contacts",
+    "title": "GET IN TOUCH | BearGrid Solutions",
+    "height": 1117,
+    "header": {
+      "height": 160,
+      "background": "rgb(255, 255, 255)",
+      "position": "relative"
+    },
+    "headings": [
+      "CONTACT US"
+    ],
+    "images": [
+      {
+        "alt": "Bear Grid logo",
+        "src": "http://127.0.0.1:4173/_next/image?url=%2Flogos%2Fbear-grid-logo.png&w=96&q=75",
+        "sourceWidth": 96,
+        "sourceHeight": 84,
+        "renderedWidth": 67,
+        "renderedHeight": 59,
+        "top": 51,
+        "objectFit": "fill",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  }
+]

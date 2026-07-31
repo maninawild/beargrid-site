@@ -35,22 +35,21 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-4" noValidate>
+    <form onSubmit={onSubmit} className="grid gap-4 wix-form" noValidate>
       {!compact ? <h2 className="text-3xl font-semibold text-neutral-950">Reach us now</h2> : null}
       <p className="text-sm leading-6 text-neutral-600">Sign up to learn more</p>
-      <input required name="name" placeholder="Name" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
-      <input required type="email" name="email" placeholder="Email" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
-      <input required name="subject" placeholder="Subject" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
-      <textarea required name="message" placeholder="Message" rows={5} className="border border-neutral-300 px-4 py-3 outline-none focus:border-red-700" />
+      <input required name="name" placeholder="Name" />
+      <input required type="email" name="email" placeholder="Email" />
+      <input required name="subject" placeholder="Subject" />
+      <textarea required name="message" placeholder="Message" rows={5} />
       <button
         type="submit"
         disabled={state.status === "loading"}
-        className="min-h-12 bg-red-700 px-6 text-sm font-semibold tracking-[0.12em] text-white transition hover:bg-red-800 disabled:cursor-not-allowed disabled:bg-neutral-500"
       >
         {state.status === "loading" ? "Sending..." : compact ? "Send" : "Get in touch"}
       </button>
       {state.message ? (
-        <p className={state.status === "error" ? "text-sm text-red-700" : "text-sm text-green-700"} role="status">
+        <p className="text-sm" role="status">
           {state.message}
         </p>
       ) : null}
@@ -75,18 +74,18 @@ export function JobForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-4" noValidate>
+    <form onSubmit={onSubmit} className="grid gap-4 wix-form" noValidate>
       <h2 className="text-3xl font-semibold text-neutral-950">Come Work With Us</h2>
       <div className="grid gap-4 sm:grid-cols-2">
-        <input required name="firstName" placeholder="First Name" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
-        <input required name="lastName" placeholder="Last Name" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
+        <input required name="firstName" placeholder="First Name" />
+        <input required name="lastName" placeholder="Last Name" />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <input required type="email" name="email" placeholder="Email" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
-        <input required name="phone" placeholder="Phone" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
+        <input required type="email" name="email" placeholder="Email" />
+        <input required name="phone" placeholder="Phone" />
       </div>
-      <input required name="profile" placeholder="Link to CV/LinkedIn" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700" />
-      <select required name="position" defaultValue="" className="min-h-12 border border-neutral-300 px-4 outline-none focus:border-red-700">
+      <input required name="profile" placeholder="Link to CV/LinkedIn" />
+      <select required name="position" defaultValue="">
         <option value="" disabled>
           Choose an option
         </option>
@@ -98,12 +97,11 @@ export function JobForm() {
       <button
         type="submit"
         disabled={state.status === "loading"}
-        className="min-h-12 bg-red-700 px-6 text-sm font-semibold tracking-[0.12em] text-white transition hover:bg-red-800 disabled:cursor-not-allowed disabled:bg-neutral-500"
       >
         {state.status === "loading" ? "Sending..." : "Apply"}
       </button>
       {state.message ? (
-        <p className={state.status === "error" ? "text-sm text-red-700" : "text-sm text-green-700"} role="status">
+        <p className="text-sm" role="status">
           {state.message}
         </p>
       ) : null}

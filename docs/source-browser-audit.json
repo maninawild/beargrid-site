@@ -1,0 +1,716 @@
+[
+  {
+    "page": "home",
+    "url": "https://beargrid.wixsite.com/mysite",
+    "title": "Smart Sensors | Bear Grid Solutions",
+    "height": 2659,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "To know",
+      "WHAT SOUND",
+      "LOOKS LIKE",
+      "WHAT IS BEAR GRID?",
+      "Bear Grid is a Start Up Research Lab developing technical solutions for security, surveillance and drilling systems based on Artificial Intelligence Algorithms that classify sounds and seismic activity. Real time Seismic Data acquisition system is a universal solution.",
+      "PARTNERS"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_696e754b7551694c4c354d~mv2_d_4800_2255_s_2.jpg/v1/fill/w_1280,h_442,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_696e754b7551694c4c354d~mv2_d_4800_2255_s_2.jpg",
+        "sourceWidth": 1280,
+        "sourceHeight": 442,
+        "renderedWidth": 1280,
+        "renderedHeight": 442,
+        "top": 179,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "1.png",
+        "src": "https://static.wixstatic.com/media/00f349_afd9e3c37c4f47b4b2f80a7b5897d1c8~mv2.png/v1/fill/w_695,h_514,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.png",
+        "sourceWidth": 695,
+        "sourceHeight": 514,
+        "renderedWidth": 695,
+        "renderedHeight": 514,
+        "top": 876,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "AccountNL.com-Logo-Zwart-HighRes-1.png",
+        "src": "https://static.wixstatic.com/media/00f349_2e3175435fcd45b2af65916edbd764a9~mv2.png/v1/fill/w_359,h_93,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AccountNL_com-Logo-Zwart-HighRes-1.png",
+        "sourceWidth": 359,
+        "sourceHeight": 93,
+        "renderedWidth": 359,
+        "renderedHeight": 93,
+        "top": 1768,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "YesDelftAlgemeen-logo_blauw.png",
+        "src": "https://static.wixstatic.com/media/00f349_68732282008148309aef7c6bea75a19c~mv2.png/v1/fill/w_225,h_52,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/YesDelftAlgemeen-logo_blauw.png",
+        "sourceWidth": 225,
+        "sourceHeight": 52,
+        "renderedWidth": 225,
+        "renderedHeight": 52,
+        "top": 1789,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "KREW-Logo-community.png",
+        "src": "https://static.wixstatic.com/media/00f349_d9ba8020abf943a4bd2afb420994e7b1~mv2.png/v1/fill/w_199,h_81,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KREW-Logo-community.png",
+        "sourceWidth": 199,
+        "sourceHeight": 81,
+        "renderedWidth": 199,
+        "renderedHeight": 81,
+        "top": 2056,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "id-KZGlfmw.png",
+        "src": "https://static.wixstatic.com/media/00f349_a4ef9f14b38f4977a4ee8caee464c9b8~mv2.png/v1/fill/w_119,h_119,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/id-KZGlfmw.png",
+        "sourceWidth": 119,
+        "sourceHeight": 119,
+        "renderedWidth": 119,
+        "renderedHeight": 119,
+        "top": 2037,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "sectors",
+    "url": "https://beargrid.wixsite.com/mysite/sectors",
+    "title": "WHAT WE DO | BearGrid Solutions",
+    "height": 2107,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_73656a4c79434432555145~mv2_d_3000_2000_s_2.jpg/v1/fill/w_307,h_353,al_b,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_73656a4c79434432555145~mv2_d_3000_2000_s_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 728,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_6c43433541596636354f63~mv2_d_5469_3077_s_4_2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_6c43433541596636354f63~mv2_d_5469_3077_s_4_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 1086,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/00f349_56ee9c73ac2945cc8d6ea7b1e3c9c63b~mv2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/00f349_56ee9c73ac2945cc8d6ea7b1e3c9c63b~mv2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 1444,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_5079467a79675032654e67~mv2_d_6000_3370_s_4_2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_5079467a79675032654e67~mv2_d_6000_3370_s_4_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 728,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_55792d6b707a3073754438~mv2_d_4608_2592_s_4_2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_55792d6b707a3073754438~mv2_d_4608_2592_s_4_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 1086,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_596a70305473686d495549~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_596a70305473686d495549~mv2_d_5184_3456_s_4_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 1444,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_72556a6e56595956575163~mv2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_72556a6e56595956575163~mv2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 728,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_6f6830444954576f486934~mv2_d_5464_3640_s_4_2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_6f6830444954576f486934~mv2_d_5464_3640_s_4_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 1086,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/nsplsh_754c68554b6c3268427173~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_307,h_353,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_754c68554b6c3268427173~mv2_d_6000_4000_s_4_2.jpg",
+        "sourceWidth": 307,
+        "sourceHeight": 353,
+        "renderedWidth": 307,
+        "renderedHeight": 353,
+        "top": 1444,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "solutions",
+    "url": "https://beargrid.wixsite.com/mysite/solutions",
+    "title": "SOLUTIONS | BearGrid Solutions",
+    "height": 2140,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "OUR SOLUTIONS",
+      "BEAR TECHNOLOGY is AI seismic classification security system for home, backyard, farm and residence appliance and for other outdoor areas requiring quality surveillance.",
+      "",
+      "With specially tailored platform it is required easy installation and data requisition from the security sensors and devices.",
+      "",
+      "It is universal and adjustable for any purposes to control, monitor and manage physical objects on the property area.",
+      "",
+      "BEAR GRID is developing technical solutions for security, surveillance and quality control management systems systems based on seismic Artificial Intelligence classification.",
+      "PRODUCTS",
+      "Bear Grid",
+      "device",
+      "Bear Grid",
+      "Platform",
+      "Artificial Intelligence",
+      "Interface"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "2.png",
+        "src": "https://static.wixstatic.com/media/00f349_8aef23eebadb4f90bf716ae4efbc0ebd~mv2.png/v1/fill/w_790,h_593,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.png",
+        "sourceWidth": 790,
+        "sourceHeight": 593,
+        "renderedWidth": 790,
+        "renderedHeight": 593,
+        "top": 659,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "audio-1293262_640.png",
+        "src": "https://static.wixstatic.com/media/00f349_89a4e3d964b049ebba82df52eaa234d3~mv2.png/v1/fill/w_106,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/audio-1293262_640.png",
+        "sourceWidth": 106,
+        "sourceHeight": 56,
+        "renderedWidth": 106,
+        "renderedHeight": 56,
+        "top": 1424,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "bear-grid-device",
+    "url": "https://beargrid.wixsite.com/mysite/bear-grid-device",
+    "title": "Bear Device | BearGrid Solutions",
+    "height": 4844,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "BEAR DEVICE",
+      "Bear Grid",
+      "device",
+      "OTHER PRODUCTS",
+      "Bear Grid",
+      "Platform",
+      "Artificial Intelligence",
+      "Interface"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Screen Shot 2020-02-12 at 12.28.47.png",
+        "src": "https://static.wixstatic.com/media/00f349_1aa828a215e8455c82f383398d85b4a7~mv2.png/v1/crop/x_201,y_0,w_1268,h_210/fill/w_809,h_134,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202020-02-12%20at%2012_28_47.png",
+        "sourceWidth": 809,
+        "sourceHeight": 134,
+        "renderedWidth": 809,
+        "renderedHeight": 134,
+        "top": 599,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Screen Shot 2020-02-12 at 12.54.27.png",
+        "src": "https://static.wixstatic.com/media/00f349_d4648d5a50c5416eae5477a537681138~mv2.png/v1/fill/w_827,h_601,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202020-02-12%20at%2012_54_27.png",
+        "sourceWidth": 827,
+        "sourceHeight": 601,
+        "renderedWidth": 827,
+        "renderedHeight": 601,
+        "top": 1683,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Screen Shot 2022-08-02 at 13.44.55.png",
+        "src": "https://static.wixstatic.com/media/00f349_5f1c372ccb8d4c22ba6f4d449c6325b0~mv2.png/v1/fill/w_709,h_863,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202022-08-02%20at%2013_44_55.png",
+        "sourceWidth": 709,
+        "sourceHeight": 863,
+        "renderedWidth": 709,
+        "renderedHeight": 863,
+        "top": 2365,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Screen Shot 2022-08-02 at 13.44.27.png",
+        "src": "https://static.wixstatic.com/media/00f349_1a2150a15fe745cd9277f1b9a972fa73~mv2.png/v1/fill/w_714,h_537,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202022-08-02%20at%2013_44_27.png",
+        "sourceWidth": 714,
+        "sourceHeight": 537,
+        "renderedWidth": 714,
+        "renderedHeight": 537,
+        "top": 3299,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "audio-1293262_640.png",
+        "src": "https://static.wixstatic.com/media/00f349_89a4e3d964b049ebba82df52eaa234d3~mv2.png/v1/fill/w_106,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/audio-1293262_640.png",
+        "sourceWidth": 0,
+        "sourceHeight": 0,
+        "renderedWidth": 106,
+        "renderedHeight": 56,
+        "top": 4128,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "copy-of-bear-device",
+    "url": "https://beargrid.wixsite.com/mysite/copy-of-bear-device",
+    "title": "Bear Grid Platform | BearGrid Solutions",
+    "height": 2001,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "BEAR GRID PLATFORM",
+      "Bear Grid",
+      "device",
+      "Bear Grid",
+      "Platform",
+      "Artificial Intelligence",
+      "Interface"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "Screen Shot 2020-02-12 at 12.39.29.png",
+        "src": "https://static.wixstatic.com/media/00f349_6883236751b448209427010736f635b4~mv2.png/v1/fill/w_359,h_332,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screen%20Shot%202020-02-12%20at%2012_39_29.png",
+        "sourceWidth": 359,
+        "sourceHeight": 332,
+        "renderedWidth": 359,
+        "renderedHeight": 332,
+        "top": 445,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "audio-1293262_640.png",
+        "src": "https://static.wixstatic.com/media/00f349_89a4e3d964b049ebba82df52eaa234d3~mv2.png/v1/fill/w_106,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/audio-1293262_640.png",
+        "sourceWidth": 106,
+        "sourceHeight": 56,
+        "renderedWidth": 106,
+        "renderedHeight": 56,
+        "top": 1285,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "copy-of-bear-grid-platform",
+    "url": "https://beargrid.wixsite.com/mysite/copy-of-bear-grid-platform",
+    "title": "AI Interface | BearGrid Solutions",
+    "height": 1431,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "RESEARCH AND DEVELOPMENT",
+      "OTHER PRODUCTS",
+      "Bear Grid",
+      "device",
+      "Bear Grid",
+      "Platform",
+      "Research and development"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "audio-1293262_640.png",
+        "src": "https://static.wixstatic.com/media/00f349_89a4e3d964b049ebba82df52eaa234d3~mv2.png/v1/fill/w_106,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/audio-1293262_640.png",
+        "sourceWidth": 106,
+        "sourceHeight": 56,
+        "renderedWidth": 106,
+        "renderedHeight": 56,
+        "top": 715,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "coming-soon-03",
+    "url": "https://beargrid.wixsite.com/mysite/coming-soon-03",
+    "title": "ASP Bear Grid | BearGrid Solutions",
+    "height": 2718,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "Reach us now"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "iacwtv_580931c89f7a20b85b515fe32d748d27c903e882.jpg",
+        "src": "https://static.wixstatic.com/media/00f349_672d6207f9404565994766231d213d93~mv2.jpg/v1/fill/w_505,h_505,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/iacwtv_580931c89f7a20b85b515fe32d748d27c903e882.jpg",
+        "sourceWidth": 505,
+        "sourceHeight": 505,
+        "renderedWidth": 505,
+        "renderedHeight": 505,
+        "top": 313,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "LinkedIn",
+        "src": "https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ea5b4a88f0b4f91945b40499aa0af00.png",
+        "sourceWidth": 25,
+        "sourceHeight": 25,
+        "renderedWidth": 25,
+        "renderedHeight": 25,
+        "top": 2221,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "copy-of-asp-bear-grid",
+    "url": "https://beargrid.wixsite.com/mysite/copy-of-asp-bear-grid",
+    "title": "BG Smart Tower Security Solution | BearGrid Solutions",
+    "height": 3579,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "Reach us now"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "LinkedIn",
+        "src": "https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ea5b4a88f0b4f91945b40499aa0af00.png",
+        "sourceWidth": 25,
+        "sourceHeight": 25,
+        "renderedWidth": 25,
+        "renderedHeight": 25,
+        "top": 3082,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "about",
+    "url": "https://beargrid.wixsite.com/mysite/about",
+    "title": "ABOUT US | BearGrid Solutions",
+    "height": 1372,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "Meet The Team",
+      "WHO WE ARE?"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "news",
+    "url": "https://beargrid.wixsite.com/mysite/news",
+    "title": "NEWS | BearGrid Solutions",
+    "height": 2358,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID",
+      "2021 May. We are glad to share that our team are now participating YES!DELFT Accelerator Validation Lab at Delft, Netherlands. News will follow soon.",
+      "2020 October. We are glad to present our first product accomplishment! The first Bear Grid Device development is completed and ready to be tested on the ground. All the technical parameters you can find below."
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "jobs",
+    "url": "https://beargrid.wixsite.com/mysite/jobs",
+    "title": "JOBS and OPPORTUNITIES | BearGrid Solutions",
+    "height": 4976,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  },
+  {
+    "page": "contacts",
+    "url": "https://beargrid.wixsite.com/mysite/contacts",
+    "title": "GET IN TOUCH | BearGrid Solutions",
+    "height": 1029,
+    "header": {
+      "height": 129,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "relative"
+    },
+    "headings": [
+      "BEAR GRID"
+    ],
+    "images": [
+      {
+        "alt": "´Æ£Æ.png",
+        "src": "https://static.wixstatic.com/media/00f349_349fd2ba9c814b0daeb51bc35c692b03~mv2.png/v1/fill/w_135,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%B4%C3%86%C2%A3%C3%86.png",
+        "sourceWidth": 135,
+        "sourceHeight": 118,
+        "renderedWidth": 135,
+        "renderedHeight": 118,
+        "top": 50,
+        "objectFit": "cover",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/035244_d689ceddf4ed40e1b2122bab3a5e38fc~mv2.png/v1/fill/w_62,h_62,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/035244_d689ceddf4ed40e1b2122bab3a5e38fc~mv2.png",
+        "sourceWidth": 62,
+        "sourceHeight": 62,
+        "renderedWidth": 62,
+        "renderedHeight": 62,
+        "top": 309,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/035244_d8e2397534c24db1a7e7a10991d73ccc~mv2.png/v1/fill/w_62,h_62,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/035244_d8e2397534c24db1a7e7a10991d73ccc~mv2.png",
+        "sourceWidth": 62,
+        "sourceHeight": 62,
+        "renderedWidth": 62,
+        "renderedHeight": 62,
+        "top": 309,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      },
+      {
+        "alt": "",
+        "src": "https://static.wixstatic.com/media/035244_d689ceddf4ed40e1b2122bab3a5e38fc~mv2.png/v1/fill/w_62,h_62,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/035244_d689ceddf4ed40e1b2122bab3a5e38fc~mv2.png",
+        "sourceWidth": 62,
+        "sourceHeight": 62,
+        "renderedWidth": 62,
+        "renderedHeight": 62,
+        "top": 309,
+        "objectFit": "contain",
+        "objectPosition": "50% 50%"
+      }
+    ]
+  }
+]
