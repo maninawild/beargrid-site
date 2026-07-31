@@ -53,6 +53,18 @@ export default function RootLayout({
       className={`${inter.variable} ${mono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Bear Grid",
+            url: baseUrl,
+            logo: `${baseUrl}/logos/bear-grid-logo.png`,
+            foundingDate: "2019",
+            description: "Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.",
+          }).replace(/</g, "\\u003c") }}
+        />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
