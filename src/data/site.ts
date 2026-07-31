@@ -27,7 +27,7 @@ export type SitePage = {
 export const baseUrl = "https://beargridsolutions.com";
 
 export const navItems = [
-  { label: "HOME", href: "/" },
+  { label: "HOME", href: "/history/original-platform/home" },
   { label: "WHAT WE DO", href: "/history/original-platform/sectors" },
   {
     label: "SOLUTIONS",
@@ -57,6 +57,45 @@ export const navItems = [
   },
   { label: "GET IN TOUCH", href: "/contact" },
 ];
+
+export const legacyHomePage: SitePage = {
+  slug: "home",
+  sourceUrl: "https://beargrid.wixsite.com/mysite",
+  title: "Smart Sensors | Bear Grid Solutions",
+  navTitle: "HOME",
+  description:
+    "Bear Grid Labs is team researching and developing solutions for security and surveillance systems based on sound, tone and noise AI classification. We making a security systems smart, effective and low-cost.",
+  eyebrow: "To know",
+  heroTitle: "WHAT SOUND LOOKS LIKE",
+  heroText:
+    "Bear Grid is a Start Up Research Lab developing technical solutions for security, surveillance and drilling systems based on Artificial Intelligence Algorithms that classify sounds and seismic activity.",
+  heroImage: "/media/hero-sound-wave.jpg",
+  heroImageAlt: "Abstract sound wave landscape used on the original Bear Grid home page.",
+  sections: [
+    {
+      title: "WHAT IS BEAR GRID?",
+      body: [
+        "Bear Grid is a Start Up Research Lab developing technical solutions for security, surveillance and drilling systems based on Artificial Intelligence Algorithms that classify sounds and seismic activity.",
+        "Real time Seismic Data acquisition system is a universal solution.",
+      ],
+      image: "/media/bear-grid-system.png",
+      imageAlt: "Bear Grid system overview diagram from the original Wix site.",
+      cta: {
+        label: "LEARN MORE ABOUT BEAR GRID SOLUTIONS",
+        href: "/history/original-platform/solutions",
+      },
+    },
+    {
+      title: "PARTNERS",
+      cards: [
+        { title: "AccountNL.com", body: "/logos/accountnl-logo.png" },
+        { title: "YES!DELFT", body: "/logos/yesdelft-logo.png" },
+        { title: "KREW", body: "/logos/krew-logo.png" },
+        { title: "Partner logo", body: "/logos/id-kzglfmw-logo.png" },
+      ],
+    },
+  ],
+};
 
 export const productCards = [
   {

@@ -5,6 +5,7 @@ const routes = [
   "/contact",
   "/history",
   "/history/original-platform",
+  "/history/original-platform/home",
   "/history/original-platform/use-cases",
   "/history/original-platform/solutions",
   "/history/original-platform/bear-device",

@@ -22,5 +22,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "yearly" as const,
     priority: 0.7,
   }));
-  return [...companyPages, ...legacyPages];
+  return [
+    ...companyPages,
+    {
+      url: new URL("/history/original-platform/home", baseUrl).toString(),
+      lastModified: new Date("2026-08-01"),
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    },
+    ...legacyPages,
+  ];
 }

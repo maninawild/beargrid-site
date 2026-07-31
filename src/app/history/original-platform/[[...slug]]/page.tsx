@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Hero, Sections } from "@/components/PageSections";
-import { baseUrl, getPageBySlug, pages, publicPages } from "@/data/site";
+import { baseUrl, getPageBySlug, legacyHomePage, pages, publicPages } from "@/data/site";
 
 const aliases: Record<string, string> = {
   "bear-device": "bear-grid-device",
@@ -13,12 +13,14 @@ const aliases: Record<string, string> = {
 
 function resolve(slug?: string[]) {
   if (!slug?.length) return pages.home;
+  if (slug[0] === "home") return legacyHomePage;
   return getPageBySlug(aliases[slug[0]] ?? slug[0]);
 }
 
 export function generateStaticParams() {
   return [
     { slug: [] },
+    { slug: ["home"] },
     ...publicPages.filter((page) => page.slug && page.slug !== "history" && page.slug !== "contacts").map((page) => ({ slug: [page.slug] })),
     ...Object.keys(aliases).map((slug) => ({ slug: [slug] })),
   ];

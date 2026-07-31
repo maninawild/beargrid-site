@@ -21,7 +21,7 @@ const exactImages: Record<string, Record<number, string>> = {
 };
 
 export function Hero({ page }: { page: SitePage }) {
-  if (page.slug === "") {
+  if (page.slug === "" || page.slug === "home") {
     return (
       <section className="home-hero" aria-label="WHAT SOUND LOOKS LIKE">
         <Image
@@ -213,7 +213,7 @@ function StandardPage({ page }: { page: SitePage }) {
 }
 
 export function Sections({ page }: { page: SitePage }) {
-  if (page.slug === "") return <HomeSections page={page} />;
+  if (page.slug === "" || page.slug === "home") return <HomeSections page={page} />;
   if (page.slug === "sectors") return <Sectors page={page} />;
   if (page.slug === "bear-grid-device") return <DevicePage page={page} />;
   if (page.slug === "history") return <HistoryPage page={page} />;
