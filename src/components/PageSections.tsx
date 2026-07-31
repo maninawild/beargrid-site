@@ -126,6 +126,7 @@ function HistoryPage({ page }: { page: SitePage }) {
           <Link
             className="font-semibold underline decoration-2 underline-offset-4"
             href="/technology/platform"
+            style={{ textDecoration: "underline", textDecorationThickness: "2px", textUnderlineOffset: "4px" }}
           >
             Original Bear Grid Platform
           </Link>.
@@ -142,6 +143,7 @@ function HistoryPage({ page }: { page: SitePage }) {
             className="font-semibold underline decoration-2 underline-offset-4"
             href="https://yesdelft.com/"
             rel="noreferrer"
+            style={{ textDecoration: "underline", textDecorationThickness: "2px", textUnderlineOffset: "4px" }}
             target="_blank"
           >
             YES!Delft accelerator
@@ -150,6 +152,7 @@ function HistoryPage({ page }: { page: SitePage }) {
           <Link
             className="font-semibold underline decoration-2 underline-offset-4"
             href="/bear-grid-device"
+            style={{ textDecoration: "underline", textDecorationThickness: "2px", textUnderlineOffset: "4px" }}
           >
             Bear Grid Device
           </Link>.
