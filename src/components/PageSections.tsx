@@ -123,22 +123,42 @@ function HistoryPage({ page }: { page: SitePage }) {
         <p>
           Bear Grid was founded in Israel in 2019 as a technology startup developing smart
           microseismic sensors for security systems. Explore the{" "}
-          <Link href="/technology/platform">original Bear Grid platform</Link>.
+          <Link
+            className="font-semibold underline decoration-2 underline-offset-4"
+            href="/technology/platform"
+          >
+            Original Bear Grid Platform
+          </Link>.
         </p>
         <p>
           In 2020, the founders considered Canada, the Netherlands, Denmark and the United
-          Kingdom as the company&apos;s future base. The Netherlands was selected, and Bear
-          Grid has operated there since 2021.
+          Kingdom as the company&apos;s future base. The Netherlands was selected. Bear Grid
+          began building its Dutch operations in 2021, followed by the founders&apos; relocation
+          and startup trajectory in the Netherlands in 2022.
         </p>
         <p>
-          After joining the YES!Delft accelerator, the startup assembled a unique database
-          of footstep patterns and developed the{" "}
-          <Link href="/bear-grid-device">Bear Grid Device</Link>.
+          With support from the{" "}
+          <a
+            className="font-semibold underline decoration-2 underline-offset-4"
+            href="https://yesdelft.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            YES!Delft accelerator
+          </a>
+          , the startup assembled a unique database of footstep patterns and developed the{" "}
+          <Link
+            className="font-semibold underline decoration-2 underline-offset-4"
+            href="/bear-grid-device"
+          >
+            Bear Grid Device
+          </Link>.
         </p>
         <p>
-          In 2023, the company had not found its ideal product-market fit. In 2024, Bear Grid
-          changed its purpose completely and began focusing on helping founders and supporting
-          new ventures.
+          The original startup did not reach product-market fit in 2023. Since 2024, Bear Grid
+          has evolved into a Dutch holding and services company focused on innovation consulting,
+          startup assessment, business development and practical venture-building support for
+          founders.
         </p>
       </section>
     </main>

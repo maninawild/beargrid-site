@@ -78,7 +78,8 @@ test.describe("Bear Grid site", () => {
   test("history remains in the legacy site and links to both technology pages", async ({ page }) => {
     await page.goto("/history");
     await expect(page.getByRole("link", { name: "Current Bear Grid" })).toHaveAttribute("href", "/");
-    await expect(page.getByRole("link", { name: "original Bear Grid platform" })).toHaveAttribute("href", "/technology/platform");
+    await expect(page.getByRole("link", { name: "Original Bear Grid Platform" })).toHaveAttribute("href", "/technology/platform");
+    await expect(page.getByRole("link", { name: "YES!Delft accelerator" })).toHaveAttribute("href", "https://yesdelft.com/");
     await expect(page.getByRole("link", { name: "Bear Grid Device" }).last()).toHaveAttribute("href", "/bear-grid-device");
   });
 
