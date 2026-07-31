@@ -294,6 +294,11 @@ img { max-width: 100%; height: auto; }
 .timeline-section article:last-child { border-bottom: 1px solid #92918e; }
 .timeline-section time { font-size: 13px; font-weight: 650; letter-spacing: .08em; }
 .timeline-section p { max-width: 760px; margin: 0; color: #404040; font-size: 20px; line-height: 1.55; }
+.history-copy { width: min(900px, calc(100% - 64px)); margin: auto; padding: 30px 0 130px; }
+.history-copy p { margin: 0; padding: 30px 0; border-top: 1px solid #92918e; color: #404040; font-size: 20px; line-height: 1.65; }
+.history-copy p:last-child { border-bottom: 1px solid #92918e; }
+.history-copy a { font-weight: 650; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.history-copy a:hover, .history-copy a:focus-visible { text-decoration-thickness: 3px; }
 .history-actions { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #92918e; }
 .history-actions > div { min-height: 460px; padding: 70px max(32px, calc((100vw - 1320px) / 2)); }
 .history-actions > div:first-child { border-right: 1px solid #92918e; padding-right: 70px; }
@@ -356,6 +361,8 @@ img { max-width: 100%; height: auto; }
   .timeline-section { width: calc(100% - 48px); padding-bottom: 85px; }
   .timeline-section article { grid-template-columns: 1fr; gap: 25px; }
   .timeline-section p { font-size: 17px; }
+  .history-copy { width: calc(100% - 48px); padding-bottom: 85px; }
+  .history-copy p { font-size: 17px; }
   .history-actions { grid-template-columns: 1fr; }
   .history-actions > div { min-height: 0; padding: 70px 24px !important; border-right: 0 !important; border-bottom: 1px solid #92918e; }
   .contact-layout { width: calc(100% - 48px); min-height: auto; grid-template-columns: 1fr; gap: 55px; padding: 80px 0 100px; }

@@ -84,6 +84,15 @@ test("confirmed legacy routes redirect permanently", async ({ request }) => {
   }
 });
 
+test("history preserves the approved narrative and current actions", async ({ page }) => {
+  await page.goto("/history");
+  await expect(page.getByText("Bear Grid was founded in Israel in 2019", { exact: false })).toBeVisible();
+  await expect(page.getByText("began building its Dutch operations in 2021", { exact: false })).toBeVisible();
+  await expect(page.getByText("did not reach product-market fit in 2023", { exact: false })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Original Bear Grid Platform" }).first()).toHaveAttribute("href", "/history/original-platform");
+  await expect(page.getByRole("link", { name: "Discuss your project" })).toHaveAttribute("href", "/contact?intent=project");
+});
+
 test("404 provides a recovery action", async ({ page }) => {
   await page.goto("/does-not-exist");
   await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
