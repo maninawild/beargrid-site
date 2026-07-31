@@ -1,112 +1,123 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const expertise = [
-  ["AI & Technology Strategy", "Practical evaluation, positioning and implementation of technology and AI initiatives."],
-  ["Venture Building", "From early concept and validation to market entry, operating model and execution."],
-  ["Product & Market Validation", "Testing demand, business models and commercial assumptions before significant investment."],
-  ["Risk Management", "Identifying commercial, operational and technology risks early enough to act."],
-  ["Partnership Building", "Finding hidden synergy, connecting the right parties and converting mutual interest into concrete collaboration."],
-  ["Innovation & Business Advisory", "Strategic support for teams facing complex decisions, transformation or expansion."],
-] as const;
+export const services = [
+  {
+    number: "01",
+    title: "AI & Technology Strategy",
+    body: "Helping teams evaluate, design and implement practical technology and AI initiatives.",
+  },
+  {
+    number: "02",
+    title: "Venture Building",
+    body: "Supporting new ventures from concept and validation to market positioning and execution.",
+  },
+  {
+    number: "03",
+    title: "Product & Market Validation",
+    body: "Testing assumptions, customer demand, business models and market readiness before significant investment.",
+  },
+  {
+    number: "04",
+    title: "Risk Management",
+    body: "Identifying commercial, operational and technology risks early and turning uncertainty into clearer decisions.",
+  },
+  {
+    number: "05",
+    title: "Partnership Building",
+    body: "Finding hidden synergy, connecting the right founders, investors, institutions and operators, then turning mutual interest into concrete collaboration.",
+  },
+  {
+    number: "06",
+    title: "Innovation & Business Advisory",
+    body: "Strategic support for companies, founders and institutions working through complex change, expansion or transformation.",
+  },
+];
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return <p className="final-label">{children}</p>;
+export function Eyebrow({ children }: { children: React.ReactNode }) {
+  return <p className="company-eyebrow">{children}</p>;
+}
+
+export function ServiceGrid({ compact = false }: { compact?: boolean }) {
+  return (
+    <div className={`service-grid ${compact ? "compact" : ""}`}>
+      {services.map((service) => (
+        <article key={service.number}>
+          <span>{service.number}</span>
+          <h3>{service.title}</h3>
+          <p>{service.body}</p>
+        </article>
+      ))}
+    </div>
+  );
 }
 
 export function CompanyHome() {
   return (
-    <main className="final-main">
-      <section className="final-hero">
-        <div className="final-hero-copy">
-          <SectionLabel>Technology / Venture / Business</SectionLabel>
-          <Image className="hero-wordmark" src="/logos/bear-grid-logo.png" alt="Bear Grid" width={135} height={118} priority />
-          <h1>Technology, venture and business strategy for complex markets.</h1>
-          <p>Bear Grid helps founders, companies and institutions validate ideas, manage risk, build partnerships and turn technology into practical business outcomes.</p>
-          <div className="final-actions">
-            <Link className="final-button dark" href="/contact">Discuss a Project</Link>
-            <Link className="final-button" href="/technology">Explore Technology</Link>
-          </div>
+    <main className="company-main">
+      <section className="company-hero">
+        <div className="company-hero-mark">
+          <Image src="/logos/bear-grid-logo.png" alt="" width={172} height={151} priority />
         </div>
-        <div className="final-hero-proof" aria-label="Bear Grid company focus">
-          <p>One company</p>
-          <div>
-            <span>01</span>
-            <h2>Advisory</h2>
-            <p>Business, technology and venture work.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <h2>Technology</h2>
-            <p>Original sensing and monitoring platform.</p>
+        <div className="company-hero-copy">
+          <Eyebrow>BEAR GRID / EST. AS A DEEP-TECH COMPANY</Eyebrow>
+          <h1>Technology.<br />Strategy.<br />Venture Building.</h1>
+          <p>Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.</p>
+          <div className="company-actions">
+            <Link className="company-button dark" href="/services">Explore Services</Link>
+            <Link className="company-button" href="/technology/platform">View Technology Platform</Link>
           </div>
         </div>
       </section>
 
-      <section className="final-intro" id="about">
-        <SectionLabel>What Bear Grid does</SectionLabel>
+      <section className="company-statement" id="about">
+        <Eyebrow>01 / EVOLUTION</Eyebrow>
         <div>
-          <h2>Technical thinking joined with commercial action.</h2>
-          <p>We work where technology, markets and execution meet—helping teams test assumptions, make informed decisions and build the relationships needed to move forward.</p>
+          <h2>From technology platform to broader innovation company</h2>
+          <p>Bear Grid began with AI-enabled sensing and security technology. That work remains part of our portfolio, while our focus has expanded to venture building, technology strategy, product validation, risk and partnership development.</p>
         </div>
       </section>
 
-      <section className="final-section" id="expertise">
-        <div className="final-section-heading">
-          <SectionLabel>Expertise</SectionLabel>
-          <h2>Focused support for consequential decisions.</h2>
+      <section className="company-section services-preview">
+        <div className="section-heading">
+          <Eyebrow>02 / WHAT WE DO</Eyebrow>
+          <h2>Focused support where technology, markets and execution meet.</h2>
         </div>
-        <div className="expertise-list">
-          {expertise.map(([title, body], index) => (
-            <article key={title}>
-              <span>0{index + 1}</span>
-              <h3>{title}</h3>
-              <p>{body}</p>
-            </article>
-          ))}
-        </div>
+        <ServiceGrid compact />
+        <Link className="text-link" href="/services">Explore all services →</Link>
       </section>
 
-      <section className="heritage-preview">
-        <div className="heritage-copy">
-          <SectionLabel>Technology heritage</SectionLabel>
+      <section className="technology-band">
+        <div>
+          <Eyebrow>03 / TECHNOLOGY HERITAGE</Eyebrow>
           <h2>Original Technology Platform</h2>
-          <p>Bear Grid began with AI-enabled sensing, monitoring and security systems. This original platform, technical research and application work remain part of the company’s technology portfolio.</p>
-          <Link className="final-button light" href="/technology">Explore the Technology Platform</Link>
         </div>
-        <div className="heritage-image">
-          <Image src="/media/wix/solutions-exact.png" alt="Bear Grid perimeter sensing system diagram" width={790} height={593} sizes="(max-width: 800px) 100vw, 55vw" />
-        </div>
-      </section>
-
-      <section className="final-section engagement-section">
-        <div className="final-section-heading">
-          <SectionLabel>Engagement formats</SectionLabel>
-          <h2>Designed around the question at hand.</h2>
-        </div>
-        <div className="engagement-grid">
-          <article><h3>Decision sprint</h3><p>A focused assessment before a major technology, product or market commitment.</p></article>
-          <article><h3>Venture support</h3><p>Structured help across validation, positioning, partnerships and execution.</p></article>
-          <article><h3>Strategic collaboration</h3><p>Ongoing work on innovation, market entry, risk or ecosystem development.</p></article>
+        <div>
+          <p>Bear Grid was founded around AI-enabled sensing, monitoring and security systems. The original platform, technical research and application concepts remain available as part of the company’s technology portfolio.</p>
+          <Link className="company-button light" href="/technology/platform">Explore Bear Grid Technology</Link>
         </div>
       </section>
 
-      <section className="why-section">
-        <SectionLabel>Why Bear Grid</SectionLabel>
-        <div className="why-grid">
-          <h2>Built from technology work, not theory alone.</h2>
-          <div>
-            <p>Bear Grid’s advisory work is grounded in the experience of developing an original deep-tech platform: defining technical problems, testing applications and connecting engineering choices to real operating contexts.</p>
-            <p>That foundation supports practical work with founders, companies and institutions navigating uncertainty.</p>
-          </div>
+      <section className="company-statement about-statement">
+        <Eyebrow>04 / ABOUT</Eyebrow>
+        <div>
+          <h2>Technical understanding, commercial judgment and a bias toward action.</h2>
+          <p>Bear Grid combines technical experience, venture work, business development and cross-border partnership building. We work across technology, innovation and entrepreneurship, helping teams move from uncertainty to practical action.</p>
         </div>
       </section>
 
-      <section className="final-contact" id="contact">
-        <SectionLabel>Contact</SectionLabel>
+      <section className="contact-panel" id="contact">
+        <Eyebrow>05 / START A CONVERSATION</Eyebrow>
         <h2>Start with a concrete question.</h2>
-        <p>We are open to advisory work, technology projects, venture collaboration, partnerships and investment opportunities.</p>
-        <Link className="final-button dark" href="/contact">Contact Bear Grid</Link>
+        <p>We are open to new projects, partnerships, technology initiatives and investment opportunities.</p>
+        <div className="contact-topics">
+          <span>Business consulting</span>
+          <span>Technology projects</span>
+          <span>Venture collaboration</span>
+          <span>Partnerships</span>
+          <span>Investment opportunities</span>
+        </div>
+        <a className="company-button dark" href="mailto:office@beargridsolutions.com">office@beargridsolutions.com</a>
       </section>
     </main>
   );

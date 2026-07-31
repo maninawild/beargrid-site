@@ -17,7 +17,7 @@ const mono = Roboto_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Bear Grid | Technology, Venture Building and Business Strategy",
+    default: "Bear Grid | Technology, Strategy & Venture Building",
     template: "%s",
   },
   description:
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "BearGrid Solutions",
-    title: "Bear Grid | Technology, Venture Building and Business Strategy",
+    title: "Bear Grid | Technology, Strategy & Venture Building",
     description:
       "Technology strategy, venture building, product validation, risk management and partnership development.",
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bear Grid | Technology, Venture Building and Business Strategy",
+    title: "Bear Grid | Technology, Strategy & Venture Building",
     description:
       "Technology strategy, venture building, product validation, risk management and partnership development.",
     images: ["/og.png"],
@@ -53,21 +53,6 @@ export default function RootLayout({
       className={`${inter.variable} ${mono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Bear Grid",
-              url: baseUrl,
-              logo: new URL("/logos/bear-grid-logo.png", baseUrl).toString(),
-              email: "office@beargridsolutions.com",
-              description:
-                "Technology, venture and business strategy for complex markets, supported by an original AI-enabled sensing and monitoring platform.",
-            }).replace(/</g, "\\u003c"),
-          }}
-        />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
