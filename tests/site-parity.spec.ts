@@ -13,6 +13,7 @@ const routes = [
   "/coming-soon-03",
   "/copy-of-asp-bear-grid",
   "/about",
+  "/history",
   "/news",
   "/jobs",
   "/contacts",
@@ -72,6 +73,13 @@ test.describe("Bear Grid site", () => {
   test("legacy pages link back to Current Bear Grid", async ({ page }) => {
     await page.goto("/bear-grid-device");
     await expect(page.getByRole("link", { name: "Current Bear Grid" })).toHaveAttribute("href", "/");
+  });
+
+  test("history remains in the legacy site and links to both technology pages", async ({ page }) => {
+    await page.goto("/history");
+    await expect(page.getByRole("link", { name: "Current Bear Grid" })).toHaveAttribute("href", "/");
+    await expect(page.getByRole("link", { name: "original Bear Grid platform" })).toHaveAttribute("href", "/technology/platform");
+    await expect(page.getByRole("link", { name: "Bear Grid Device" }).last()).toHaveAttribute("href", "/bear-grid-device");
   });
 
   test("contact form validates and submits to its endpoint", async ({ page }) => {

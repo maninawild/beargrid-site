@@ -50,6 +50,7 @@ export const navItems = [
     label: "ABOUT US",
     href: "/about",
     children: [
+      { label: "HISTORY", href: "/history" },
       { label: "NEWS", href: "/news" },
       { label: "JOBS and OPPORTUNITIES", href: "/jobs" },
     ],
@@ -438,6 +439,26 @@ export const pages: Record<string, SitePage> = {
       },
     ],
     form: "jobs",
+  },
+  history: {
+    slug: "history",
+    sourceUrl: "https://beargrid.wixsite.com/mysite",
+    title: "HISTORY | BearGrid Solutions",
+    navTitle: "HISTORY",
+    description:
+      "The story of Bear Grid, from a microseismic security startup founded in Israel to a Netherlands-based company supporting founders and new ventures.",
+    heroTitle: "HISTORY",
+    heroText: "From sensing technology to founder support.",
+    sections: [
+      {
+        body: [
+          "Bear Grid was founded in Israel in 2019 as a technology startup developing smart microseismic sensors for security systems.",
+          "In 2020, the founders considered Canada, the Netherlands, Denmark and the United Kingdom as the company’s future base. The Netherlands was selected, and Bear Grid has operated there since 2021.",
+          "After joining the YES!Delft accelerator, the startup assembled a unique database of footstep patterns and developed the Bear Grid Device.",
+          "In 2023, the company had not found its ideal product-market fit. In 2024, Bear Grid changed its purpose completely and began focusing on helping founders and supporting new ventures.",
+        ],
+      },
+    ],
   },
   contacts: {
     slug: "contacts",

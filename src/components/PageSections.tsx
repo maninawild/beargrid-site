@@ -114,6 +114,37 @@ function DevicePage({ page }: { page: SitePage }) {
   );
 }
 
+function HistoryPage({ page }: { page: SitePage }) {
+  return (
+    <main className="content-page page-history">
+      <h1>{page.heroTitle}</h1>
+      {page.heroText ? <p className="lead">{page.heroText}</p> : null}
+      <section className="plain-section">
+        <p>
+          Bear Grid was founded in Israel in 2019 as a technology startup developing smart
+          microseismic sensors for security systems. Explore the{" "}
+          <Link href="/technology/platform">original Bear Grid platform</Link>.
+        </p>
+        <p>
+          In 2020, the founders considered Canada, the Netherlands, Denmark and the United
+          Kingdom as the company&apos;s future base. The Netherlands was selected, and Bear
+          Grid has operated there since 2021.
+        </p>
+        <p>
+          After joining the YES!Delft accelerator, the startup assembled a unique database
+          of footstep patterns and developed the{" "}
+          <Link href="/bear-grid-device">Bear Grid Device</Link>.
+        </p>
+        <p>
+          In 2023, the company had not found its ideal product-market fit. In 2024, Bear Grid
+          changed its purpose completely and began focusing on helping founders and supporting
+          new ventures.
+        </p>
+      </section>
+    </main>
+  );
+}
+
 function StandardPage({ page }: { page: SitePage }) {
   return (
     <main className={`content-page page-${page.slug}`}>
@@ -155,5 +186,6 @@ export function Sections({ page }: { page: SitePage }) {
   if (page.slug === "") return <HomeSections page={page} />;
   if (page.slug === "sectors") return <Sectors page={page} />;
   if (page.slug === "bear-grid-device") return <DevicePage page={page} />;
+  if (page.slug === "history") return <HistoryPage page={page} />;
   return <StandardPage page={page} />;
 }

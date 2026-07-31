@@ -12,6 +12,7 @@ const moreItems = [
   { label: "AI Interface", href: "/copy-of-bear-grid-platform" },
   { label: "ASP Bear Grid", href: "/coming-soon-03" },
   { label: "BG Smart Tower Security Solution", href: "/copy-of-asp-bear-grid" },
+  { label: "HISTORY", href: "/history" },
   { label: "NEWS", href: "/news" },
   { label: "JOBS and OPPORTUNITIES", href: "/jobs" },
 ];
