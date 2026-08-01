@@ -7,10 +7,11 @@ import { useEffect, useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const modernRoutes = new Set(["/", "/services", "/history", "/contact"]);
+const modernRoutes = new Set(["/", "/services", "/investors", "/history", "/contact"]);
 const modernNav = [
   ["Home", "/"],
   ["Expertise", "/#expertise"],
+  ["Investors", "/investors"],
   ["History", "/history"],
   ["Contact", "/contact"],
 ] as const;
@@ -72,6 +73,7 @@ function ModernFooter() {
       </div>
       <div className="footer-links">
         <Link href="/#expertise">Expertise</Link>
+        <Link href="/investors">Investors</Link>
         <Link href="/history">History</Link>
         <Link href="/history/original-platform">Original platform</Link>
         <Link href="/contact">Contact</Link>

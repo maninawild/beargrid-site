@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const services = [
@@ -72,6 +73,9 @@ export function ServiceGrid({ compact = false }: { compact?: boolean }) {
           <span>{service.number}</span>
           <h3>{service.title}</h3>
           <p>{service.body}</p>
+          <Link className="service-cta" href={`/contact?intent=assessment&service=${encodeURIComponent(service.title)}`}>
+            Request an assessment <span aria-hidden="true">→</span>
+          </Link>
         </article>
       ))}
     </div>
@@ -87,9 +91,9 @@ export function CompanyHome() {
           <span>Technology · Ventures · Partnerships</span>
         </div>
         <div className="new-hero-copy">
-          <h1>Turn technical uncertainty into a confident next move.</h1>
+          <h1>Independent R&amp;D consultancy for ambitious technology ventures.</h1>
           <div>
-            <p>Bear Grid helps founders, R&amp;D teams, investors and institutions assess complex technology, validate ventures and structure practical innovation programmes.</p>
+            <p>We assess complex technology, validate ventures and shape R&amp;D programmes for founders, innovation teams, investors and institutions.</p>
             <div className="company-actions">
               <Link className="company-button dark" href="/contact?intent=project">Discuss your project</Link>
               <Link className="company-button" href="/contact?intent=assessment">Request an assessment</Link>
@@ -108,7 +112,7 @@ export function CompanyHome() {
       <section className="company-section home-problems">
         <div className="section-heading">
           <Eyebrow>01 / PROBLEMS WE SOLVE</Eyebrow>
-          <h2>Important decisions should not depend on optimistic assumptions.</h2>
+          <h2>Resolve the questions that put technology ventures at risk.</h2>
         </div>
         <div className="problem-list">
           {problems.map((problem, index) => (
@@ -123,7 +127,7 @@ export function CompanyHome() {
       <section className="company-section home-services" id="expertise">
         <div className="section-heading">
           <Eyebrow>02 / CORE SERVICES</Eyebrow>
-          <h2>Focused expertise at the point where technology meets execution.</h2>
+          <h2>Four ways to move from uncertainty to evidence and action.</h2>
         </div>
         <ServiceGrid compact />
       </section>
@@ -131,7 +135,7 @@ export function CompanyHome() {
       <section className="dark-section">
         <div className="section-heading">
           <Eyebrow>03 / HOW WE WORK</Eyebrow>
-          <h2>A short path from the real question to a usable decision.</h2>
+          <h2>A defined engagement with a decision at the end.</h2>
         </div>
         <ol className="process-grid">
           {process.map(([title, body], index) => (
@@ -164,9 +168,32 @@ export function CompanyHome() {
         </div>
       </section>
 
+      <section className="ecosystem-section" aria-labelledby="ecosystem-title">
+        <div className="section-heading">
+          <Eyebrow>06 / ECOSYSTEM &amp; COMMUNITY</Eyebrow>
+          <div>
+            <h2 id="ecosystem-title">Connected to the Dutch innovation ecosystem.</h2>
+            <p>Organisations and communities in the wider ecosystem around our work.</p>
+          </div>
+        </div>
+        <div className="ecosystem-grid">
+          <div className="ecosystem-mark">
+            <Image src="/logos/yesdelft-logo.png" alt="YES!Delft" width={230} height={90} />
+          </div>
+          <div className="ecosystem-mark ecosystem-wordmark">INSPIRE<span>XCHANGE</span></div>
+          <div className="ecosystem-mark ecosystem-wordmark">PLATFORM <span>ZERO</span><small>ROTTERDAM</small></div>
+          <div className="ecosystem-mark ecosystem-wordmark">SUB<span>ZERO</span><small>ROTTERDAM</small></div>
+          <div className="ecosystem-mark">
+            <Image src="/logos/krew-logo.png" alt="The KREW The Hague" width={230} height={90} />
+          </div>
+          <div className="ecosystem-mark ecosystem-wordmark">LOCALITY <span>HUB</span><small>AMSTERDAM</small></div>
+        </div>
+        <p className="ecosystem-note">Shown as ecosystem and community connections only; inclusion does not imply endorsement or investment.</p>
+      </section>
+
       <section className="company-section faq-section">
         <div className="section-heading">
-          <Eyebrow>06 / FREQUENTLY ASKED</Eyebrow>
+          <Eyebrow>07 / FREQUENTLY ASKED</Eyebrow>
           <h2>Before we begin.</h2>
         </div>
         <div className="faq-list">

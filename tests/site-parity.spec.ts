@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 const routes = [
   "/",
   "/contact",
+  "/investors",
   "/history",
   "/history/original-platform",
   "/history/original-platform/home",
@@ -55,7 +56,19 @@ test("mobile navigation and CTA destinations work", async ({ page }) => {
   await page.getByRole("button", { name: "Close company navigation" }).press("Escape");
   await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeHidden();
   await expect(page.getByRole("link", { name: "Discuss your project" }).first()).toHaveAttribute("href", "/contact?intent=project");
+  await expect(page.getByRole("link", { name: "Investors" })).toHaveAttribute("href", "/investors");
   await expect(page.getByRole("link", { name: "Contact Bear Grid on WhatsApp" })).toHaveAttribute("target", "_blank");
+});
+
+test("homepage services and investor page have clear conversion paths", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("link", { name: /Request an assessment/ })).toHaveCount(6);
+  await page.goto("/investors");
+  await expect(page.getByRole("heading", { name: "Meet ambitious R&D ventures." })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Start a conversation" }).first()).toHaveAttribute(
+    "href",
+    "/contact?intent=investor",
+  );
 });
 
 test("legacy navigation remains inside the archive", async ({ page }) => {
