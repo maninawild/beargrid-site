@@ -6,6 +6,7 @@ const routes = [
   "/history",
   "/history/original-platform",
   "/history/original-platform/home",
+  "/history/original-platform/history",
   "/history/original-platform/use-cases",
   "/history/original-platform/solutions",
   "/history/original-platform/bear-device",
@@ -55,6 +56,27 @@ test("mobile navigation and CTA destinations work", async ({ page }) => {
   await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeHidden();
   await expect(page.getByRole("link", { name: "Discuss your project" }).first()).toHaveAttribute("href", "/contact?intent=project");
   await expect(page.getByRole("link", { name: "Contact Bear Grid on WhatsApp" })).toHaveAttribute("target", "_blank");
+});
+
+test("legacy navigation remains inside the archive", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/history/original-platform/home");
+
+  await expect(page.locator("header .brand")).toHaveAttribute(
+    "href",
+    "/history/original-platform/home",
+  );
+  await expect(page.getByRole("link", { name: "HOME", exact: true })).toHaveAttribute(
+    "href",
+    "/history/original-platform/home",
+  );
+  await expect(page.getByRole("link", { name: "WHAT WE DO", exact: true })).toHaveAttribute(
+    "href",
+    "/history/original-platform/use-cases",
+  );
+  await expect(
+    page.locator('header a[href="/history/original-platform/history"]').first(),
+  ).toHaveAttribute("href", "/history/original-platform/history");
 });
 
 test("contact form validates and submits", async ({ page }) => {

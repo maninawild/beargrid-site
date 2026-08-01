@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     sectors: "use-cases",
   };
   const legacyPages = publicPages
-    .filter((page) => page.slug && page.slug !== "history" && page.slug !== "contacts")
+    .filter((page) => page.slug && page.slug !== "contacts")
     .map((page) => ({
     url: new URL(`/history/original-platform/${canonicalAliases[page.slug] ?? page.slug}`, baseUrl).toString(),
     lastModified: new Date("2026-07-13"),

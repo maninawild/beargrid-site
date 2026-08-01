@@ -24,11 +24,11 @@ export type SitePage = {
   form?: FormKind;
 };
 
-export const baseUrl = "https://beargridsolutions.com";
+export const baseUrl = "https://beargrid-site.vercel.app";
 
 export const navItems = [
   { label: "HOME", href: "/history/original-platform/home" },
-  { label: "WHAT WE DO", href: "/history/original-platform/sectors" },
+  { label: "WHAT WE DO", href: "/history/original-platform/use-cases" },
   {
     label: "SOLUTIONS",
     href: "/history/original-platform/solutions",
@@ -50,7 +50,7 @@ export const navItems = [
     label: "ABOUT US",
     href: "/history/original-platform/about",
     children: [
-      { label: "HISTORY", href: "/history" },
+      { label: "HISTORY", href: "/history/original-platform/history" },
       { label: "NEWS", href: "/history/original-platform/news" },
       { label: "JOBS and OPPORTUNITIES", href: "/history/original-platform/jobs" },
     ],

@@ -21,7 +21,7 @@ export function generateStaticParams() {
   return [
     { slug: [] },
     { slug: ["home"] },
-    ...publicPages.filter((page) => page.slug && page.slug !== "history" && page.slug !== "contacts").map((page) => ({ slug: [page.slug] })),
+    ...publicPages.filter((page) => page.slug && page.slug !== "contacts").map((page) => ({ slug: [page.slug] })),
     ...Object.keys(aliases).map((slug) => ({ slug: [slug] })),
   ];
 }

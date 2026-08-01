@@ -12,7 +12,7 @@ const moreItems = [
   { label: "AI Interface", href: "/history/original-platform/ai-interface" },
   { label: "ASP Bear Grid", href: "/history/original-platform/coming-soon-03" },
   { label: "BG Smart Tower Security Solution", href: "/history/original-platform/copy-of-asp-bear-grid" },
-  { label: "HISTORY", href: "/history" },
+  { label: "HISTORY", href: "/history/original-platform/history" },
   { label: "NEWS", href: "/history/original-platform/news" },
   { label: "JOBS and OPPORTUNITIES", href: "/history/original-platform/jobs" },
 ];
@@ -47,7 +47,7 @@ export function Header() {
   return (
     <header className="site-header" id="top">
       <div className="header-inner">
-        <Link className="brand" href="/" onClick={() => setMobileOpen(false)}>
+        <Link className="brand" href="/history/original-platform/home" onClick={() => setMobileOpen(false)}>
           <Image src="/logos/bear-grid-logo.png" alt="Bear Grid logo" width={67} height={59} priority />
           <span>BEAR GRID</span>
         </Link>

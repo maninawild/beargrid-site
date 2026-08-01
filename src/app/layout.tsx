@@ -22,9 +22,6 @@ export const metadata: Metadata = {
   },
   description:
     "Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     siteName: "BearGrid Solutions",
