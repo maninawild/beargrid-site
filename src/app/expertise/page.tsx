@@ -4,25 +4,26 @@ import { Eyebrow, rAndDServices, ServiceGrid, services } from "@/components/Comp
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "R&D Consultancy Services | Bear Grid",
+  title: "R&D-advies en technologiebeoordeling | Bear Grid",
   description:
-    "Independent technology assessment, R&D strategy, venture validation and innovation partnership support for founders, companies, investors and institutions.",
+    "Onafhankelijke technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen voor oprichters, bedrijven, investeerders en instellingen.",
   alternates: { canonical: "/expertise" },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    title: "R&D Consultancy Services | Bear Grid",
+    locale: "nl_NL",
+    title: "R&D-advies en technologiebeoordeling | Bear Grid",
     description:
-      "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
+      "Onafhankelijke technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen.",
     url: `${baseUrl}/expertise`,
-    images: ["/og.png"],
+    images: ["/brand-assets/og-expertise.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "R&D Consultancy Services | Bear Grid",
+    title: "R&D-advies en technologiebeoordeling | Bear Grid",
     description:
-      "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
-    images: ["/og.png"],
+      "Onafhankelijke technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen.",
+    images: ["/brand-assets/twitter-default.png"],
   },
 };
 
@@ -36,7 +37,8 @@ export default function ExpertisePage() {
       description: service.body,
       url: `${baseUrl}/expertise`,
       provider: { "@id": `${baseUrl}/#organization` },
-      areaServed: "Worldwide",
+      areaServed: "Wereldwijd",
+      inLanguage: "nl-NL",
     })),
   };
 
@@ -49,6 +51,7 @@ export default function ExpertisePage() {
           { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
           { "@type": "ListItem", position: 2, name: "Expertise", item: `${baseUrl}/expertise` },
         ],
+        inLanguage: "nl-NL",
       }).replace(/</g, "\\u003c") }} />
       <script
         type="application/ld+json"
@@ -57,18 +60,18 @@ export default function ExpertisePage() {
         }}
       />
       <section className="inner-company-hero">
-        <Eyebrow>EXPERTISE / INDEPENDENT R&amp;D CONSULTANCY</Eyebrow>
-        <h1>Technology assessment, R&amp;D strategy and venture validation.</h1>
+        <Eyebrow>EXPERTISE / ONAFHANKELIJK R&amp;D-ADVIESBUREAU</Eyebrow>
+        <h1>Technologiebeoordeling, R&amp;D-strategie en validatie van nieuwe ondernemingen.</h1>
         <p>
-          Bear Grid helps founders, companies, investors and institutions resolve
-          technical feasibility, product direction, delivery risk and partnership
-          decisions before committing significant time or capital.
+          Bear Grid helpt oprichters, bedrijven, investeerders en instellingen om
+          duidelijkheid te krijgen over technische haalbaarheid, productrichting,
+          uitvoeringsrisico&apos;s en partnerschappen voordat zij veel tijd of kapitaal inzetten.
         </p>
       </section>
       <section className="company-section" aria-labelledby="rd-services-title">
         <div className="section-heading">
-          <Eyebrow>WHAT THE CORE R&amp;D SERVICES MEAN</Eyebrow>
-          <h2 id="rd-services-title">Independent evidence for the next decision.</h2>
+          <Eyebrow>WAT ONZE R&amp;D-KERNDIENSTEN INHOUDEN</Eyebrow>
+          <h2 id="rd-services-title">Onafhankelijk bewijs voor het volgende besluit.</h2>
         </div>
         <div className="service-grid">
           {rAndDServices.map((service) => (
@@ -77,30 +80,30 @@ export default function ExpertisePage() {
               <h3>{service.title}</h3>
               <p>{service.body}</p>
               <Link className="service-cta" href={`/contact?service=${encodeURIComponent(service.title)}`}>
-                Discuss this decision <span aria-hidden="true">→</span>
+                Bespreek dit besluit <span aria-hidden="true">→</span>
               </Link>
             </article>
           ))}
         </div>
       </section>
-      <section className="company-section" aria-label="Bear Grid consultancy services">
+      <section className="company-section" aria-label="Adviesdiensten van Bear Grid">
         <div className="section-heading">
-          <Eyebrow>HANDS-ON DELIVERY CAPABILITIES</Eyebrow>
-          <h2>From decision support to a working result.</h2>
+          <Eyebrow>PRAKTISCHE UITVOERINGSKRACHT</Eyebrow>
+          <h2>Van besluitvorming naar een werkend resultaat.</h2>
         </div>
         <ServiceGrid />
       </section>
       <section className="services-method">
-        <Eyebrow>HOW WE WORK</Eyebrow>
+        <Eyebrow>ONZE WERKWIJZE</Eyebrow>
         <div>
-          <h2>Start with the decision, not the deliverable.</h2>
+          <h2>Begin bij het besluit, niet bij het eindproduct.</h2>
           <p>
-            We define the question, identify the evidence required and build a
-            focused path from uncertainty to action. An engagement can support one
-            critical decision or a broader R&amp;D and venture programme.
+            We formuleren de vraag, bepalen welk bewijs nodig is en maken een
+            gerichte route van onzekerheid naar actie. Een opdracht kan één
+            cruciaal besluit ondersteunen of een breder R&amp;D- en ondernemingstraject.
           </p>
           <Link className="company-button dark" href="/contact?intent=project">
-            Discuss your project
+            Bespreek uw project
           </Link>
         </div>
       </section>

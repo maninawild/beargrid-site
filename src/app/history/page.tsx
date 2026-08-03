@@ -4,22 +4,23 @@ import { Eyebrow } from "@/components/CompanyPages";
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Company History | Bear Grid",
-  description: "How Bear Grid evolved from a deep-tech sensing startup into an independent Netherlands-based R&D consultancy.",
+  title: "Geschiedenis van Bear Grid | Bear Grid",
+  description: "Hoe Bear Grid zich ontwikkelde van een deeptech-start-up voor sensortechnologie tot een in Nederland gevestigd onafhankelijk R&D-adviesbureau.",
   alternates: { canonical: "/history" },
   openGraph: {
     type: "article",
     siteName: "Bear Grid",
-    title: "Company History | Bear Grid",
-    description: "From deep-tech startup to independent R&D consultancy.",
+    locale: "nl_NL",
+    title: "Geschiedenis van Bear Grid | Bear Grid",
+    description: "Van deeptech-start-up tot onafhankelijk R&D-adviesbureau.",
     url: `${baseUrl}/history`,
-    images: ["/og.png"],
+    images: ["/brand-assets/og-history.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Company History | Bear Grid",
-    description: "From deep-tech startup to independent R&D consultancy.",
-    images: ["/og.png"],
+    title: "Geschiedenis van Bear Grid | Bear Grid",
+    description: "Van deeptech-start-up tot onafhankelijk R&D-adviesbureau.",
+    images: ["/brand-assets/twitter-default.png"],
   },
 };
 
@@ -31,75 +32,76 @@ export default function HistoryPage() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
-          { "@type": "ListItem", position: 2, name: "History", item: `${baseUrl}/history` },
+          { "@type": "ListItem", position: 2, name: "Geschiedenis", item: `${baseUrl}/history` },
         ],
+        inLanguage: "nl-NL",
       }).replace(/</g, "\\u003c") }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "@id": `${baseUrl}/history#about`,
-        name: "Bear Grid company history",
+        name: "Geschiedenis van Bear Grid",
         url: `${baseUrl}/history`,
         description: metadata.description,
         about: { "@id": `${baseUrl}/#organization` },
-        inLanguage: "en",
+        inLanguage: "nl-NL",
       }).replace(/</g, "\\u003c") }} />
       <section className="inner-company-hero">
-        <Eyebrow>COMPANY HISTORY</Eyebrow>
-        <h1>HISTORY</h1>
-        <p>Bear Grid is a Netherlands-based independent R&amp;D consultancy founded in 2019. It evolved from a deep-tech sensing startup into a company supporting technology and venture decisions.</p>
+        <Eyebrow>GESCHIEDENIS VAN HET BEDRIJF</Eyebrow>
+        <h1>GESCHIEDENIS</h1>
+        <p>Bear Grid is een in Nederland gevestigd onafhankelijk R&amp;D-adviesbureau, opgericht in 2019. Het bedrijf ontwikkelde zich van een deeptech-start-up voor sensortechnologie tot een organisatie die technologie- en ondernemingsbeslissingen ondersteunt.</p>
       </section>
-      <section className="history-story" aria-label="Bear Grid company timeline">
+      <section className="history-story" aria-label="Tijdlijn van Bear Grid">
         <ol className="history-timeline">
           <li>
             <time dateTime="2019">2019</time>
             <p>
-              Bear Grid was founded in Israel in 2019 as a technology startup developing smart
-              microseismic sensors for security systems. Explore the{" "}
-              <Link href="/history/original-platform">Original Bear Grid Platform</Link>.
+              Bear Grid werd in 2019 in Israël opgericht als technologie-start-up voor slimme
+              microseismische sensoren in beveiligingssystemen. Bekijk het{" "}
+              <Link href="/history/original-platform">oorspronkelijke Bear Grid-platform</Link>.
             </p>
           </li>
           <li>
             <time dateTime="2020">2020</time>
             <p>
-              In 2020, the founders considered Canada, the Netherlands, Denmark and the United
-              Kingdom as the company&apos;s future base. The Netherlands was selected. Bear Grid
-              began building its Dutch operations in 2021, followed by the founders&apos; relocation
-              and startup trajectory in the Netherlands in 2022.
+              In 2020 overwogen de oprichters Canada, Nederland, Denemarken en het Verenigd
+              Koninkrijk als toekomstige vestigingsplaats. De keuze viel op Nederland. Bear Grid
+              bouwde vanaf 2021 de Nederlandse activiteiten op, gevolgd door de verhuizing van
+              de oprichters en het verdere start-uptraject in Nederland in 2022.
             </p>
           </li>
           <li>
             <time dateTime="2021">2021—2022</time>
             <p>
-              With support from the{" "}
+              Met ondersteuning van de{" "}
               <a href="https://yesdelft.com/" rel="noreferrer" target="_blank">
-                YES!Delft accelerator
+                YES!Delft-accelerator
               </a>
-              , the startup assembled a unique database of footstep patterns and developed the{" "}
+              {" "}bouwde de start-up een unieke database met voetstappatronen op en ontwikkelde het{" "}
               <Link href="/history/original-platform/bear-device">Bear Grid Device</Link>.
             </p>
           </li>
           <li>
-            <time dateTime="2023">2023—TODAY</time>
+            <time dateTime="2023">2023—HEDEN</time>
             <p>
-              The original startup did not reach product-market fit in 2023. Since 2024, Bear Grid
-              has evolved into a Dutch holding and services company focused on innovation consulting,
-              startup assessment, business development and practical venture-building support for
-              founders.
+              De oorspronkelijke start-up bereikte in 2023 geen product-market fit. Sinds 2024 is
+              Bear Grid een Nederlandse holding- en dienstverleningsmaatschappij, gericht op
+              innovatieadvies, beoordeling van start-ups, business development en praktische
+              ondersteuning van oprichters bij het opbouwen van ondernemingen.
             </p>
           </li>
         </ol>
       </section>
       <section className="history-actions">
         <div>
-          <Eyebrow>PRESERVED ARCHIVE</Eyebrow>
-          <h2>The original Bear Grid platform remains available in full.</h2>
-          <Link className="company-button" href="/history/original-platform">Explore the original platform</Link>
+          <Eyebrow>BEWAARD ARCHIEF</Eyebrow>
+          <h2>Het oorspronkelijke Bear Grid-platform blijft volledig beschikbaar.</h2>
+          <Link className="company-button" href="/history/original-platform">Bekijk het oorspronkelijke platform</Link>
         </div>
         <div>
-          <Eyebrow>CURRENT COMPANY</Eyebrow>
-          <h2>Have a technical or venture decision to make?</h2>
-          <Link className="company-button dark" href="/contact?intent=project">Discuss your project</Link>
+          <Eyebrow>HUIDIGE BEDRIJF</Eyebrow>
+          <h2>Moet u een technisch of ondernemingsbesluit nemen?</h2>
+          <Link className="company-button dark" href="/contact?intent=project">Bespreek uw project</Link>
         </div>
       </section>
     </main>

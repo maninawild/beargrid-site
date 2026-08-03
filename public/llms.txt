@@ -1,20 +1,20 @@
 # Bear Grid
 
-Bear Grid is a Netherlands-based independent R&D consultancy founded in 2019. It supports founders, companies, investors and institutions with technology assessment, R&D strategy, venture validation and innovation partnerships.
+Bear Grid is een in Nederland gevestigd onafhankelijk R&D-adviesbureau, opgericht in 2019. Het ondersteunt oprichters, bedrijven, investeerders en instellingen met technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen.
 
-## Primary pages
+## Belangrijkste pagina's
 
 - Home: https://beargridsolutions.com/
 - Expertise: https://beargridsolutions.com/expertise
-- Investors: https://beargridsolutions.com/investors
-- Company history: https://beargridsolutions.com/history
+- Investeerders: https://beargridsolutions.com/investors
+- Geschiedenis van het bedrijf: https://beargridsolutions.com/history
 - Contact: https://beargridsolutions.com/contact
-- Original sensing-platform archive: https://beargridsolutions.com/history/original-platform
+- Archief van het oorspronkelijke sensorplatform: https://beargridsolutions.com/history/original-platform
 
-## Historical context
+## Historische context
 
-Bear Grid began as a deep-tech sensing startup in Israel in 2019 and has operated in the Netherlands since 2021. The preserved original-platform archive documents its seismic sensing, signal-classification and security-system work. Since 2024, Bear Grid has focused on independent R&D consultancy and venture support.
+Bear Grid begon in 2019 in Israël als deeptech-start-up voor sensortechnologie en is sinds 2021 actief in Nederland. Het bewaarde archief van het oorspronkelijke platform documenteert het werk aan seismische detectie, signaalclassificatie en beveiligingssystemen. Sinds 2024 richt Bear Grid zich op onafhankelijk R&D-advies en ondersteuning van nieuwe ondernemingen.
 
 ## Contact
 
-Project and investor enquiries: https://beargridsolutions.com/contact
+Aanvragen van projecten en investeerders: https://beargridsolutions.com/contact

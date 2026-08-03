@@ -49,7 +49,7 @@ const cards = [
 
 export default function BrandAssetsReviewPage() {
   return (
-    <main className={styles.page}>
+    <main className={styles.page} lang="en">
       <header className={styles.hero}>
         <p>BEAR GRID / APPROVED ASSET SYSTEM</p>
         <h1>Existing logo. Production-ready variants.</h1>

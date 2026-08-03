@@ -35,10 +35,10 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
         body: JSON.stringify(payload),
       });
       const data = (await response.json()) as { message?: string };
-      if (!response.ok) throw new Error(data.message || "Please check the form and try again.");
-      setState({ status: "success", message: data.message || "Thank you. Your project details have been sent." });
+      if (!response.ok) throw new Error(data.message || "Controleer het formulier en probeer het opnieuw.");
+      setState({ status: "success", message: data.message || "Bedankt. Uw projectgegevens zijn verzonden." });
     } catch (error) {
-      setState({ status: "error", message: error instanceof Error ? error.message : "We could not send your message. Please try again." });
+      setState({ status: "error", message: error instanceof Error ? error.message : "We konden uw bericht niet verzenden. Probeer het opnieuw." });
       sending.current = false;
     }
   }
@@ -46,11 +46,11 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
   if (state.status === "success") {
     return (
       <div className="form-success" role="status" aria-live="polite">
-        <span>Message received</span>
-        <h2>Thank you.</h2>
-        <p>We have received your enquiry and will contact you shortly.</p>
+        <span>Bericht ontvangen</span>
+        <h2>Bedankt.</h2>
+        <p>We hebben uw aanvraag ontvangen en nemen binnenkort contact met u op.</p>
         <a className="text-link" href="https://wa.me/message/4OIGQ3FHUZQSD1" target="_blank" rel="noreferrer">
-          Message us on WhatsApp
+          Stuur ons een bericht via WhatsApp
         </a>
       </div>
     );
@@ -58,49 +58,53 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
 
   return (
     <form onSubmit={onSubmit} className="contact-form" aria-describedby="contact-form-note">
-      <p id="contact-form-note">Seven short questions. All fields are required.</p>
+      <p id="contact-form-note">Zeven korte vragen. Alle velden zijn verplicht.</p>
       <label>
-        Name
+        Naam
         <input required name="name" autoComplete="name" maxLength={120} />
       </label>
       <label>
-        Company
+        Bedrijf
         <input required name="company" autoComplete="organization" maxLength={160} />
       </label>
       <label>
-        What do you need help with?
+        Waarmee kunnen we u helpen?
         <select required name="need" value={need} onChange={(event) => setNeed(event.target.value)}>
-          <option value="">Select one</option>
-          <option>Strategy &amp; Complex Problem Solving</option>
-          <option>Sales Systems</option>
-          <option>AI Automation</option>
-          <option>Digital Products &amp; Websites</option>
-          <option>Executive Advisory</option>
-          <option>Venture Team Assembly</option>
-          <option>Other</option>
+          <option value="">Maak een keuze</option>
+          <option>Technologiebeoordeling</option>
+          <option>R&amp;D-strategie</option>
+          <option>Validatie van nieuwe ondernemingen</option>
+          <option>Innovatiepartnerschappen</option>
+          <option>Strategie &amp; complexe vraagstukken</option>
+          <option>Verkoopsystemen</option>
+          <option>AI-automatisering</option>
+          <option>Digitale producten &amp; websites</option>
+          <option>Advies aan directie en bestuur</option>
+          <option>Samenstellen van ventureteams</option>
+          <option>Anders</option>
         </select>
       </label>
       <label>
-        Describe your challenge
+        Beschrijf uw vraagstuk
         <textarea required name="message" rows={5} minLength={20} maxLength={2000} />
       </label>
       <label>
         Budget
         <select required name="budget" defaultValue="">
-          <option value="" disabled>Select one</option>
+          <option value="" disabled>Maak een keuze</option>
           <option>&lt; €5k</option>
           <option>€5–20k</option>
           <option>€20–100k</option>
           <option>€100k+</option>
-          <option>Not sure</option>
+          <option>Nog niet bepaald</option>
         </select>
       </label>
       <label>
-        Desired timeline
-        <input required name="timeline" maxLength={160} placeholder="For example: within 6 weeks" />
+        Gewenste planning
+        <input required name="timeline" maxLength={160} placeholder="Bijvoorbeeld: binnen 6 weken" />
       </label>
       <label>
-        Email
+        E-mailadres
         <input required type="email" name="email" autoComplete="email" maxLength={200} />
       </label>
       <label className="form-trap" aria-hidden="true">
@@ -108,7 +112,7 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
         <input name="website" tabIndex={-1} autoComplete="off" />
       </label>
       <button type="submit" disabled={state.status === "loading"}>
-        {state.status === "loading" ? "Sending…" : "Send enquiry"}
+        {state.status === "loading" ? "Bezig met verzenden…" : "Aanvraag verzenden"}
       </button>
       {state.status === "error" ? (
         <p className="form-error" role="alert">{state.message}</p>

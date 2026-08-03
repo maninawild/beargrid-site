@@ -5,35 +5,36 @@ import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact | Bear Grid",
-  description: "Tell Bear Grid about the business or technology problem you need to solve.",
+  description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    title: "Contact Bear Grid",
-    description: "Tell Bear Grid about the business or technology problem you need to solve.",
+    locale: "nl_NL",
+    title: "Contact opnemen met Bear Grid",
+    description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
     url: `${baseUrl}/contact`,
-    images: ["/og.png"],
+    images: ["/brand-assets/og-contact.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Bear Grid",
-    description: "Tell Bear Grid about the business or technology problem you need to solve.",
-    images: ["/og.png"],
+    title: "Contact opnemen met Bear Grid",
+    description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
+    images: ["/brand-assets/twitter-default.png"],
   },
 };
 
 const allowedServices = [
-  "Technology Assessment",
-  "R&D Strategy",
-  "Venture Validation",
-  "Innovation Partnerships",
-  "Strategy & Complex Problem Solving",
-  "Sales Systems",
-  "AI Automation",
-  "Digital Products & Websites",
-  "Executive Advisory",
-  "Venture Team Assembly",
+  "Technologiebeoordeling",
+  "R&D-strategie",
+  "Validatie van nieuwe ondernemingen",
+  "Innovatiepartnerschappen",
+  "Strategie & complexe vraagstukken",
+  "Verkoopsystemen",
+  "AI-automatisering",
+  "Digitale producten & websites",
+  "Advies aan directie en bestuur",
+  "Samenstellen van ventureteams",
 ];
 
 export default async function ContactPage({
@@ -46,7 +47,7 @@ export default async function ContactPage({
   const initialNeed = allowedServices.includes(requestedService)
     ? requestedService
     : query.intent === "investor"
-      ? "Executive Advisory"
+      ? "Advies aan directie en bestuur"
       : "";
 
   return (
@@ -58,12 +59,13 @@ export default async function ContactPage({
           { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
           { "@type": "ListItem", position: 2, name: "Contact", item: `${baseUrl}/contact` },
         ],
+        inLanguage: "nl-NL",
       }).replace(/</g, "\\u003c") }} />
       <section className="contact-layout">
         <div className="contact-intro">
-          <Eyebrow>LET&apos;S TALK</Eyebrow>
-          <h1>What do you need help with?</h1>
-          <p>Give us the short version. We will review it and reply within two business days.</p>
+          <Eyebrow>NEEM CONTACT OP</Eyebrow>
+          <h1>Waarmee kunnen we u helpen?</h1>
+          <p>Geef ons de korte versie. We beoordelen uw aanvraag en reageren binnen twee werkdagen.</p>
         </div>
         <ContactForm initialNeed={initialNeed} />
       </section>

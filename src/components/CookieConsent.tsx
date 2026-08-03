@@ -28,25 +28,25 @@ export function CookieConsent() {
 
   return (
     <>
-      <button className="cookie-settings-button" type="button" onClick={() => setOpen(true)} aria-label="Open cookie settings">
-        Cookie settings
+      <button className="cookie-settings-button" type="button" onClick={() => setOpen(true)} aria-label="Cookie-instellingen openen">
+        Cookie-instellingen
       </button>
       {open ? (
         <section className="cookie-panel" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
           <div>
-            <p className="company-eyebrow">COOKIE PREFERENCES</p>
-            <h2 id="cookie-title">Your privacy choices</h2>
+            <p className="company-eyebrow">COOKIEVOORKEUREN</p>
+            <h2 id="cookie-title">Uw privacykeuzes</h2>
             <p>
-              We use essential storage to remember your choice. Optional analytics will only be enabled after consent. Read our <Link href="/cookie-policy">Cookie Policy</Link>.
+              We gebruiken essentiële opslag om uw keuze te onthouden. Optionele analyse wordt alleen na toestemming ingeschakeld. Lees ons <Link href="/cookie-policy">cookiebeleid</Link>.
             </p>
           </div>
           <div className="cookie-actions">
-            <button type="button" onClick={() => save("essential")}>Essential only</button>
-            <button className="primary" type="button" onClick={() => save("all")}>Accept optional cookies</button>
+            <button type="button" onClick={() => save("essential")}>Optionele cookies weigeren</button>
+            <button className="primary" type="button" onClick={() => save("all")}>Alles accepteren</button>
           </div>
         </section>
       ) : null}
-      <span className="sr-only" aria-live="polite">{consent ? `Cookie preference: ${consent}` : ""}</span>
+      <span className="sr-only" aria-live="polite">{consent ? `Cookievoorkeur: ${consent === "all" ? "alles geaccepteerd" : "alleen essentieel"}` : ""}</span>
     </>
   );
 }

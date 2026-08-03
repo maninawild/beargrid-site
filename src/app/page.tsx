@@ -3,24 +3,25 @@ import { CompanyHome, rAndDServices, services } from "@/components/CompanyPages"
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Independent R&D Consultancy Netherlands | Bear Grid",
-  description: "Bear Grid is a Netherlands-based independent R&D consultancy for technology assessment, R&D strategy, venture validation and innovation partnerships.",
+  title: "Onafhankelijk R&D-adviesbureau in Nederland | Bear Grid",
+  description: "Bear Grid is een in Nederland gevestigd onafhankelijk R&D-adviesbureau voor technologiebeoordeling, R&D-strategie, validatie en innovatiepartnerschappen.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    title: "Independent R&D Consultancy Netherlands | Bear Grid",
-    description: "Technology assessment, R&D strategy, venture validation and innovation partnership support for founders, teams and investors.",
+    locale: "nl_NL",
+    title: "Onafhankelijk R&D-adviesbureau in Nederland | Bear Grid",
+    description: "Technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen voor oprichters, teams en investeerders.",
     url: baseUrl,
-    images: ["/og.png"],
+    images: ["/brand-assets/og-home.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Independent R&D Consultancy Netherlands | Bear Grid",
-    description: "Technology assessment, R&D strategy, venture validation and innovation partnership support for founders, teams and investors.",
-    images: ["/og.png"],
+    title: "Onafhankelijk R&D-adviesbureau in Nederland | Bear Grid",
+    description: "Technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen voor oprichters, teams en investeerders.",
+    images: ["/brand-assets/twitter-default.png"],
   },
 };
 
@@ -36,17 +37,19 @@ export default function Home() {
           description: service.body,
           url: `${baseUrl}/expertise`,
           provider: { "@id": `${baseUrl}/#organization` },
-          areaServed: "Worldwide",
+          areaServed: "Wereldwijd",
+          inLanguage: "nl-NL",
         })),
       }).replace(/</g, "\\u003c") }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
         mainEntity: [
-          ["What can Bear Grid take on?", "A defined problem, a complete build or hands-on support to a leadership team. Typical work covers strategy, sales systems, automation, websites, platforms and venture execution."],
-          ["Do you only advise?", "No. We advise when a decision needs to be made and build when the answer needs to become a working system, product or process."],
-          ["How does a project start?", "Send a short enquiry. We review it, ask any necessary questions and propose a clear first piece of work. If we are not the right fit, we will say so."],
+          ["Waarvoor kunt u Bear Grid inschakelen?", "Voor een afgebakend vraagstuk, een volledig ontwikkeltraject of praktische ondersteuning van een managementteam. Veelvoorkomend werk omvat strategie, verkoopsystemen, automatisering, websites, platforms en de uitvoering van nieuwe ondernemingen."],
+          ["Geeft Bear Grid alleen advies?", "Nee. We adviseren wanneer er een besluit nodig is en bouwen wanneer het antwoord een werkend systeem, product of proces moet worden."],
+          ["Hoe start een project?", "Stuur een korte aanvraag. We beoordelen die, stellen waar nodig aanvullende vragen en doen een voorstel voor een duidelijke eerste opdracht. Als we niet de juiste partij zijn, zeggen we dat."],
         ].map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })),
+        inLanguage: "nl-NL",
       }).replace(/</g, "\\u003c") }} />
       <CompanyHome />
     </>

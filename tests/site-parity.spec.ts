@@ -55,21 +55,21 @@ for (const viewport of [
 test("mobile navigation and CTA destinations work", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
-  await page.getByRole("button", { name: "Open company navigation" }).click();
-  await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeVisible();
-  await page.getByRole("button", { name: "Close company navigation" }).press("Escape");
-  await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeHidden();
-  await expect(page.locator(".new-hero").getByRole("link", { name: "Let's Talk" })).toHaveAttribute("href", "/contact");
-  await expect(page.getByRole("link", { name: "Investors" })).toHaveAttribute("href", "/investors");
-  await expect(page.getByRole("link", { name: "Contact Bear Grid on WhatsApp" })).toHaveAttribute("target", "_blank");
+  await page.getByRole("button", { name: "Bedrijfsnavigatie openen" }).click();
+  await expect(page.getByRole("navigation", { name: "Mobiele bedrijfsnavigatie" })).toBeVisible();
+  await page.getByRole("button", { name: "Bedrijfsnavigatie sluiten" }).press("Escape");
+  await expect(page.getByRole("navigation", { name: "Mobiele bedrijfsnavigatie" })).toBeHidden();
+  await expect(page.locator(".new-hero").getByRole("link", { name: "Neem contact op" })).toHaveAttribute("href", "/contact");
+  await expect(page.getByRole("link", { name: "Investeerders" })).toHaveAttribute("href", "/investors");
+  await expect(page.getByRole("link", { name: "Neem via WhatsApp contact op met Bear Grid" })).toHaveAttribute("target", "_blank");
 });
 
 test("homepage services and investor page have clear conversion paths", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".service-grid").getByRole("link", { name: "Let's Talk" })).toHaveCount(6);
+  await expect(page.locator(".service-grid").getByRole("link", { name: "Neem contact op" })).toHaveCount(6);
   await page.goto("/investors");
-  await expect(page.getByRole("heading", { name: "Assess the technology before committing capital." })).toBeVisible();
-  await expect(page.locator(".investor-hero").getByRole("link", { name: "Let's Talk" })).toHaveAttribute(
+  await expect(page.getByRole("heading", { name: "Beoordeel de technologie voordat u kapitaal inzet." })).toBeVisible();
+  await expect(page.locator(".investor-hero").getByRole("link", { name: "Neem contact op" })).toHaveAttribute(
     "href",
     "/contact?intent=investor",
   );
@@ -77,12 +77,12 @@ test("homepage services and investor page have clear conversion paths", async ({
 
 test("homepage ecosystem logos are local, visible and linked", async ({ page, request }) => {
   const logos = [
-    ["Visit YES!Delft website", "https://yesdelft.com/", "/logos/yesdelft-logo.png"],
-    ["Visit InspireXChange website", "https://www.inspirexchange.nl/", "/logos/inspirexchange.png"],
-    ["Visit Platform Zero website", "https://platformzero.co/", "/logos/platform-zero.png"],
-    ["Visit Design Hub International website", "https://www.dhi-architecture.com/", "/logos/dhi-logo.png"],
-    ["Visit KREW Community website", "https://www.krewcommunity.com/", "/logos/krew-logo.png"],
-    ["Visit Localie Hub website", "https://hub.localie.co/", "/logos/localie-hub.png"],
+    ["Bezoek de website van YES!Delft", "https://yesdelft.com/", "/logos/yesdelft-logo.png"],
+    ["Bezoek de website van InspireXChange", "https://www.inspirexchange.nl/", "/logos/inspirexchange.png"],
+    ["Bezoek de website van Platform Zero", "https://platformzero.co/", "/logos/platform-zero.png"],
+    ["Bezoek de website van Design Hub International", "https://www.dhi-architecture.com/", "/logos/dhi-logo.png"],
+    ["Bezoek de website van KREW Community", "https://www.krewcommunity.com/", "/logos/krew-logo.png"],
+    ["Bezoek de website van Localie Hub", "https://hub.localie.co/", "/logos/localie-hub.png"],
   ] as const;
 
   await page.goto("/#expertise");
@@ -126,19 +126,19 @@ test("contact form validates and submits", async ({ page }) => {
   await page.route("**/api/contact", (route) => route.fulfill({
     status: 200,
     contentType: "application/json",
-    body: JSON.stringify({ message: "Thank you. We have received your enquiry and will contact you shortly." }),
+    body: JSON.stringify({ message: "Dank u. We hebben uw aanvraag ontvangen en nemen binnenkort contact met u op." }),
   }));
   await page.goto("/contact");
-  await page.getByRole("textbox", { name: "Name", exact: true }).fill("QA Test");
-  await page.getByRole("textbox", { name: "Company", exact: true }).fill("Bear Grid QA");
-  await page.getByLabel("What do you need help with?").selectOption({ label: "AI Automation" });
-  await page.getByRole("textbox", { name: "Describe your challenge", exact: true }).fill("A sufficiently detailed project description for final quality assurance.");
+  await page.getByRole("textbox", { name: "Naam", exact: true }).fill("QA Test");
+  await page.getByRole("textbox", { name: "Bedrijf", exact: true }).fill("Bear Grid QA");
+  await page.getByLabel("Waarmee kunnen we u helpen?").selectOption({ label: "AI-automatisering" });
+  await page.getByRole("textbox", { name: "Beschrijf uw vraagstuk", exact: true }).fill("Een voldoende gedetailleerde projectbeschrijving voor de kwaliteitscontrole.");
   await page.getByLabel("Budget").selectOption({ label: "€20–100k" });
-  await page.getByRole("textbox", { name: "Desired timeline", exact: true }).fill("Within eight weeks");
-  await page.getByRole("textbox", { name: "Email", exact: true }).fill("qa@example.com");
-  await page.getByRole("button", { name: "Send enquiry" }).click();
-  await expect(page.getByRole("status")).toContainText("We have received your enquiry");
-  await expect(page.getByRole("link", { name: "Message us on WhatsApp" })).toHaveAttribute(
+  await page.getByRole("textbox", { name: "Gewenste planning", exact: true }).fill("Binnen acht weken");
+  await page.getByRole("textbox", { name: "E-mailadres", exact: true }).fill("qa@example.com");
+  await page.getByRole("button", { name: "Aanvraag verzenden" }).click();
+  await expect(page.getByRole("status")).toContainText("We hebben uw aanvraag ontvangen");
+  await expect(page.getByRole("link", { name: "Stuur ons een bericht via WhatsApp" })).toHaveAttribute(
     "href",
     "https://wa.me/message/4OIGQ3FHUZQSD1",
   );
@@ -174,6 +174,7 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
 
   for (const [route, canonical] of canonicalRoutes) {
     await page.goto(route);
+    await expect(page.locator("html")).toHaveAttribute("lang", "nl-NL");
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", canonical);
     await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", canonical);
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /https:\/\/beargridsolutions\.com\//);
@@ -181,6 +182,10 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
     const jsonLd = await page.locator('script[type="application/ld+json"]').allTextContents();
     for (const payload of jsonLd) expect(() => JSON.parse(payload)).not.toThrow();
   }
+
+  await page.goto("/history/original-platform");
+  expect(await page.locator('[lang="en"]').count()).toBeGreaterThan(0);
+  await expect(page.getByText("Preserved original platform", { exact: false })).toBeVisible();
 
   const robots = await (await request.get("/robots.txt")).text();
   expect(robots).toContain("Sitemap: https://beargridsolutions.com/sitemap.xml");
@@ -209,18 +214,18 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
 
 test("major pages provide distinct, answer-first service definitions", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("Independent R&D consultancy");
-  await expect(page.getByText("Netherlands-based independent R&D consultancy", { exact: false }).first()).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Onafhankelijk R&D-adviesbureau");
+  await expect(page.getByText("in Nederland gevestigd onafhankelijk R&D-adviesbureau", { exact: false }).first()).toBeVisible();
 
   await page.goto("/expertise");
-  for (const service of ["Technology Assessment", "R&D Strategy", "Venture Validation", "Innovation Partnerships"]) {
+  for (const service of ["Technologiebeoordeling", "R&D-strategie", "Validatie van nieuwe ondernemingen", "Innovatiepartnerschappen"]) {
     await expect(page.getByRole("heading", { name: service, exact: true })).toBeVisible();
   }
-  await expect(page.getByText("An independent review for teams or investors", { exact: false })).toBeVisible();
+  await expect(page.getByText("Een onafhankelijke beoordeling voor teams of investeerders", { exact: false })).toBeVisible();
 
   await page.goto("/investors");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("Assess the technology");
-  await expect(page.getByText("findings, evidence gaps, material risks", { exact: false })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Beoordeel de technologie");
+  await expect(page.getByText("bevindingen, ontbrekend bewijs, materiële risico", { exact: false })).toBeVisible();
 
   const jsonLd = (await page.locator('script[type="application/ld+json"]').allTextContents())
     .flatMap((payload) => {
@@ -234,17 +239,17 @@ test("major pages provide distinct, answer-first service definitions", async ({ 
 
 test("history preserves the approved narrative and current actions", async ({ page }) => {
   await page.goto("/history");
-  await expect(page.getByText("Bear Grid was founded in Israel in 2019", { exact: false })).toBeVisible();
-  await expect(page.getByText("began building its Dutch operations in 2021", { exact: false })).toBeVisible();
-  await expect(page.getByText("did not reach product-market fit in 2023", { exact: false })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Original Bear Grid Platform" }).first()).toHaveAttribute("href", "/history/original-platform");
-  await expect(page.getByRole("link", { name: "Discuss your project" })).toHaveAttribute("href", "/contact?intent=project");
+  await expect(page.getByText("Bear Grid werd in 2019 in Israël opgericht", { exact: false })).toBeVisible();
+  await expect(page.getByText("bouwde vanaf 2021 de Nederlandse activiteiten op", { exact: false })).toBeVisible();
+  await expect(page.getByText("bereikte in 2023 geen product-market fit", { exact: false })).toBeVisible();
+  await expect(page.getByRole("link", { name: "oorspronkelijke Bear Grid-platform" }).first()).toHaveAttribute("href", "/history/original-platform");
+  await expect(page.getByRole("link", { name: "Bespreek uw project" })).toHaveAttribute("href", "/contact?intent=project");
 });
 
 test("404 provides a recovery action", async ({ page }) => {
   await page.goto("/does-not-exist");
-  await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Back to Home" })).toHaveAttribute("href", "/");
+  await expect(page.getByRole("heading", { name: "Pagina niet gevonden" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Terug naar Home" })).toHaveAttribute("href", "/");
 });
 
 test("approved brand asset review is noindex, responsive and complete", async ({ page, request }) => {

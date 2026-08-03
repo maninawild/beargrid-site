@@ -5,7 +5,8 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Bear Grid",
     short_name: "Bear Grid",
     description:
-      "Independent Netherlands-based R&D consultancy for technology assessment, venture validation and innovation partnerships.",
+      "In Nederland gevestigd onafhankelijk R&D-adviesbureau voor technologiebeoordeling, validatie van nieuwe ondernemingen en innovatiepartnerschappen.",
+    lang: "nl-NL",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

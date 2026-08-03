@@ -4,33 +4,34 @@ import { Eyebrow } from "@/components/CompanyPages";
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Technology & Venture Assessment for Investors | Bear Grid",
+  title: "Technologie- en ondernemingsbeoordeling voor investeerders | Bear Grid",
   description:
-    "Independent technology and venture assessment for investors, plus a relationship-led entry point to carefully selected R&D ventures.",
+    "Onafhankelijke technologie- en ondernemingsbeoordeling voor investeerders, plus toegang tot zorgvuldig geselecteerde R&D-ondernemingen.",
   alternates: {
     canonical: "/investors",
   },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    title: "Technology & Venture Assessment for Investors | Bear Grid",
+    locale: "nl_NL",
+    title: "Technologie- en ondernemingsbeoordeling voor investeerders | Bear Grid",
     description:
-      "Independent assessment of technical feasibility, evidence and execution risk before an investor commits.",
+      "Onafhankelijke beoordeling van technische haalbaarheid, bewijs en uitvoeringsrisico voordat een investeerder kapitaal inzet.",
     url: `${baseUrl}/investors`,
-    images: ["/og.png"],
+    images: ["/brand-assets/og-investors.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Technology & Venture Assessment for Investors | Bear Grid",
+    title: "Technologie- en ondernemingsbeoordeling voor investeerders | Bear Grid",
     description:
-      "Independent assessment of technical feasibility, evidence and execution risk before an investor commits.",
-    images: ["/og.png"],
+      "Onafhankelijke beoordeling van technische haalbaarheid, bewijs en uitvoeringsrisico voordat een investeerder kapitaal inzet.",
+    images: ["/brand-assets/twitter-default.png"],
   },
 };
 
 const investorTypes = [
-  "Angel investors",
-  "Venture capital",
+  "Angel-investeerders",
+  "Venturecapitalfondsen",
   "Family offices",
   "Private equity",
 ];
@@ -43,48 +44,49 @@ export default function InvestorsPage() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
-          { "@type": "ListItem", position: 2, name: "Investors", item: `${baseUrl}/investors` },
+          { "@type": "ListItem", position: 2, name: "Investeerders", item: `${baseUrl}/investors` },
         ],
+        inLanguage: "nl-NL",
       }).replace(/</g, "\\u003c") }} />
       <section className="inner-company-hero investor-hero">
-        <Eyebrow>INVESTORS / INDEPENDENT TECHNOLOGY &amp; VENTURE ASSESSMENT</Eyebrow>
-        <h1>Assess the technology before committing capital.</h1>
+        <Eyebrow>INVESTEERDERS / ONAFHANKELIJKE TECHNOLOGIE- EN ONDERNEMINGSBEOORDELING</Eyebrow>
+        <h1>Beoordeel de technologie voordat u kapitaal inzet.</h1>
         <p>
-          Bear Grid helps investors examine technical feasibility, supporting
-          evidence, architecture, delivery risk and team dependencies before an
-          investment or venture decision. The result is a concise assessment of
-          findings, evidence gaps, material risks and recommended next checks.
+          Bear Grid helpt investeerders om technische haalbaarheid, onderliggend
+          bewijs, architectuur, uitvoeringsrisico&apos;s en afhankelijkheden binnen het team
+          te onderzoeken vóór een investeringsbesluit. Het resultaat is een beknopte
+          beoordeling van bevindingen, ontbrekend bewijs, materiële risico&apos;s en aanbevolen vervolgstappen.
         </p>
         <Link className="company-button dark" href="/contact?intent=investor">
-          Let&apos;s Talk
+          Neem contact op
         </Link>
       </section>
 
       <section className="investor-body">
         <div>
-          <Eyebrow>WHO WE SPEAK WITH</Eyebrow>
+          <Eyebrow>MET WIE WE SPREKEN</Eyebrow>
           <div className="audience-list">
             {investorTypes.map((type) => <span key={type}>{type}</span>)}
           </div>
         </div>
         <div>
-          <h2>Independent review, with clear limits.</h2>
+          <h2>Onafhankelijke beoordeling, met duidelijke grenzen.</h2>
           <p>
-            Technology and venture assessment is useful when an investment thesis
-            depends on product claims, an R&amp;D roadmap or the ability of a team to
-            deliver. Scope is agreed around the decision and the evidence available.
+            Technologie- en ondernemingsbeoordeling is zinvol wanneer een investering
+            afhankelijk is van productclaims, een R&amp;D-roadmap of het vermogen van een
+            team om te leveren. De scope wordt afgestemd op het besluit en het beschikbare bewijs.
           </p>
           <p>
-            Conversations begin with strategic fit. Bear Grid does not offer
-            securities, promise returns or provide investment advice.
+            Gesprekken beginnen bij de strategische aansluiting. Bear Grid biedt
+            geen effecten aan, belooft geen rendement en geeft geen beleggingsadvies.
           </p>
           <p>
-            Bear Grid also works with technology ventures on validation and
-            execution, and may introduce carefully selected opportunities when an
-            investor&apos;s expertise, mandate and time horizon are relevant.
+            Bear Grid werkt ook met technologiebedrijven aan validatie en uitvoering
+            en kan zorgvuldig geselecteerde kansen introduceren wanneer de expertise,
+            het mandaat en de tijdshorizon van een investeerder aansluiten.
           </p>
           <Link className="text-link" href="/contact?intent=investor">
-            Let&apos;s Talk →
+            Neem contact op →
           </Link>
         </div>
       </section>
