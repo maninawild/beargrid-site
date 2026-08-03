@@ -77,7 +77,7 @@ test("homepage ecosystem logos are local, visible and linked", async ({ page, re
     ["Visit YES!Delft website", "https://yesdelft.com/", "/logos/yesdelft-logo.png"],
     ["Visit InspireXChange website", "https://www.inspirexchange.nl/", "/logos/inspirexchange.png"],
     ["Visit Platform Zero website", "https://platformzero.co/", "/logos/platform-zero.png"],
-    ["Visit Sub-Zero website", "https://platformzero.co/sub-zero/", "/logos/platform-zero.png"],
+    ["Visit Design Hub International website", "https://www.dhi-architecture.com/", "/logos/dhi-logo.png"],
     ["Visit KREW Community website", "https://www.krewcommunity.com/", "/logos/krew-logo.png"],
     ["Visit Localie Hub website", "https://hub.localie.co/", "/logos/localie-hub.png"],
   ] as const;

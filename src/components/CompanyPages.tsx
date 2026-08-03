@@ -186,8 +186,8 @@ export function CompanyHome() {
           <a className="ecosystem-mark" href="https://platformzero.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Platform Zero website">
             <Image src="/logos/platform-zero.png" alt="Platform Zero" width={500} height={500} />
           </a>
-          <a className="ecosystem-mark" href="https://platformzero.co/sub-zero/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sub-Zero website">
-            <Image src="/logos/platform-zero.png" alt="Sub-Zero by Platform Zero" width={500} height={500} />
+          <a className="ecosystem-mark" href="https://www.dhi-architecture.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Design Hub International website">
+            <Image src="/logos/dhi-logo.png" alt="Design Hub International" width={699} height={264} />
           </a>
           <a className="ecosystem-mark" href="https://www.krewcommunity.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit KREW Community website">
             <Image src="/logos/krew-logo.png" alt="KREW Community" width={398} height={162} />
