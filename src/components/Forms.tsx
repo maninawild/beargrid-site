@@ -1,18 +1,21 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 
 type State = { status: "idle" | "loading" | "success" | "error"; message: string };
 
 export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
   const [state, setState] = useState<State>({ status: "idle", message: "" });
   const [startedAt] = useState(() => Date.now());
+  const sending = useRef(false);
   const [need, setNeed] = useState(initialNeed);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (sending.current) return;
     const form = event.currentTarget;
     if (!form.reportValidity()) return;
+    sending.current = true;
     setState({ status: "loading", message: "" });
     const params = new URLSearchParams(window.location.search);
     const attribution = Object.fromEntries(
@@ -33,10 +36,10 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
       });
       const data = (await response.json()) as { message?: string };
       if (!response.ok) throw new Error(data.message || "Please check the form and try again.");
-      form.reset();
       setState({ status: "success", message: data.message || "Thank you. Your project details have been sent." });
     } catch (error) {
       setState({ status: "error", message: error instanceof Error ? error.message : "We could not send your message. Please try again." });
+      sending.current = false;
     }
   }
 
@@ -44,8 +47,11 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
     return (
       <div className="form-success" role="status" aria-live="polite">
         <span>Message received</span>
-        <h2>Thanks.</h2>
-        <p>{state.message}</p>
+        <h2>Thank you.</h2>
+        <p>We have received your enquiry and will contact you shortly.</p>
+        <a className="text-link" href="https://wa.me/message/4OIGQ3FHUZQSD1" target="_blank" rel="noreferrer">
+          Message us on WhatsApp
+        </a>
       </div>
     );
   }

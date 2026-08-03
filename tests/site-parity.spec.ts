@@ -126,7 +126,7 @@ test("contact form validates and submits", async ({ page }) => {
   await page.route("**/api/contact", (route) => route.fulfill({
     status: 200,
     contentType: "application/json",
-    body: JSON.stringify({ message: "We'll review your request and reply within two business days." }),
+    body: JSON.stringify({ message: "Thank you. We have received your enquiry and will contact you shortly." }),
   }));
   await page.goto("/contact");
   await page.getByRole("textbox", { name: "Name", exact: true }).fill("QA Test");
@@ -137,7 +137,11 @@ test("contact form validates and submits", async ({ page }) => {
   await page.getByRole("textbox", { name: "Desired timeline", exact: true }).fill("Within eight weeks");
   await page.getByRole("textbox", { name: "Email", exact: true }).fill("qa@example.com");
   await page.getByRole("button", { name: "Send enquiry" }).click();
-  await expect(page.getByRole("status")).toContainText("reply within two business days");
+  await expect(page.getByRole("status")).toContainText("We have received your enquiry");
+  await expect(page.getByRole("link", { name: "Message us on WhatsApp" })).toHaveAttribute(
+    "href",
+    "https://wa.me/message/4OIGQ3FHUZQSD1",
+  );
 });
 
 test("confirmed legacy routes redirect permanently", async ({ request }) => {
