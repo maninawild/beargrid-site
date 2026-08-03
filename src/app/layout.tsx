@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { SiteShell } from "@/components/SiteShell";
-import { baseUrl } from "@/data/site";
 import "./globals.css";
+
+const siteUrl = "https://beargridsolutions.com";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,26 +16,27 @@ const mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Bear Grid | Technology, Strategy & Venture Building",
-    template: "%s",
+    default: "Bear Grid | Independent R&D Consultancy",
+    template: "%s | Bear Grid",
   },
   description:
-    "Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.",
+    "Bear Grid is a Netherlands-based independent R&D consultancy for technology assessment, venture validation, innovation strategy and partnerships.",
   openGraph: {
     type: "website",
-    siteName: "BearGrid Solutions",
-    title: "Bear Grid | Technology, Strategy & Venture Building",
+    siteName: "Bear Grid",
+    title: "Bear Grid | Independent R&D Consultancy",
     description:
-      "Technology strategy, venture building, product validation, risk management and partnership development.",
+      "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
+    url: siteUrl,
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bear Grid | Technology, Strategy & Venture Building",
+    title: "Bear Grid | Independent R&D Consultancy",
     description:
-      "Technology strategy, venture building, product validation, risk management and partnership development.",
+      "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
     images: ["/og.png"],
   },
 };
@@ -56,10 +58,10 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Bear Grid",
-            url: baseUrl,
-            logo: `${baseUrl}/logos/bear-grid-logo.png`,
+            url: siteUrl,
+            logo: `${siteUrl}/logos/bear-grid-logo.png`,
             foundingDate: "2019",
-            description: "Bear Grid helps founders, companies and institutions turn complex technology and business questions into practical decisions, partnerships and working products.",
+            description: "Bear Grid is a Netherlands-based independent R&D consultancy.",
           }).replace(/</g, "\\u003c") }}
         />
         <SiteShell>{children}</SiteShell>
