@@ -55,7 +55,7 @@ export default function InvestorsPage() {
           to investors whose expertise, mandate and time horizon are relevant.
         </p>
         <Link className="company-button dark" href="/contact?intent=investor">
-          Start a conversation
+          Let&apos;s Talk
         </Link>
       </section>
 
@@ -77,7 +77,7 @@ export default function InvestorsPage() {
             investor relationships within the Dutch startup ecosystem.
           </p>
           <Link className="text-link" href="/contact?intent=investor">
-            Start a conversation →
+            Let&apos;s Talk →
           </Link>
         </div>
       </section>

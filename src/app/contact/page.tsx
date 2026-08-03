@@ -5,25 +5,46 @@ import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact | Bear Grid",
-  description: "Discuss a technology, R&D, venture or innovation project with Bear Grid.",
+  description: "Tell Bear Grid about the business or technology problem you need to solve.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
     title: "Contact Bear Grid",
-    description: "Discuss a technology, R&D, venture or innovation project with Bear Grid.",
+    description: "Tell Bear Grid about the business or technology problem you need to solve.",
     url: `${baseUrl}/contact`,
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Bear Grid",
-    description: "Discuss a technology, R&D, venture or innovation project with Bear Grid.",
+    description: "Tell Bear Grid about the business or technology problem you need to solve.",
     images: ["/og.png"],
   },
 };
 
-export default function ContactPage() {
+const allowedServices = [
+  "Strategy & Complex Problem Solving",
+  "Sales Systems",
+  "AI Automation",
+  "Digital Products & Websites",
+  "Executive Advisory",
+  "Venture Team Assembly",
+];
+
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ service?: string | string[]; intent?: string | string[] }>;
+}) {
+  const query = await searchParams;
+  const requestedService = typeof query.service === "string" ? query.service : "";
+  const initialNeed = allowedServices.includes(requestedService)
+    ? requestedService
+    : query.intent === "investor"
+      ? "Executive Advisory"
+      : "";
+
   return (
     <main className="company-main inner-company-page contact-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -36,11 +57,11 @@ export default function ContactPage() {
       }).replace(/</g, "\\u003c") }} />
       <section className="contact-layout">
         <div className="contact-intro">
-          <Eyebrow>CONTACT / START WITH CONTEXT</Eyebrow>
-          <h1>Tell us what you need to decide.</h1>
-          <p>Share the project, the current uncertainty and the outcome you need. We will review the context and respond with a practical next step.</p>
+          <Eyebrow>LET&apos;S TALK</Eyebrow>
+          <h1>What do you need help with?</h1>
+          <p>Give us the short version. We will review it and reply within two business days.</p>
         </div>
-        <ContactForm />
+        <ContactForm initialNeed={initialNeed} />
       </section>
     </main>
   );

@@ -13,7 +13,7 @@ const modernNav = [
   ["Expertise", "/expertise"],
   ["Investors", "/investors"],
   ["History", "/history"],
-  ["Contact", "/contact"],
+  ["Let's Talk", "/contact"],
 ] as const;
 
 function ModernHeader() {
@@ -69,7 +69,7 @@ function ModernFooter() {
           <Image src="/logos/bear-grid-logo.png" alt="" width={38} height={34} />
           <span>BEAR GRID</span>
         </Link>
-        <p>Technology. Strategy. Venture Building.</p>
+        <p>Strategy. Engineering. Execution.</p>
       </div>
       <div className="footer-links">
         <Link href="/expertise">Expertise</Link>

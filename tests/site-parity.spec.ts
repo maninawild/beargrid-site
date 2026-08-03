@@ -56,17 +56,17 @@ test("mobile navigation and CTA destinations work", async ({ page }) => {
   await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeVisible();
   await page.getByRole("button", { name: "Close company navigation" }).press("Escape");
   await expect(page.getByRole("navigation", { name: "Company mobile navigation" })).toBeHidden();
-  await expect(page.getByRole("link", { name: "Discuss your project" }).first()).toHaveAttribute("href", "/contact?intent=project");
+  await expect(page.locator(".new-hero").getByRole("link", { name: "Let's Talk" })).toHaveAttribute("href", "/contact");
   await expect(page.getByRole("link", { name: "Investors" })).toHaveAttribute("href", "/investors");
   await expect(page.getByRole("link", { name: "Contact Bear Grid on WhatsApp" })).toHaveAttribute("target", "_blank");
 });
 
 test("homepage services and investor page have clear conversion paths", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("link", { name: /Request an assessment/ })).toHaveCount(6);
+  await expect(page.locator(".service-grid").getByRole("link", { name: "Let's Talk" })).toHaveCount(6);
   await page.goto("/investors");
   await expect(page.getByRole("heading", { name: "Meet ambitious R&D ventures." })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Start a conversation" }).first()).toHaveAttribute(
+  await expect(page.locator(".investor-hero").getByRole("link", { name: "Let's Talk" })).toHaveAttribute(
     "href",
     "/contact?intent=investor",
   );
@@ -123,15 +123,18 @@ test("contact form validates and submits", async ({ page }) => {
   await page.route("**/api/contact", (route) => route.fulfill({
     status: 200,
     contentType: "application/json",
-    body: JSON.stringify({ message: "Thank you. Your application has been sent." }),
+    body: JSON.stringify({ message: "We'll review your request and reply within two business days." }),
   }));
   await page.goto("/contact");
   await page.getByRole("textbox", { name: "Name", exact: true }).fill("QA Test");
   await page.getByRole("textbox", { name: "Company", exact: true }).fill("Bear Grid QA");
+  await page.getByLabel("What do you need help with?").selectOption({ label: "AI Automation" });
+  await page.getByRole("textbox", { name: "Describe your challenge", exact: true }).fill("A sufficiently detailed project description for final quality assurance.");
+  await page.getByLabel("Budget").selectOption({ label: "€20–100k" });
+  await page.getByRole("textbox", { name: "Desired timeline", exact: true }).fill("Within eight weeks");
   await page.getByRole("textbox", { name: "Email", exact: true }).fill("qa@example.com");
-  await page.getByRole("textbox", { name: "Short project description", exact: true }).fill("A sufficiently detailed project description for final quality assurance.");
-  await page.getByRole("button", { name: "Submit project details" }).click();
-  await expect(page.getByRole("status")).toContainText("application has been sent");
+  await page.getByRole("button", { name: "Send enquiry" }).click();
+  await expect(page.getByRole("status")).toContainText("reply within two business days");
 });
 
 test("confirmed legacy routes redirect permanently", async ({ request }) => {
