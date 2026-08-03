@@ -315,16 +315,25 @@ img { max-width: 100%; height: auto; }
 .timeline-section article:last-child { border-bottom: 1px solid #92918e; }
 .timeline-section time { font-size: 13px; font-weight: 650; letter-spacing: .08em; }
 .timeline-section p { max-width: 760px; margin: 0; color: #404040; font-size: 20px; line-height: 1.55; }
-.history-copy { width: min(900px, calc(100% - 64px)); margin: auto; padding: 30px 0 130px; }
-.history-copy p { margin: 0; padding: 30px 0; border-top: 1px solid #92918e; color: #404040; font-size: 20px; line-height: 1.65; }
-.history-copy p:last-child { border-bottom: 1px solid #92918e; }
-.history-copy a { font-weight: 650; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
-.history-copy a:hover, .history-copy a:focus-visible { text-decoration-thickness: 3px; }
-.history-actions { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #92918e; }
-.history-actions > div { min-height: 460px; padding: 70px max(32px, calc((100vw - 1320px) / 2)); }
-.history-actions > div:first-child { border-right: 1px solid #92918e; padding-right: 70px; }
-.history-actions > div:last-child { padding-left: 70px; background: #dfddd6; }
-.history-actions h2 { max-width: 580px; margin: 42px 0 55px; font-size: clamp(35px, 4vw, 54px); font-weight: 520; letter-spacing: -.045em; line-height: 1.02; }
+.history-page-new .inner-company-hero { padding-top: 145px; padding-bottom: 85px; border-bottom: 0; }
+.history-page-new .inner-company-hero h1 { max-width: 900px; margin-bottom: 38px; }
+.history-page-new .inner-company-hero > p { max-width: 620px; color: #4a4a48; font-size: clamp(20px, 2vw, 27px); line-height: 1.5; }
+.history-story { width: min(1040px, calc(100% - 64px)); margin: auto; padding: 70px 0 155px; }
+.history-timeline { position: relative; list-style: none; margin: 0; padding: 0; }
+.history-timeline::before { content: ""; position: absolute; top: 8px; bottom: 10px; left: 132px; width: 1px; background: #c7c4bd; }
+.history-timeline li { position: relative; display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 70px; padding: 0 0 82px; }
+.history-timeline li:last-child { padding-bottom: 0; }
+.history-timeline li::before { content: ""; position: absolute; top: 7px; left: 127px; width: 11px; height: 11px; border-radius: 50%; background: #171717; box-shadow: 0 0 0 7px #f7f6f2; }
+.history-timeline time { padding-top: 2px; color: #65635f; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+.history-timeline p { max-width: 700px; margin: 0; color: #383836; font-size: clamp(19px, 1.8vw, 23px); line-height: 1.68; }
+.history-timeline li:first-child p { color: #171717; font-size: clamp(21px, 2vw, 26px); line-height: 1.58; }
+.history-timeline a { color: #171717; font-weight: 680; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.history-timeline a:hover, .history-timeline a:focus-visible { text-decoration-thickness: 2px; }
+.history-actions { width: min(1320px, calc(100% - 64px)); margin: 0 auto 130px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(70px, 10vw, 150px); padding-top: 90px; border-top: 1px solid #c7c4bd; }
+.history-actions > div { min-height: 0; padding: 0; }
+.history-actions > div:first-child { padding-right: 0; }
+.history-actions > div:last-child { padding-left: 0; background: transparent; }
+.history-actions h2 { max-width: 540px; margin: 32px 0 48px; font-size: clamp(34px, 3.5vw, 50px); font-weight: 520; letter-spacing: -.045em; line-height: 1.06; }
 
 .contact-layout { width: min(1180px, calc(100% - 64px)); min-height: calc(100svh - 92px); margin: auto; display: grid; grid-template-columns: 1fr .82fr; gap: clamp(60px, 9vw, 150px); align-items: start; padding: 120px 0; }
 .contact-intro h1 { max-width: 700px; margin: 38px 0; font-size: clamp(58px, 6.5vw, 96px); font-weight: 520; letter-spacing: -.065em; line-height: .92; }
@@ -382,10 +391,17 @@ img { max-width: 100%; height: auto; }
   .timeline-section { width: calc(100% - 48px); padding-bottom: 85px; }
   .timeline-section article { grid-template-columns: 1fr; gap: 25px; }
   .timeline-section p { font-size: 17px; }
-  .history-copy { width: calc(100% - 48px); padding-bottom: 85px; }
-  .history-copy p { font-size: 17px; }
+  .history-page-new .inner-company-hero { padding-top: 82px; padding-bottom: 55px; }
+  .history-page-new .inner-company-hero > p { margin-left: 0; font-size: 19px; }
+  .history-story { width: calc(100% - 48px); padding: 45px 0 100px; }
+  .history-timeline::before { left: 5px; }
+  .history-timeline li { grid-template-columns: 1fr; gap: 20px; padding: 0 0 65px 32px; }
+  .history-timeline li::before { top: 5px; left: 0; width: 11px; height: 11px; }
+  .history-timeline time { padding-top: 0; }
+  .history-timeline p, .history-timeline li:first-child p { font-size: 18px; line-height: 1.65; }
   .history-actions { grid-template-columns: 1fr; }
-  .history-actions > div { min-height: 0; padding: 70px 24px !important; border-right: 0 !important; border-bottom: 1px solid #92918e; }
+  .history-actions { width: calc(100% - 48px); gap: 80px; margin-bottom: 100px; padding-top: 70px; }
+  .history-actions > div { min-height: 0; padding: 0 !important; border: 0 !important; }
   .contact-layout { width: calc(100% - 48px); min-height: auto; grid-template-columns: 1fr; gap: 55px; padding: 80px 0 100px; }
   .contact-intro h1 { font-size: 53px; }
   .contact-intro > p { font-size: 17px; }

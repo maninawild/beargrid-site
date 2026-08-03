@@ -37,32 +37,46 @@ export default function HistoryPage() {
         <h1>HISTORY</h1>
         <p>From sensing technology to founder support.</p>
       </section>
-      <section className="history-copy">
-        <p>
-          Bear Grid was founded in Israel in 2019 as a technology startup developing smart
-          microseismic sensors for security systems. Explore the{" "}
-          <Link href="/history/original-platform">Original Bear Grid Platform</Link>.
-        </p>
-        <p>
-          In 2020, the founders considered Canada, the Netherlands, Denmark and the United
-          Kingdom as the company&apos;s future base. The Netherlands was selected. Bear Grid
-          began building its Dutch operations in 2021, followed by the founders&apos; relocation
-          and startup trajectory in the Netherlands in 2022.
-        </p>
-        <p>
-          With support from the{" "}
-          <a href="https://yesdelft.com/" rel="noreferrer" target="_blank">
-            YES!Delft accelerator
-          </a>
-          , the startup assembled a unique database of footstep patterns and developed the{" "}
-          <Link href="/history/original-platform/bear-device">Bear Grid Device</Link>.
-        </p>
-        <p>
-          The original startup did not reach product-market fit in 2023. Since 2024, Bear Grid
-          has evolved into a Dutch holding and services company focused on innovation consulting,
-          startup assessment, business development and practical venture-building support for
-          founders.
-        </p>
+      <section className="history-story" aria-label="Bear Grid company timeline">
+        <ol className="history-timeline">
+          <li>
+            <time dateTime="2019">2019</time>
+            <p>
+              Bear Grid was founded in Israel in 2019 as a technology startup developing smart
+              microseismic sensors for security systems. Explore the{" "}
+              <Link href="/history/original-platform">Original Bear Grid Platform</Link>.
+            </p>
+          </li>
+          <li>
+            <time dateTime="2020">2020</time>
+            <p>
+              In 2020, the founders considered Canada, the Netherlands, Denmark and the United
+              Kingdom as the company&apos;s future base. The Netherlands was selected. Bear Grid
+              began building its Dutch operations in 2021, followed by the founders&apos; relocation
+              and startup trajectory in the Netherlands in 2022.
+            </p>
+          </li>
+          <li>
+            <time dateTime="2021">2021—2022</time>
+            <p>
+              With support from the{" "}
+              <a href="https://yesdelft.com/" rel="noreferrer" target="_blank">
+                YES!Delft accelerator
+              </a>
+              , the startup assembled a unique database of footstep patterns and developed the{" "}
+              <Link href="/history/original-platform/bear-device">Bear Grid Device</Link>.
+            </p>
+          </li>
+          <li>
+            <time dateTime="2023">2023—TODAY</time>
+            <p>
+              The original startup did not reach product-market fit in 2023. Since 2024, Bear Grid
+              has evolved into a Dutch holding and services company focused on innovation consulting,
+              startup assessment, business development and practical venture-building support for
+              founders.
+            </p>
+          </li>
+        </ol>
       </section>
       <section className="history-actions">
         <div>
