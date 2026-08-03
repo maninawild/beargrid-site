@@ -97,6 +97,13 @@ const faqs = [
 
 export const companyContent: CompanyContent = {
   locale: "nl",
+  metrics: [
+    { value: "2019", label: "Opgericht" },
+    { value: "7", label: "Landen waarin gewerkt" },
+    { value: "16", label: "Start-ups ondersteund" },
+    { value: "34", label: "Producten en digitale oplossingen opgeleverd" },
+    { value: "100+", label: "Gecombineerde jaren professionele ervaring" },
+  ],
   services,
   rAndDServices,
   problems,

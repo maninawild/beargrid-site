@@ -4,6 +4,7 @@ import Link from "next/link";
 export type Service = { number: string; title: string; body: string };
 export type CompanyContent = {
   locale: "en" | "nl";
+  metrics: { value: string; label: string }[];
   services: Service[];
   rAndDServices: Service[];
   problems: string[];
@@ -61,6 +62,16 @@ export function CompanyHomeTemplate({ content }: { content: CompanyContent }) {
         <div className="new-hero-copy"><h1>{l.headline}</h1><div><p>{l.introduction}</p><div className="company-actions"><Link className="company-button dark" href={`${prefix}/contact`}>{l.contact}</Link></div></div></div>
       </section>
       <section className="positioning-strip" aria-label={l.positioning}><strong>{l.strategy}</strong><span>Engineering</span><span>{l.execution}</span><span>{l.answers}</span></section>
+      <section className="metrics-section" aria-label={content.locale === "nl" ? "Bedrijfsgegevens" : "Company metrics"}>
+        <dl className="metrics-grid">
+          {content.metrics.map((metric) => (
+            <div className="metric" key={metric.label}>
+              <dt>{metric.value}</dt>
+              <dd>{metric.label}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
       <section className="company-section home-problems">
         <div className="section-heading"><Eyebrow>{l.problemsEyebrow}</Eyebrow><h2>{l.problemsTitle}</h2></div>
         <div className="problem-list">{content.problems.map((problem, index) => <article key={problem}><span>0{index + 1}</span><p>{problem}</p></article>)}</div>

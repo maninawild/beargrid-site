@@ -83,6 +83,38 @@ test("homepage services and investor page have clear conversion paths", async ({
   );
 });
 
+test("homepage trust metrics and company footer details are complete", async ({ page }) => {
+  await page.goto("/");
+
+  const metrics = page.locator(".metrics-section");
+  await expect(metrics).toBeVisible();
+  expect(await metrics.evaluate((section) => section.previousElementSibling?.classList.contains("positioning-strip"))).toBe(true);
+
+  const expectedMetrics = [
+    ["2019", "Founded"],
+    ["7", "Countries worked in"],
+    ["16", "Startups supported"],
+    ["34", "Products and digital solutions delivered"],
+    ["100+", "Combined years of professional experience"],
+  ];
+  const metricItems = metrics.locator(".metric");
+  await expect(metricItems).toHaveCount(expectedMetrics.length);
+  for (const [index, [value, label]] of expectedMetrics.entries()) {
+    await expect(metricItems.nth(index).locator("dt")).toHaveText(value);
+    await expect(metricItems.nth(index).locator("dd")).toHaveText(label);
+  }
+
+  const companyDetails = page.locator(".footer-company-details");
+  await expect(companyDetails).toContainText("Bear Grid Holding B.V.");
+  await expect(companyDetails).toContainText("Galileistraat 33");
+  await expect(companyDetails).toContainText("3029 AL Rotterdam");
+  await expect(companyDetails).toContainText("The Netherlands");
+  await expect(companyDetails).toContainText("KvK: 83732373");
+  await expect(page.locator(".footer-legal").getByRole("link", { name: "Legal notice" })).toHaveAttribute("href", "/legal");
+  await expect(page.locator(".footer-legal").getByRole("link", { name: "Privacy policy" })).toHaveAttribute("href", "/privacy");
+  await expect(page.locator(".footer-legal").getByRole("link", { name: "Cookie policy" })).toHaveAttribute("href", "/cookies");
+});
+
 test("homepage ecosystem logos are local, visible and linked", async ({ page, request }) => {
   const logos = [
     ["Visit YES!Delft website", "https://yesdelft.com/", "/logos/yesdelft-logo.png"],

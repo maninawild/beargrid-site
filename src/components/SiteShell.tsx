@@ -62,6 +62,13 @@ function ModernFooter({ locale }: { locale: Locale }) {
   return (
     <footer className="company-footer">
       <div><Link className="company-brand" href={isNl ? "/nl" : "/"}><Image src="/logos/bear-grid-logo.png" alt="" width={38} height={34} /><span>BEAR GRID</span></Link><p>{isNl ? "Strategie. Engineering. Uitvoering." : "Strategy. Engineering. Execution."}</p></div>
+      <address className="footer-company-details">
+        <strong>Bear Grid Holding B.V.</strong>
+        <span>Galileistraat 33</span>
+        <span>3029 AL Rotterdam</span>
+        <span>The Netherlands</span>
+        <span className="footer-registration"><span>KvK:</span> 83732373</span>
+      </address>
       <div className="footer-links">
         <Link href={isNl ? "/nl/expertise" : "/expertise"}>Expertise</Link>
         <Link href={isNl ? "/nl/investors" : "/investors"}>{isNl ? "Investeerders" : "Investors"}</Link>

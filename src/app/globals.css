@@ -182,6 +182,10 @@ img { max-width: 100%; height: auto; }
 .company-footer { display: flex; justify-content: space-between; gap: 40px; padding: 60px max(32px, calc((100% - 1320px) / 2)); border-top: 1px solid #292929; background: #171717; color: #f6f4ee; font-family: var(--font-inter), Arial, sans-serif; }
 .company-footer .company-brand img { filter: invert(1); }
 .company-footer p { margin: 18px 0 0; color: #aaa; font-size: 13px; }
+.footer-company-details { display: grid; align-content: start; gap: 5px; color: #aaa; font-size: 13px; font-style: normal; line-height: 1.45; }
+.footer-company-details strong { margin-bottom: 8px; color: #f6f4ee; font-weight: 600; }
+.footer-registration { margin-top: 10px; }
+.footer-registration > span { color: #f6f4ee; }
 .footer-links { display: grid; gap: 12px; text-align: right; font-size: 13px; }
 .legacy-return { height: 34px; display: flex; align-items: center; justify-content: flex-end; padding: 0 max(18px, calc((100% - 1080px) / 2)); border-bottom: 1px solid #ddd; background: #f7f6f2; font-family: var(--font-inter), Arial, sans-serif; font-size: 11px; letter-spacing: .06em; }
 
@@ -275,6 +279,11 @@ img { max-width: 100%; height: auto; }
 .positioning-strip > * { min-height: 78px; display: flex; align-items: center; padding: 20px 32px; border-right: 1px solid #cbc9c4; font-size: 13px; }
 .positioning-strip > :last-child { border-right: 0; }
 .positioning-strip strong { font-weight: 650; }
+.metrics-section { padding: 0 max(32px, calc((100% - 1320px) / 2)); background: #f7f6f2; font-family: var(--font-inter), Arial, sans-serif; }
+.metrics-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; margin: 0; padding: 48px 0 52px; }
+.metric { min-width: 0; }
+.metric dt { margin: 0 0 13px; color: #171717; font-size: clamp(31px, 3vw, 44px); font-weight: 560; letter-spacing: -.045em; line-height: .9; }
+.metric dd { max-width: 22ch; margin: 0; color: #55544f; font-size: 13px; line-height: 1.45; }
 .problem-list { border-top: 1px solid #92918e; }
 .problem-list article { display: grid; grid-template-columns: 80px 1fr; align-items: center; min-height: 126px; border-bottom: 1px solid #92918e; }
 .problem-list span { font-size: 11px; }
@@ -390,6 +399,8 @@ img { max-width: 100%; height: auto; }
   .new-hero h1 { font-size: clamp(52px, 15vw, 72px); }
   .positioning-strip { grid-template-columns: 1fr 1fr; }
   .positioning-strip > * { min-height: 62px; padding: 15px 20px; border-bottom: 1px solid #cbc9c4; }
+  .metrics-section { padding-inline: 24px; }
+  .metrics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; padding: 50px 0 55px; }
   .problem-list article { grid-template-columns: 42px 1fr; padding: 24px 0; }
   .problem-list p { font-size: 22px; }
   .dark-section { padding: 85px 24px; }
@@ -644,6 +655,8 @@ html[lang="nl-NL"] .company-main p {
   .new-hero-top { flex-direction: column; gap: 12px; }
   .positioning-strip { grid-template-columns: minmax(0, 1fr); }
   .positioning-strip > * { border-right: 0; }
+  .metrics-section { padding-inline: 20px; }
+  .metrics-grid { grid-template-columns: minmax(0, 1fr); gap: 34px; }
   .company-statement,
   .company-section,
   .inner-company-hero,
