@@ -71,6 +71,32 @@ test("homepage services and investor page have clear conversion paths", async ({
   );
 });
 
+test("homepage ecosystem logos are local, visible and linked", async ({ page, request }) => {
+  const logos = [
+    ["Visit YES!Delft website", "https://yesdelft.com/", "/logos/yesdelft-logo.png"],
+    ["Visit InspireXChange website", "https://www.inspirexchange.nl/", "/logos/inspirexchange.png"],
+    ["Visit Platform Zero website", "https://platformzero.co/", "/logos/platform-zero.png"],
+    ["Visit Sub-Zero website", "https://platformzero.co/sub-zero/", "/logos/platform-zero.png"],
+    ["Visit KREW Community website", "https://www.krewcommunity.com/", "/logos/krew-logo.png"],
+    ["Visit Localie Hub website", "https://hub.localie.co/", "/logos/localie-hub.png"],
+  ] as const;
+
+  await page.goto("/#expertise");
+  await page.locator(".ecosystem-section").scrollIntoViewIfNeeded();
+
+  for (const [label, href, src] of logos) {
+    const card = page.getByRole("link", { name: label });
+    await expect(card).toBeVisible();
+    await expect(card).toHaveAttribute("href", href);
+    await expect(card).toHaveAttribute("target", "_blank");
+    const image = card.locator("img");
+    await expect(image).toBeVisible();
+    expect(decodeURIComponent((await image.getAttribute("src")) ?? "")).toContain(src);
+    expect(await image.evaluate((element) => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    expect((await request.get(src)).status()).toBe(200);
+  }
+});
+
 test("legacy navigation remains inside the archive", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/history/original-platform/home");

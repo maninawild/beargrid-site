@@ -3,7 +3,6 @@ import { Inter, Roboto_Mono } from "next/font/google";
 import { SiteShell } from "@/components/SiteShell";
 import { baseUrl } from "@/data/site";
 import "./globals.css";
-import "./ecosystem-logos.css";
 
 const inter = Inter({
   variable: "--font-inter",

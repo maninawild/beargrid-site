@@ -178,22 +178,22 @@ export function CompanyHome() {
         </div>
         <div className="ecosystem-grid">
           <a className="ecosystem-mark" href="https://yesdelft.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit YES!Delft website">
-            <Image src="/logos/yesdelft-logo.png" alt="YES!Delft" width={230} height={90} style={{ filter: "none" }} />
+            <Image src="/logos/yesdelft-logo.png" alt="YES!Delft" width={450} height={104} />
           </a>
           <a className="ecosystem-mark" href="https://www.inspirexchange.nl/" target="_blank" rel="noopener noreferrer" aria-label="Visit InspireXChange website">
-            <img src="/logos/inspirexchange-upload.svg" alt="InspireXChange" width="230" height="90" style={{ filter: "none" }} />
+            <Image src="/logos/inspirexchange.png" alt="InspireXChange" width={500} height={360} />
           </a>
           <a className="ecosystem-mark" href="https://platformzero.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Platform Zero website">
-            <img src="/logos/platform-zero-upload.svg" alt="Platform Zero" width="230" height="90" style={{ filter: "none" }} />
+            <Image src="/logos/platform-zero.png" alt="Platform Zero" width={500} height={500} />
           </a>
           <a className="ecosystem-mark" href="https://platformzero.co/sub-zero/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sub-Zero website">
-            <img src="/logos/platform-zero-upload.svg" alt="Sub-Zero by Platform Zero" width="230" height="90" style={{ filter: "none" }} />
+            <Image src="/logos/platform-zero.png" alt="Sub-Zero by Platform Zero" width={500} height={500} />
           </a>
           <a className="ecosystem-mark" href="https://www.krewcommunity.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit KREW Community website">
-            <Image src="/logos/krew-logo.png" alt="KREW Community" width={230} height={90} style={{ filter: "none" }} />
+            <Image src="/logos/krew-logo.png" alt="KREW Community" width={398} height={162} />
           </a>
           <a className="ecosystem-mark" href="https://hub.localie.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Localie Hub website">
-            <img src="/logos/localie-hub-upload.svg" alt="Localie Hub" width="230" height="90" style={{ filter: "none" }} />
+            <Image src="/logos/localie-hub.png" alt="Localie Hub" width={900} height={360} />
           </a>
         </div>
         <p className="ecosystem-note">Shown as ecosystem and community connections only; inclusion does not imply endorsement or investment.</p>

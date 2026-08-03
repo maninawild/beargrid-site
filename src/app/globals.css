@@ -291,7 +291,7 @@ img { max-width: 100%; height: auto; }
 .ecosystem-section .section-heading > div p { max-width: 650px; margin: 28px 0 0; color: #555; font-size: 16px; line-height: 1.6; }
 .ecosystem-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #cbc9c4; border-left: 1px solid #cbc9c4; }
 .ecosystem-mark { min-height: 150px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #cbc9c4; border-bottom: 1px solid #cbc9c4; padding: 30px; }
-.ecosystem-mark img { width: auto; max-width: 190px; max-height: 72px; object-fit: contain; filter: grayscale(1); }
+.ecosystem-mark img { width: auto; max-width: 190px; max-height: 72px; object-fit: contain; filter: none; }
 .ecosystem-wordmark { flex-wrap: wrap; gap: 0 6px; color: #202020; font-size: clamp(18px, 2vw, 27px); font-weight: 750; letter-spacing: -.03em; }
 .ecosystem-wordmark span { font-weight: 400; }
 .ecosystem-wordmark small { flex-basis: 100%; margin-top: 6px; text-align: center; font-size: 9px; font-weight: 600; letter-spacing: .16em; }
