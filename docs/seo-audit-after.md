@@ -55,11 +55,22 @@ Local production build, Lighthouse 12.8.2:
 
 ## Production verification
 
-To be completed after the production deployment reaches READY:
+Initial implementation deployment: `dpl_EdFVxz9x68yKcqFkNMaSoBwPpayA` (`READY`)
 
-- commit and deployment;
-- live crawler matrix;
-- live sitemap/canonical scan;
-- live metadata, structured-data and image scan;
-- live desktop/mobile/browser-console check;
-- production Lighthouse confirmation.
+- Major canonical routes returned `200` with one H1, unique title, matching canonical and Open Graph URL, absolute production Open Graph image and no Vercel-domain reference.
+- `/privacy` and `/cookies` returned a single permanent redirect to their `200` canonical policy routes.
+- All 19 sitemap URLs returned `200`, were self-canonical and indexable; no redirected, review or noindex route appeared.
+- Googlebot, Bingbot, Applebot, OAI-SearchBot, PerplexityBot and ClaudeBot received `200` for `/`, `/expertise`, `/investors`, `/history`, `/robots.txt` and `/sitemap.xml`.
+- Live internal-link and image scan rechecked 44 local paths and 203 image/resource responses with no failures.
+- Browser QA found one H1, no broken images, no horizontal overflow and no Vercel references on the five main routes.
+- `https://beargridsolutions.com/indexnow-key.txt` returned the intended `404` until the owner configures `INDEXNOW_KEY`; no IndexNow submission was falsely reported.
+
+Production Lighthouse 12.8.2:
+
+| Route | Performance | Accessibility | Best Practices | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| `/` | 98 | 100 | 100 | 100 |
+| `/expertise` | 99 | 100 | 100 | 100 |
+| `/investors` | 97 | 100 | 100 | 100 |
+| `/history` | 97 | 100 | 100 | 100 |
+| `/contact` | 98 | 100 | 100 | 100 |
