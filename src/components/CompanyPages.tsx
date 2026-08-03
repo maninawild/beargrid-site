@@ -177,16 +177,22 @@ export function CompanyHome() {
           </div>
         </div>
         <div className="ecosystem-grid">
-          <div className="ecosystem-mark">
-            <Image src="/logos/yesdelft-logo.png" alt="YES!Delft" width={230} height={90} />
-          </div>
+          <a className="ecosystem-mark" href="https://yesdelft.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit YES!Delft website">
+            <Image src="/logos/yesdelft-logo.png" alt="YES!Delft" width={230} height={90} style={{ filter: "none" }} />
+          </a>
           <div className="ecosystem-mark ecosystem-wordmark">INSPIRE<span>XCHANGE</span></div>
-          <div className="ecosystem-mark ecosystem-wordmark">PLATFORM <span>ZERO</span><small>ROTTERDAM</small></div>
-          <div className="ecosystem-mark ecosystem-wordmark">SUB<span>ZERO</span><small>ROTTERDAM</small></div>
-          <div className="ecosystem-mark">
-            <Image src="/logos/krew-logo.png" alt="The KREW The Hague" width={230} height={90} />
-          </div>
-          <div className="ecosystem-mark ecosystem-wordmark">LOCALITY <span>HUB</span><small>AMSTERDAM</small></div>
+          <a className="ecosystem-mark ecosystem-wordmark" href="https://platformzero.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Platform Zero website" style={{ color: "#e4572e" }}>
+            PLATFORM <span>ZERO</span><small>ROTTERDAM</small>
+          </a>
+          <a className="ecosystem-mark ecosystem-wordmark" href="https://platformzero.co/sub-zero/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sub Zero website" style={{ color: "#e4572e" }}>
+            PLATFORM <span>ZERO</span><small>SUB-ZERO</small>
+          </a>
+          <a className="ecosystem-mark" href="https://www.krewcommunity.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit KREW Community website">
+            <Image src="/logos/krew-logo.png" alt="KREW Community" width={230} height={90} style={{ filter: "none" }} />
+          </a>
+          <a className="ecosystem-mark ecosystem-wordmark" href="https://hub.localie.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Locality Hub website" style={{ color: "#2f7d6d" }}>
+            LOCALITY <span>HUB</span><small>AMSTERDAM</small>
+          </a>
         </div>
         <p className="ecosystem-note">Shown as ecosystem and community connections only; inclusion does not imply endorsement or investment.</p>
       </section>
