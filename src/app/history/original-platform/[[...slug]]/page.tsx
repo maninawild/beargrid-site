@@ -57,6 +57,10 @@ export default async function OriginalPlatformPage({ params }: { params: Promise
           ...(slug?.length ? [{ "@type": "ListItem", position: 4, name: page.navTitle, item: `${baseUrl}/history/original-platform/${slug[0]}` }] : []),
         ],
       }).replace(/</g, "\\u003c") }} />
+      <aside className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 border-b border-neutral-300 bg-neutral-100 px-5 py-3 text-center text-sm" aria-label="Current Bear Grid website">
+        <p className="m-0">You are viewing the archived original Bear Grid platform.</p>
+        <Link className="font-bold underline underline-offset-4" href="/">Visit the current Bear Grid website</Link>
+      </aside>
       <Hero page={page} />
       <Sections page={page} />
       {(page.form || !slug?.length) ? (
