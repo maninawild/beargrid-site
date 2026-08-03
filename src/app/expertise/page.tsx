@@ -65,6 +65,7 @@ export default function ExpertisePage() {
         </p>
       </section>
       <section className="company-section" aria-label="Bear Grid consultancy services">
+        <h2 className="sr-only">Bear Grid consultancy services</h2>
         <ServiceGrid />
       </section>
       <section className="services-method">
