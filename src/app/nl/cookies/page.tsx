@@ -1,25 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { baseUrl } from "@/data/site";
+import { localizedAlternatesFor } from "@/i18n";
 
 export const metadata: Metadata = {
   title: "Cookiebeleid | Bear Grid",
   description: "Informatie over cookies en lokale opslag die op de website van Bear Grid worden gebruikt.",
-  alternates: { canonical: "/cookie-policy" },
+  alternates: localizedAlternatesFor("nl", "/cookies"),
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
     locale: "nl_NL",
+    alternateLocale: "en_US",
     title: "Cookiebeleid | Bear Grid",
     description: "Informatie over cookies en lokale opslag die op de website van Bear Grid worden gebruikt.",
-    url: `${baseUrl}/cookie-policy`,
-    images: ["/brand-assets/og-default.png"],
+    url: `https://beargridsolutions.com/nl/cookies`,
+    images: ["/brand-assets/og-default-nl.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cookiebeleid | Bear Grid",
     description: "Informatie over cookies en lokale opslag die op de website van Bear Grid worden gebruikt.",
-    images: ["/brand-assets/twitter-default.png"],
+    images: ["/brand-assets/twitter-default-nl.png"],
   },
 };
 
@@ -34,7 +35,7 @@ export default function CookiePolicyPage() {
       <section><h2>Uw keuze</h2><p>U kunt optionele cookies accepteren of alleen essentiële opslag gebruiken. Het weigeren van optionele cookies beperkt de toegang tot de website niet. Onderaan elke moderne pagina kunt u de cookie-instellingen opnieuw openen en uw voorkeur wijzigen.</p></section>
       <section><h2>Huidige browseropslag</h2><p>De sleutel <code>bear-grid-cookie-consent</code> bewaart of u alleen essentiële opslag hebt gekozen of optionele cookies hebt geaccepteerd. Dit is lokale opslag van Bear Grid en blijft bestaan totdat u browsergegevens wist of uw voorkeur wijzigt.</p></section>
       <section><h2>Diensten van derden</h2><p>Als u een externe link volgt, bijvoorbeeld naar WhatsApp of een organisatie uit het ecosysteem, gaat u naar een derde partij met een eigen cookie- en privacybeleid.</p></section>
-      <section><h2>Meer informatie</h2><p>Lees onze <Link href="/privacy-policy">privacyverklaring</Link> of stel uw vraag via de <Link href="/contact">contactpagina</Link>.</p></section>
+      <section><h2>Meer informatie</h2><p>Lees onze <Link href="/nl/privacy">privacyverklaring</Link> of stel uw vraag via de <Link href="/nl/contact">contactpagina</Link>.</p></section>
       <p className="policy-updated">Laatst bijgewerkt: 3 augustus 2026.</p>
     </main>
   );

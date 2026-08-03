@@ -1,25 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { baseUrl } from "@/data/site";
+import { localizedAlternatesFor } from "@/i18n";
 
 export const metadata: Metadata = {
   title: "Privacyverklaring | Bear Grid",
   description: "Hoe Bear Grid persoonsgegevens verwerkt volgens de AVG en de Nederlandse privacywetgeving.",
-  alternates: { canonical: "/privacy-policy" },
+  alternates: localizedAlternatesFor("nl", "/privacy"),
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
     locale: "nl_NL",
+    alternateLocale: "en_US",
     title: "Privacyverklaring | Bear Grid",
     description: "Hoe Bear Grid persoonsgegevens verwerkt volgens de AVG en de Nederlandse privacywetgeving.",
-    url: `${baseUrl}/privacy-policy`,
-    images: ["/brand-assets/og-default.png"],
+    url: `https://beargridsolutions.com/nl/privacy`,
+    images: ["/brand-assets/og-default-nl.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacyverklaring | Bear Grid",
     description: "Hoe Bear Grid persoonsgegevens verwerkt volgens de AVG en de Nederlandse privacywetgeving.",
-    images: ["/brand-assets/twitter-default.png"],
+    images: ["/brand-assets/twitter-default-nl.png"],
   },
 };
 
@@ -29,7 +30,7 @@ export default function PrivacyPolicyPage() {
       <p className="company-eyebrow">PRIVACY</p>
       <h1>Privacyverklaring</h1>
       <p className="policy-lead">Bear Grid is gevestigd in Nederland en verwerkt persoonsgegevens volgens de Algemene verordening gegevensbescherming (AVG) en de toepasselijke Nederlandse wetgeving.</p>
-      <section><h2>Wie is verantwoordelijk?</h2><p>Bear Grid is de verwerkingsverantwoordelijke voor persoonsgegevens die via deze website worden verzameld. Vragen over privacy en verzoeken over uw rechten kunt u indienen via onze <Link href="/contact">contactpagina</Link>.</p></section>
+      <section><h2>Wie is verantwoordelijk?</h2><p>Bear Grid is de verwerkingsverantwoordelijke voor persoonsgegevens die via deze website worden verzameld. Vragen over privacy en verzoeken over uw rechten kunt u indienen via onze <Link href="/nl/contact">contactpagina</Link>.</p></section>
       <section><h2>Gegevens die we kunnen verzamelen</h2><p>We kunnen informatie verwerken die u via formulieren of rechtstreekse communicatie verstrekt, waaronder uw naam, contactgegevens, organisatie, bericht en projectinformatie. Technische logbestanden kunnen het IP-adres, de browser, het apparaat, opgevraagde pagina&apos;s, tijdstippen en beveiligingsgebeurtenissen bevatten.</p></section>
       <section><h2>Waarom we gegevens verwerken</h2><p>We verwerken gegevens om aanvragen te beantwoorden, diensten te bespreken en te leveren, zakelijke relaties te beheren, de website te gebruiken en te beveiligen, wettelijke verplichtingen na te komen en waar van toepassing gerechtvaardigde bedrijfsbelangen te behartigen. Optionele analyse- of marketingtechnologie wordt alleen gebruikt na geldige toestemming.</p></section>
       <section><h2>Rechtsgronden</h2><p>Afhankelijk van de situatie is de verwerking gebaseerd op stappen die u vóór het sluiten van een overeenkomst aanvraagt, de uitvoering van een overeenkomst, wettelijke verplichtingen, gerechtvaardigde belangen zoals websitebeveiliging en bedrijfsvoering, of uw toestemming.</p></section>

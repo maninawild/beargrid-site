@@ -1,10 +1,17 @@
 "use client";
 
 import { FormEvent, useRef, useState } from "react";
+import type { Locale } from "@/i18n";
 
 type State = { status: "idle" | "loading" | "success" | "error"; message: string };
 
-export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
+const options = {
+  en: ["Technology Assessment", "R&D Strategy", "Venture Validation", "Innovation Partnerships", "Strategy & Complex Problem Solving", "Sales Systems", "AI Automation", "Digital Products & Websites", "Executive Advisory", "Venture Team Assembly", "Other"],
+  nl: ["Technologiebeoordeling", "R&D-strategie", "Validatie van nieuwe ondernemingen", "Innovatiepartnerschappen", "Strategie & complexe vraagstukken", "Verkoopsystemen", "AI-automatisering", "Digitale producten & websites", "Advies aan directie en bestuur", "Samenstellen van ventureteams", "Anders"],
+};
+
+export function ContactForm({ initialNeed = "", locale = "en" }: { initialNeed?: string; locale?: Locale }) {
+  const isNl = locale === "nl";
   const [state, setState] = useState<State>({ status: "idle", message: "" });
   const [startedAt] = useState(() => Date.now());
   const sending = useRef(false);
@@ -26,6 +33,7 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
     const payload = {
       ...Object.fromEntries(new FormData(form).entries()),
       ...attribution,
+      locale,
       startedAt,
     };
     try {
@@ -35,10 +43,10 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
         body: JSON.stringify(payload),
       });
       const data = (await response.json()) as { message?: string };
-      if (!response.ok) throw new Error(data.message || "Controleer het formulier en probeer het opnieuw.");
-      setState({ status: "success", message: data.message || "Bedankt. Uw projectgegevens zijn verzonden." });
+      if (!response.ok) throw new Error(data.message || (isNl ? "Controleer het formulier en probeer het opnieuw." : "Please check the form and try again."));
+      setState({ status: "success", message: data.message || (isNl ? "Bedankt. Uw projectgegevens zijn verzonden." : "Thank you. Your project details have been sent.") });
     } catch (error) {
-      setState({ status: "error", message: error instanceof Error ? error.message : "We konden uw bericht niet verzenden. Probeer het opnieuw." });
+      setState({ status: "error", message: error instanceof Error ? error.message : (isNl ? "We konden uw bericht niet verzenden. Probeer het opnieuw." : "We could not send your message. Please try again.") });
       sending.current = false;
     }
   }
@@ -46,11 +54,11 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
   if (state.status === "success") {
     return (
       <div className="form-success" role="status" aria-live="polite">
-        <span>Bericht ontvangen</span>
-        <h2>Bedankt.</h2>
-        <p>We hebben uw aanvraag ontvangen en nemen binnenkort contact met u op.</p>
+        <span>{isNl ? "Bericht ontvangen" : "Message received"}</span>
+        <h2>{isNl ? "Bedankt." : "Thank you."}</h2>
+        <p>{isNl ? "We hebben uw aanvraag ontvangen en nemen binnenkort contact met u op." : "We have received your enquiry and will contact you shortly."}</p>
         <a className="text-link" href="https://wa.me/message/4OIGQ3FHUZQSD1" target="_blank" rel="noreferrer">
-          Stuur ons een bericht via WhatsApp
+          {isNl ? "Stuur ons een bericht via WhatsApp" : "Message us on WhatsApp"}
         </a>
       </div>
     );
@@ -58,53 +66,43 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
 
   return (
     <form onSubmit={onSubmit} className="contact-form" aria-describedby="contact-form-note">
-      <p id="contact-form-note">Zeven korte vragen. Alle velden zijn verplicht.</p>
+      <p id="contact-form-note">{isNl ? "Zeven korte vragen. Alle velden zijn verplicht." : "Seven short questions. All fields are required."}</p>
       <label>
-        Naam
+        {isNl ? "Naam" : "Name"}
         <input required name="name" autoComplete="name" maxLength={120} />
       </label>
       <label>
-        Bedrijf
+        {isNl ? "Bedrijf" : "Company"}
         <input required name="company" autoComplete="organization" maxLength={160} />
       </label>
       <label>
-        Waarmee kunnen we u helpen?
+        {isNl ? "Waarmee kunnen we u helpen?" : "What do you need help with?"}
         <select required name="need" value={need} onChange={(event) => setNeed(event.target.value)}>
-          <option value="">Maak een keuze</option>
-          <option>Technologiebeoordeling</option>
-          <option>R&amp;D-strategie</option>
-          <option>Validatie van nieuwe ondernemingen</option>
-          <option>Innovatiepartnerschappen</option>
-          <option>Strategie &amp; complexe vraagstukken</option>
-          <option>Verkoopsystemen</option>
-          <option>AI-automatisering</option>
-          <option>Digitale producten &amp; websites</option>
-          <option>Advies aan directie en bestuur</option>
-          <option>Samenstellen van ventureteams</option>
-          <option>Anders</option>
+          <option value="">{isNl ? "Maak een keuze" : "Select one"}</option>
+          {options[locale].map((option) => <option key={option}>{option}</option>)}
         </select>
       </label>
       <label>
-        Beschrijf uw vraagstuk
+        {isNl ? "Beschrijf uw vraagstuk" : "Describe your challenge"}
         <textarea required name="message" rows={5} minLength={20} maxLength={2000} />
       </label>
       <label>
         Budget
         <select required name="budget" defaultValue="">
-          <option value="" disabled>Maak een keuze</option>
+          <option value="" disabled>{isNl ? "Maak een keuze" : "Select one"}</option>
           <option>&lt; €5k</option>
           <option>€5–20k</option>
           <option>€20–100k</option>
           <option>€100k+</option>
-          <option>Nog niet bepaald</option>
+          <option>{isNl ? "Nog niet bepaald" : "Not sure"}</option>
         </select>
       </label>
       <label>
-        Gewenste planning
-        <input required name="timeline" maxLength={160} placeholder="Bijvoorbeeld: binnen 6 weken" />
+        {isNl ? "Gewenste planning" : "Desired timeline"}
+        <input required name="timeline" maxLength={160} placeholder={isNl ? "Bijvoorbeeld: binnen 6 weken" : "For example: within 6 weeks"} />
       </label>
       <label>
-        E-mailadres
+        {isNl ? "E-mailadres" : "Email"}
         <input required type="email" name="email" autoComplete="email" maxLength={200} />
       </label>
       <label className="form-trap" aria-hidden="true">
@@ -112,7 +110,7 @@ export function ContactForm({ initialNeed = "" }: { initialNeed?: string }) {
         <input name="website" tabIndex={-1} autoComplete="off" />
       </label>
       <button type="submit" disabled={state.status === "loading"}>
-        {state.status === "loading" ? "Bezig met verzenden…" : "Aanvraag verzenden"}
+        {state.status === "loading" ? (isNl ? "Bezig met verzenden…" : "Sending…") : (isNl ? "Aanvraag verzenden" : "Send enquiry")}
       </button>
       {state.status === "error" ? (
         <p className="form-error" role="alert">{state.message}</p>

@@ -59,7 +59,7 @@ export default async function OriginalPlatformPage({ params }: { params: Promise
   const page = resolve(slug);
   if (!page) notFound();
   return (
-    <div lang="en" className="contents">
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -82,6 +82,6 @@ export default async function OriginalPlatformPage({ params }: { params: Promise
           <Link className="outline-button" href="/contact">Contact Bear Grid</Link>
         </section>
       ) : null}
-    </div>
+    </>
   );
 }

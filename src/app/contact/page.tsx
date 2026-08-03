@@ -2,39 +2,41 @@ import type { Metadata } from "next";
 import { ContactForm } from "@/components/Forms";
 import { Eyebrow } from "@/components/CompanyPages";
 import { baseUrl } from "@/data/site";
+import { localizedAlternatesFor } from "@/i18n";
 
 export const metadata: Metadata = {
   title: "Contact | Bear Grid",
-  description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
-  alternates: { canonical: "/contact" },
+  description: "Tell Bear Grid about the business or technology problem you need to solve.",
+  alternates: localizedAlternatesFor("en", "/contact"),
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    locale: "nl_NL",
-    title: "Contact opnemen met Bear Grid",
-    description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
+    locale: "en_US",
+    alternateLocale: "nl_NL",
+    title: "Contact Bear Grid",
+    description: "Tell Bear Grid about the business or technology problem you need to solve.",
     url: `${baseUrl}/contact`,
-    images: ["/brand-assets/og-contact.png"],
+    images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact opnemen met Bear Grid",
-    description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
-    images: ["/brand-assets/twitter-default.png"],
+    title: "Contact Bear Grid",
+    description: "Tell Bear Grid about the business or technology problem you need to solve.",
+    images: ["/og.png"],
   },
 };
 
 const allowedServices = [
-  "Technologiebeoordeling",
-  "R&D-strategie",
-  "Validatie van nieuwe ondernemingen",
-  "Innovatiepartnerschappen",
-  "Strategie & complexe vraagstukken",
-  "Verkoopsystemen",
-  "AI-automatisering",
-  "Digitale producten & websites",
-  "Advies aan directie en bestuur",
-  "Samenstellen van ventureteams",
+  "Technology Assessment",
+  "R&D Strategy",
+  "Venture Validation",
+  "Innovation Partnerships",
+  "Strategy & Complex Problem Solving",
+  "Sales Systems",
+  "AI Automation",
+  "Digital Products & Websites",
+  "Executive Advisory",
+  "Venture Team Assembly",
 ];
 
 export default async function ContactPage({
@@ -47,7 +49,7 @@ export default async function ContactPage({
   const initialNeed = allowedServices.includes(requestedService)
     ? requestedService
     : query.intent === "investor"
-      ? "Advies aan directie en bestuur"
+      ? "Executive Advisory"
       : "";
 
   return (
@@ -59,13 +61,13 @@ export default async function ContactPage({
           { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
           { "@type": "ListItem", position: 2, name: "Contact", item: `${baseUrl}/contact` },
         ],
-        inLanguage: "nl-NL",
+        inLanguage: "en",
       }).replace(/</g, "\\u003c") }} />
       <section className="contact-layout">
         <div className="contact-intro">
-          <Eyebrow>NEEM CONTACT OP</Eyebrow>
-          <h1>Waarmee kunnen we u helpen?</h1>
-          <p>Geef ons de korte versie. We beoordelen uw aanvraag en reageren binnen twee werkdagen.</p>
+          <Eyebrow>LET&apos;S TALK</Eyebrow>
+          <h1>What do you need help with?</h1>
+          <p>Give us the short version. We will review it and reply within two business days.</p>
         </div>
         <ContactForm initialNeed={initialNeed} />
       </section>

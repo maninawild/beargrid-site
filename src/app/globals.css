@@ -134,6 +134,9 @@ img { max-width: 100%; height: auto; }
 .company-nav .platform-link { border: 1px solid #242424; padding: 11px 16px; }
 .company-nav .platform-link::after { display: none; }
 .company-nav .platform-link:hover { background: #161616; color: #fff; }
+.language-switcher { display: flex; align-items: center; gap: 9px; margin-left: 24px; font-size: 11px; letter-spacing: .08em; }
+.language-switcher a { color: #777; }
+.language-switcher a[aria-current="page"] { color: #111; text-decoration: underline; text-underline-offset: 4px; }
 .company-menu-button, .company-mobile-nav { display: none; }
 .company-main { background: #f7f6f2; color: #171717; font-family: var(--font-inter), Arial, sans-serif; }
 .company-eyebrow { margin: 0; font-size: 11px; font-weight: 650; letter-spacing: .16em; text-transform: uppercase; }
@@ -212,10 +215,13 @@ img { max-width: 100%; height: auto; }
   .company-header { height: 78px; }
   .company-header-inner { width: calc(100% - 32px); }
   .company-nav { display: none; }
+  .company-header-inner > .language-switcher { display: none; }
   .company-menu-button { display: grid; gap: 7px; margin-left: auto; border: 0; background: transparent; padding: 12px 0 12px 12px; }
   .company-menu-button span { width: 27px; height: 1px; background: #171717; }
   .company-mobile-nav { display: grid; position: absolute; top: 78px; left: 0; right: 0; padding: 22px 22px 30px; border-bottom: 1px solid #92918e; background: #f7f6f2; }
   .company-mobile-nav a { padding: 13px 0; border-bottom: 1px solid #d7d5cf; font-size: 17px; }
+  .company-mobile-nav .language-switcher { margin: 18px 0 0; }
+  .company-mobile-nav .language-switcher a { border: 0; padding: 6px 10px 6px 0; font-size: 13px; }
   .company-mobile-nav .platform-link { margin-top: 12px; border: 1px solid #171717; padding: 13px; text-align: center; }
   .company-hero { min-height: auto; grid-template-columns: 1fr; }
   .company-hero-mark { min-height: 180px; place-items: center start; padding: 40px 24px; border-right: 0; border-bottom: 1px solid #cbc9c4; }

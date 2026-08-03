@@ -8,6 +8,14 @@ const paper = "#F7F6F2";
 const ink = "#171717";
 
 const pages = [
+  ["default", "Bear Grid", "Independent R&D consultancy"],
+  ["home", "Bear Grid", "Independent R&D consultancy · Netherlands"],
+  ["expertise", "Expertise", "Technology assessment · R&D strategy"],
+  ["history", "History", "Founded in 2019 · Netherlands"],
+  ["investors", "Investors", "Venture validation · Innovation partnerships"],
+  ["contact", "Contact", "Independent R&D consultancy"],
+];
+const dutchPages = [
   ["default", "Bear Grid", "Onafhankelijk R&D-adviesbureau"],
   ["home", "Bear Grid", "Onafhankelijk R&D-adviesbureau · Nederland"],
   ["expertise", "Expertise", "Technologiebeoordeling · R&D-strategie"],
@@ -101,7 +109,7 @@ await raster(iconSvg(192, 26), "icon-192.png", 192, 192);
 await raster(iconSvg(512, 70), "icon-512.png", 512, 512);
 await raster(iconSvg(512, 102), "maskable-icon-512.png", 512, 512);
 
-function socialSvg(title, descriptor, width = 1200, height = 630) {
+function socialSvg(title, descriptor, width = 1200, height = 630, country = "NETHERLANDS") {
   return svgDocument(
     width,
     height,
@@ -110,14 +118,18 @@ function socialSvg(title, descriptor, width = 1200, height = 630) {
      <text x="390" y="225" fill="${ink}" font-family="Inter,Arial,Helvetica,sans-serif" font-size="${title.length > 18 ? 62 : 78}" font-weight="700" letter-spacing="1">${escapeXml(title)}</text>
      <line x1="394" y1="265" x2="1115" y2="265" stroke="#92918E" stroke-width="3"/>
      <text x="394" y="332" fill="${ink}" font-family="Inter,Arial,Helvetica,sans-serif" font-size="30" font-weight="500">${escapeXml(descriptor)}</text>
-     <text x="394" y="445" fill="${ink}" font-family="Inter,Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="5">BEAR GRID · NEDERLAND</text>`,
+     <text x="394" y="445" fill="${ink}" font-family="Inter,Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="5">BEAR GRID · ${country}</text>`,
   );
 }
 
 for (const [slug, title, descriptor] of pages) {
   await raster(socialSvg(title, descriptor), `og-${slug}.png`, 1200, 630);
 }
-await raster(socialSvg("Bear Grid", "Onafhankelijk R&D-adviesbureau", 1200, 600), "twitter-default.png", 1200, 600);
+await raster(socialSvg("Bear Grid", "Independent R&D consultancy", 1200, 600), "twitter-default.png", 1200, 600);
+for (const [slug, title, descriptor] of dutchPages) {
+  await raster(socialSvg(title, descriptor, 1200, 630, "NEDERLAND"), `og-${slug}-nl.png`, 1200, 630);
+}
+await raster(socialSvg("Bear Grid", "Onafhankelijk R&D-adviesbureau", 1200, 600, "NEDERLAND"), "twitter-default-nl.png", 1200, 600);
 
 const manifest = {
   source: "/logos/bear-grid-logo.png",
