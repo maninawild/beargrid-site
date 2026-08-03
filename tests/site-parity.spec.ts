@@ -68,7 +68,7 @@ test("homepage services and investor page have clear conversion paths", async ({
   await page.goto("/");
   await expect(page.locator(".service-grid").getByRole("link", { name: "Let's Talk" })).toHaveCount(6);
   await page.goto("/investors");
-  await expect(page.getByRole("heading", { name: "Meet ambitious R&D ventures." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Assess the technology before committing capital." })).toBeVisible();
   await expect(page.locator(".investor-hero").getByRole("link", { name: "Let's Talk" })).toHaveAttribute(
     "href",
     "/contact?intent=investor",
@@ -150,6 +150,8 @@ test("confirmed legacy routes redirect permanently", async ({ request }) => {
     ["/bear-grid-device", "/history/original-platform/bear-device"],
     ["/copy-of-bear-device", "/history/original-platform/bear-grid-platform"],
     ["/contacts", "/contact"],
+    ["/privacy", "/privacy-policy"],
+    ["/cookies", "/cookie-policy"],
   ]) {
     const response = await request.get(source, { maxRedirects: 0 });
     expect(response.status()).toBe(308);
@@ -182,9 +184,10 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
 
   const robots = await (await request.get("/robots.txt")).text();
   expect(robots).toContain("Sitemap: https://beargridsolutions.com/sitemap.xml");
-  for (const crawler of ["Googlebot", "Bingbot", "Applebot", "GPTBot", "ChatGPT-User", "OAI-SearchBot", "ClaudeBot", "PerplexityBot"]) {
+  for (const crawler of ["Googlebot", "Bingbot", "Applebot", "OAI-SearchBot", "ClaudeBot", "PerplexityBot"]) {
     expect(robots).toContain(crawler);
   }
+  expect(robots).toContain("Disallow: /brand-assets-review");
 
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).toContain("<loc>https://beargridsolutions.com/expertise</loc>");
@@ -194,12 +197,39 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
   expect(sitemap).not.toContain("beargrid-site.vercel.app");
   expect(sitemap).not.toContain("/history/original-platform/home</loc>");
   expect(sitemap).not.toContain("/history/original-platform/history</loc>");
+  expect(sitemap).not.toContain("<priority>");
+  expect(sitemap).not.toContain("<changefreq>");
 
   expect((await request.get("/manifest.webmanifest")).status()).toBe(200);
   expect((await request.get("/llms.txt")).status()).toBe(200);
   for (const asset of ["/favicon.ico", "/icon.svg", "/apple-touch-icon.png", "/icon-192.png", "/icon-512.png", "/og.png"]) {
     expect((await request.get(asset)).status()).toBe(200);
   }
+});
+
+test("major pages provide distinct, answer-first service definitions", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Independent R&D consultancy");
+  await expect(page.getByText("Netherlands-based independent R&D consultancy", { exact: false }).first()).toBeVisible();
+
+  await page.goto("/expertise");
+  for (const service of ["Technology Assessment", "R&D Strategy", "Venture Validation", "Innovation Partnerships"]) {
+    await expect(page.getByRole("heading", { name: service, exact: true })).toBeVisible();
+  }
+  await expect(page.getByText("An independent review for teams or investors", { exact: false })).toBeVisible();
+
+  await page.goto("/investors");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Assess the technology");
+  await expect(page.getByText("findings, evidence gaps, material risks", { exact: false })).toBeVisible();
+
+  const jsonLd = (await page.locator('script[type="application/ld+json"]').allTextContents())
+    .flatMap((payload) => {
+      const parsed = JSON.parse(payload);
+      return parsed["@graph"] ?? [parsed];
+    });
+  const organization = jsonLd.find((item) => item["@id"] === "https://beargridsolutions.com/#organization");
+  expect(organization?.name).toBe("Bear Grid");
+  expect(organization?.logo?.url).toBe("https://beargridsolutions.com/logos/bear-grid-logo.png");
 });
 
 test("history preserves the approved narrative and current actions", async ({ page }) => {

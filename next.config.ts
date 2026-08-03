@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
       { source: "/coming-soon-03", destination: "/history/original-platform/coming-soon-03", permanent: true },
       { source: "/copy-of-asp-bear-grid", destination: "/history/original-platform/copy-of-asp-bear-grid", permanent: true },
       { source: "/contacts", destination: "/contact", permanent: true },
+      { source: "/privacy", destination: "/privacy-policy", permanent: true },
+      { source: "/cookies", destination: "/cookie-policy", permanent: true },
       { source: "/technology", destination: "/history", permanent: true },
       { source: "/technology/platform", destination: "/history/original-platform", permanent: true },
       { source: "/history/original-platform/bear-grid-device", destination: "/history/original-platform/bear-device", permanent: true },

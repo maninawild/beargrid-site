@@ -34,6 +34,29 @@ export const services = [
   },
 ];
 
+export const rAndDServices = [
+  {
+    number: "01",
+    title: "Technology Assessment",
+    body: "An independent review for teams or investors who need to decide whether a technology is feasible and ready for its next commitment. Bear Grid examines the evidence, architecture, technical risks and delivery dependencies, then provides findings and recommended next checks.",
+  },
+  {
+    number: "02",
+    title: "R&D Strategy",
+    body: "A decision-led plan for founders and innovation teams that need to turn an uncertain technical objective into a workable programme. Bear Grid defines priorities, validation milestones, resource needs and decision gates, then delivers a roadmap the team can execute.",
+  },
+  {
+    number: "03",
+    title: "Venture Validation",
+    body: "A focused examination of an early-stage venture before significant time or capital is committed. Bear Grid tests the technical, product and execution assumptions, identifies evidence gaps and delivers a clear view of what should be validated, changed or stopped.",
+  },
+  {
+    number: "04",
+    title: "Innovation Partnerships",
+    body: "Structured support for companies and institutions that need external capabilities to move an innovation project forward. Bear Grid clarifies the objective, partner roles, contributions and governance, then provides a practical collaboration plan.",
+  },
+];
+
 const problems = [
   "Manual work is consuming time that should be spent serving customers.",
   "Sales depend on individual effort instead of a system the team can run.",
@@ -99,13 +122,13 @@ export function CompanyHome() {
     <main className="company-main">
       <section className="new-hero">
         <div className="new-hero-top">
-          <Eyebrow>INDEPENDENT ENGINEERING &amp; BUSINESS CONSULTANCY</Eyebrow>
+          <Eyebrow>NETHERLANDS-BASED INDEPENDENT R&amp;D CONSULTANCY</Eyebrow>
           <span>Solve · Build · Improve · Deliver</span>
         </div>
         <div className="new-hero-copy">
-          <h1>We solve hard business and technology problems.</h1>
+          <h1>Independent R&amp;D consultancy for difficult technology and venture decisions.</h1>
           <div>
-            <p>For SMEs, technology companies, industrial teams, scale-ups and investors. We turn unclear problems into working plans, systems and products.</p>
+            <p>Bear Grid helps founders, innovation teams, investors and institutions assess technology, shape R&amp;D strategy, validate ventures and build effective partnerships. We turn unclear problems into decisions, plans, systems and products.</p>
             <div className="company-actions">
               <Link className="company-button dark" href="/contact">Let&apos;s Talk</Link>
             </div>

@@ -47,7 +47,7 @@ export default function HistoryPage() {
       <section className="inner-company-hero">
         <Eyebrow>COMPANY HISTORY</Eyebrow>
         <h1>HISTORY</h1>
-        <p>From sensing technology to founder support.</p>
+        <p>Bear Grid is a Netherlands-based independent R&amp;D consultancy founded in 2019. It evolved from a deep-tech sensing startup into a company supporting technology and venture decisions.</p>
       </section>
       <section className="history-story" aria-label="Bear Grid company timeline">
         <ol className="history-timeline">

@@ -24,6 +24,10 @@ export const metadata: Metadata = {
 };
 
 const allowedServices = [
+  "Technology Assessment",
+  "R&D Strategy",
+  "Venture Validation",
+  "Innovation Partnerships",
   "Strategy & Complex Problem Solving",
   "Sales Systems",
   "AI Automation",

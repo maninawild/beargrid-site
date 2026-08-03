@@ -2,21 +2,21 @@ import type { MetadataRoute } from "next";
 import { baseUrl, publicPages } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const companyPages = [
-    "/",
-    "/expertise",
-    "/contact",
-    "/investors",
-    "/history",
-    "/history/original-platform",
-    "/legal",
-    "/privacy-policy",
-    "/cookie-policy",
-  ].map((path) => ({
+  const companyPageDates: Record<string, string> = {
+    "/": "2026-08-03",
+    "/expertise": "2026-08-03",
+    "/contact": "2026-08-03",
+    "/investors": "2026-08-03",
+    "/history": "2026-08-03",
+    "/history/original-platform": "2026-08-03",
+    "/legal": "2026-08-03",
+    "/privacy-policy": "2026-08-03",
+    "/cookie-policy": "2026-08-03",
+  };
+
+  const companyPages = Object.entries(companyPageDates).map(([path, lastModified]) => ({
     url: new URL(path, baseUrl).toString(),
-    lastModified: new Date("2026-08-03"),
-    changeFrequency: path.includes("policy") || path === "/legal" ? ("yearly" as const) : ("monthly" as const),
-    priority: path === "/" ? 1 : path === "/expertise" ? 0.9 : path.includes("policy") || path === "/legal" ? 0.3 : 0.8,
+    lastModified: new Date(lastModified),
   }));
 
   const canonicalAliases: Record<string, string> = {
@@ -31,8 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((page) => ({
       url: new URL(`/history/original-platform/${canonicalAliases[page.slug] ?? page.slug}`, baseUrl).toString(),
       lastModified: new Date("2026-08-01"),
-      changeFrequency: "yearly" as const,
-      priority: 0.7,
     }));
   return [...companyPages, ...legacyPages];
 }

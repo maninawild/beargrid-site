@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Eyebrow, ServiceGrid, services } from "@/components/CompanyPages";
+import { Eyebrow, rAndDServices, ServiceGrid, services } from "@/components/CompanyPages";
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -29,8 +29,9 @@ export const metadata: Metadata = {
 export default function ExpertisePage() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
-    "@graph": services.map((service) => ({
+    "@graph": [...rAndDServices, ...services].map((service) => ({
       "@type": "Service",
+      "@id": `${baseUrl}/expertise#service-${service.number}-${service.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
       name: service.title,
       description: service.body,
       url: `${baseUrl}/expertise`,
@@ -64,8 +65,29 @@ export default function ExpertisePage() {
           decisions before committing significant time or capital.
         </p>
       </section>
+      <section className="company-section" aria-labelledby="rd-services-title">
+        <div className="section-heading">
+          <Eyebrow>WHAT THE CORE R&amp;D SERVICES MEAN</Eyebrow>
+          <h2 id="rd-services-title">Independent evidence for the next decision.</h2>
+        </div>
+        <div className="service-grid">
+          {rAndDServices.map((service) => (
+            <article key={service.title}>
+              <span>{service.number}</span>
+              <h3>{service.title}</h3>
+              <p>{service.body}</p>
+              <Link className="service-cta" href={`/contact?service=${encodeURIComponent(service.title)}`}>
+                Discuss this decision <span aria-hidden="true">→</span>
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
       <section className="company-section" aria-label="Bear Grid consultancy services">
-        <h2 className="sr-only">Bear Grid consultancy services</h2>
+        <div className="section-heading">
+          <Eyebrow>HANDS-ON DELIVERY CAPABILITIES</Eyebrow>
+          <h2>From decision support to a working result.</h2>
+        </div>
         <ServiceGrid />
       </section>
       <section className="services-method">

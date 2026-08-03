@@ -4,26 +4,26 @@ import { Eyebrow } from "@/components/CompanyPages";
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Investors | Bear Grid",
+  title: "Technology & Venture Assessment for Investors | Bear Grid",
   description:
-    "A relationship-led entry point for investors interested in carefully selected R&D and technology ventures.",
+    "Independent technology and venture assessment for investors, plus a relationship-led entry point to carefully selected R&D ventures.",
   alternates: {
     canonical: "/investors",
   },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    title: "Investors | Bear Grid",
+    title: "Technology & Venture Assessment for Investors | Bear Grid",
     description:
-      "Connect with Bear Grid around ambitious R&D and technology ventures.",
+      "Independent assessment of technical feasibility, evidence and execution risk before an investor commits.",
     url: `${baseUrl}/investors`,
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Investors | Bear Grid",
+    title: "Technology & Venture Assessment for Investors | Bear Grid",
     description:
-      "A relationship-led entry point for investors interested in carefully selected R&D and technology ventures.",
+      "Independent assessment of technical feasibility, evidence and execution risk before an investor commits.",
     images: ["/og.png"],
   },
 };
@@ -47,12 +47,13 @@ export default function InvestorsPage() {
         ],
       }).replace(/</g, "\\u003c") }} />
       <section className="inner-company-hero investor-hero">
-        <Eyebrow>INVESTORS / SELECTED TECHNOLOGY VENTURES</Eyebrow>
-        <h1>Meet ambitious R&amp;D ventures.</h1>
+        <Eyebrow>INVESTORS / INDEPENDENT TECHNOLOGY &amp; VENTURE ASSESSMENT</Eyebrow>
+        <h1>Assess the technology before committing capital.</h1>
         <p>
-          Bear Grid works with technology ventures on assessment, validation and
-          execution. We occasionally introduce carefully selected opportunities
-          to investors whose expertise, mandate and time horizon are relevant.
+          Bear Grid helps investors examine technical feasibility, supporting
+          evidence, architecture, delivery risk and team dependencies before an
+          investment or venture decision. The result is a concise assessment of
+          findings, evidence gaps, material risks and recommended next checks.
         </p>
         <Link className="company-button dark" href="/contact?intent=investor">
           Let&apos;s Talk
@@ -67,14 +68,20 @@ export default function InvestorsPage() {
           </div>
         </div>
         <div>
-          <h2>Relevant people, relevant opportunities.</h2>
+          <h2>Independent review, with clear limits.</h2>
+          <p>
+            Technology and venture assessment is useful when an investment thesis
+            depends on product claims, an R&amp;D roadmap or the ability of a team to
+            deliver. Scope is agreed around the decision and the evidence available.
+          </p>
           <p>
             Conversations begin with strategic fit. Bear Grid does not offer
             securities, promise returns or provide investment advice.
           </p>
           <p>
-            We collaborate with InspireXchange on founder readiness and
-            investor relationships within the Dutch startup ecosystem.
+            Bear Grid also works with technology ventures on validation and
+            execution, and may introduce carefully selected opportunities when an
+            investor&apos;s expertise, mandate and time horizon are relevant.
           </p>
           <Link className="text-link" href="/contact?intent=investor">
             Let&apos;s Talk →

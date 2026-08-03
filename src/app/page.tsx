@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import { CompanyHome, services } from "@/components/CompanyPages";
+import { CompanyHome, rAndDServices, services } from "@/components/CompanyPages";
 import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Engineering & Business Consultancy | Bear Grid",
-  description: "Bear Grid solves difficult business and technology problems for SMEs, technology companies, industrial teams, scale-ups and investors.",
+  title: "Independent R&D Consultancy Netherlands | Bear Grid",
+  description: "Bear Grid is a Netherlands-based independent R&D consultancy for technology assessment, R&D strategy, venture validation and innovation partnerships.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     siteName: "Bear Grid",
-    title: "Engineering & Business Consultancy | Bear Grid",
-    description: "Strategy, sales systems, AI automation, digital products, executive advice and venture teams.",
+    title: "Independent R&D Consultancy Netherlands | Bear Grid",
+    description: "Technology assessment, R&D strategy, venture validation and innovation partnership support for founders, teams and investors.",
     url: baseUrl,
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Engineering & Business Consultancy | Bear Grid",
-    description: "Strategy, sales systems, AI automation, digital products, executive advice and venture teams.",
+    title: "Independent R&D Consultancy Netherlands | Bear Grid",
+    description: "Technology assessment, R&D strategy, venture validation and innovation partnership support for founders, teams and investors.",
     images: ["/og.png"],
   },
 };
@@ -29,22 +29,13 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": `${baseUrl}/#service`,
-        name: "Bear Grid",
-        url: baseUrl,
-        provider: { "@id": `${baseUrl}/#organization` },
-        areaServed: "Worldwide",
-        serviceType: services.map((service) => service.title),
-        description: "Independent engineering and business consultancy for companies, founders and investors.",
-      }).replace(/</g, "\\u003c") }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": services.map((service) => ({
+        "@graph": [...rAndDServices, ...services].map((service) => ({
           "@type": "Service",
+          "@id": `${baseUrl}/expertise#service-${service.number}-${service.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
           name: service.title,
           description: service.body,
-          provider: { "@type": "Organization", name: "Bear Grid", url: baseUrl },
+          url: `${baseUrl}/expertise`,
+          provider: { "@id": `${baseUrl}/#organization` },
           areaServed: "Worldwide",
         })),
       }).replace(/</g, "\\u003c") }} />

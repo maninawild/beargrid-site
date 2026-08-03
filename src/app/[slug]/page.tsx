@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       type: "website",
-      siteName: "BearGrid Solutions",
+      siteName: "Bear Grid",
       title: page.title,
       description: page.description,
       url: new URL(path, baseUrl).toString(),
