@@ -1,13 +1,26 @@
 import type { MetadataRoute } from "next";
-import { baseUrl } from "@/data/site";
+
+const siteUrl = "https://beargridsolutions.com";
 
 export default function robots(): MetadataRoute.Robots {
+  const allowedBots = [
+    "*",
+    "Googlebot",
+    "Bingbot",
+    "Applebot",
+    "GPTBot",
+    "ChatGPT-User",
+    "OAI-SearchBot",
+    "ClaudeBot",
+    "PerplexityBot",
+  ];
+
   return {
-    rules: {
-      userAgent: "*",
+    rules: allowedBots.map((userAgent) => ({
+      userAgent,
       allow: "/",
-    },
-    sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
+    })),
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }
