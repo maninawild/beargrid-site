@@ -1,0 +1,56 @@
+{
+  "source": "/logos/bear-grid-logo.png",
+  "sourceDimensions": "270x236",
+  "identity": "Existing approved Bear Grid mark, unchanged",
+  "palette": {
+    "ink": "#171717",
+    "paper": "#F7F6F2"
+  },
+  "reviewOnly": true,
+  "productionActivationPlan": {
+    "organizationLogo": "/brand-assets/bear-grid-logo-mark.png",
+    "favicon": "/brand-assets/favicon.ico",
+    "svgIcon": "/brand-assets/icon.svg",
+    "appleTouchIcon": "/brand-assets/apple-touch-icon.png",
+    "manifestIcons": [
+      "/brand-assets/icon-192.png",
+      "/brand-assets/icon-512.png",
+      "/brand-assets/maskable-icon-512.png"
+    ],
+    "routeSocialImages": {
+      "home": "/brand-assets/og-home.png",
+      "expertise": "/brand-assets/og-expertise.png",
+      "history": "/brand-assets/og-history.png",
+      "investors": "/brand-assets/og-investors.png",
+      "contact": "/brand-assets/og-contact.png",
+      "default": "/brand-assets/og-default.png",
+      "twitter": "/brand-assets/twitter-default.png"
+    }
+  },
+  "files": [
+    "apple-touch-icon.png",
+    "asset-manifest.json",
+    "bear-grid-logo-black.png",
+    "bear-grid-logo-black.svg",
+    "bear-grid-logo-horizontal.png",
+    "bear-grid-logo-horizontal.svg",
+    "bear-grid-logo-mark.png",
+    "bear-grid-logo-mark.svg",
+    "bear-grid-logo-white.png",
+    "bear-grid-logo-white.svg",
+    "favicon-16x16.png",
+    "favicon-32x32.png",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-512.png",
+    "icon.svg",
+    "maskable-icon-512.png",
+    "og-contact.png",
+    "og-default.png",
+    "og-expertise.png",
+    "og-history.png",
+    "og-home.png",
+    "og-investors.png",
+    "twitter-default.png"
+  ]
+}

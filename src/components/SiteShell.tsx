@@ -8,7 +8,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
 
-const modernRoutes = new Set(["/", "/expertise", "/investors", "/history", "/contact", "/legal", "/privacy-policy", "/cookie-policy"]);
+const modernRoutes = new Set(["/", "/expertise", "/investors", "/history", "/contact", "/legal", "/privacy-policy", "/cookie-policy", "/brand-assets-review"]);
 const modernNav = [["Home", "/"], ["Expertise", "/expertise"], ["Investors", "/investors"], ["History", "/history"], ["Let's Talk", "/contact"]] as const;
 
 function ModernHeader() {

@@ -216,3 +216,52 @@ test("404 provides a recovery action", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Back to Home" })).toHaveAttribute("href", "/");
 });
+
+test("approved brand asset review is noindex, responsive and complete", async ({ page, request }) => {
+  for (const viewport of [
+    { width: 390, height: 844 },
+    { width: 768, height: 1024 },
+    { width: 1024, height: 768 },
+    { width: 1440, height: 900 },
+  ]) {
+    await page.setViewportSize(viewport);
+    const errors: string[] = [];
+    page.on("console", (message) => {
+      if (message.type() === "error") errors.push(message.text());
+    });
+    await page.goto("/brand-assets-review");
+    await expect(page.locator("main")).toHaveCount(1);
+    await expect(page.locator("h1")).toHaveCount(1);
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+    for (const image of await page.locator("img").all()) {
+      await image.scrollIntoViewIfNeeded();
+    }
+    await page.waitForTimeout(250);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
+    expect(await page.locator("img").evaluateAll((images) =>
+      images.filter((image) => !(image as HTMLImageElement).complete || (image as HTMLImageElement).naturalWidth === 0).length,
+    )).toBe(0);
+    expect(errors).toEqual([]);
+  }
+
+  const assets = [
+    "bear-grid-logo-horizontal.svg", "bear-grid-logo-horizontal.png",
+    "bear-grid-logo-mark.svg", "bear-grid-logo-mark.png",
+    "bear-grid-logo-black.svg", "bear-grid-logo-black.png",
+    "bear-grid-logo-white.svg", "bear-grid-logo-white.png",
+    "favicon.ico", "favicon-16x16.png", "favicon-32x32.png", "icon.svg",
+    "apple-touch-icon.png", "icon-192.png", "icon-512.png", "maskable-icon-512.png",
+    "og-default.png", "og-home.png", "og-expertise.png", "og-history.png",
+    "og-investors.png", "og-contact.png", "twitter-default.png", "asset-manifest.json",
+  ];
+  for (const asset of assets) {
+    expect((await request.get(`/brand-assets/${asset}`)).status()).toBe(200);
+  }
+
+  const source = await (await request.get("/logos/bear-grid-logo.png")).body();
+  const approvedMark = await (await request.get("/brand-assets/bear-grid-logo-mark.png")).body();
+  expect(approvedMark.equals(source)).toBe(true);
+
+  const sitemap = await (await request.get("/sitemap.xml")).text();
+  expect(sitemap).not.toContain("/brand-assets-review");
+});
