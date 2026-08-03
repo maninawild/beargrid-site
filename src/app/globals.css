@@ -127,7 +127,7 @@ img { max-width: 100%; height: auto; }
 .company-header-inner { width: min(1320px, calc(100% - 64px)); height: 100%; margin: auto; display: flex; align-items: center; }
 .company-brand { display: inline-flex; align-items: center; font-family: var(--font-inter), Arial, sans-serif; }
 .company-logo-horizontal { display: block; width: 190px; height: auto; }
-.company-logo-mark { display: none; width: 44px; height: 44px; }
+.company-logo-mark { display: none; width: 44px; height: auto; }
 .company-nav { display: flex; align-items: center; gap: 34px; margin-left: auto; font-family: var(--font-inter), Arial, sans-serif; font-size: 14px; }
 .company-nav a { position: relative; padding: 10px 0; }
 .company-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 4px; height: 1px; background: #111; transition: right .2s ease; }

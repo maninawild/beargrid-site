@@ -60,20 +60,6 @@ await sharp({
     background: "#F7F6F2",
   },
 })
-  .composite([
-    { input: socialLogo, left: 340, top: 140 },
-    {
-      input: {
-        create: {
-          width: 600,
-          height: 12,
-          channels: 3,
-          background: "#F7F6F2",
-        },
-      },
-      left: 300,
-      top: 486,
-    },
-  ])
+  .composite([{ input: socialLogo, left: 340, top: 140 }])
   .png({ compressionLevel: 9, adaptiveFiltering: true })
   .toFile(path.join(brandDir, "og-logo.png"));
