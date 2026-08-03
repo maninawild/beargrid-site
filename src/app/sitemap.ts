@@ -2,11 +2,21 @@ import type { MetadataRoute } from "next";
 import { baseUrl, publicPages } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const companyPages = ["/", "/expertise", "/contact", "/investors", "/history", "/history/original-platform"].map((path) => ({
+  const companyPages = [
+    "/",
+    "/expertise",
+    "/contact",
+    "/investors",
+    "/history",
+    "/history/original-platform",
+    "/legal",
+    "/privacy-policy",
+    "/cookie-policy",
+  ].map((path) => ({
     url: new URL(path, baseUrl).toString(),
     lastModified: new Date("2026-08-03"),
-    changeFrequency: "monthly" as const,
-    priority: path === "/" ? 1 : path === "/expertise" ? 0.9 : 0.8,
+    changeFrequency: path.includes("policy") || path === "/legal" ? ("yearly" as const) : ("monthly" as const),
+    priority: path === "/" ? 1 : path === "/expertise" ? 0.9 : path.includes("policy") || path === "/legal" ? 0.3 : 0.8,
   }));
 
   const canonicalAliases: Record<string, string> = {

@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Bear Grid",
   description: "How Bear Grid handles personal data under the GDPR and Dutch privacy law.",
   alternates: { canonical: "/privacy-policy" },
+  openGraph: {
+    type: "website",
+    siteName: "Bear Grid",
+    title: "Privacy Policy | Bear Grid",
+    description: "How Bear Grid handles personal data under the GDPR and Dutch privacy law.",
+    url: `${baseUrl}/privacy-policy`,
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Bear Grid",
+    description: "How Bear Grid handles personal data under the GDPR and Dutch privacy law.",
+    images: ["/og.png"],
+  },
 };
 
 export default function PrivacyPolicyPage() {

@@ -4,6 +4,9 @@ const routes = [
   "/",
   "/expertise",
   "/contact",
+  "/legal",
+  "/privacy-policy",
+  "/cookie-policy",
   "/investors",
   "/history",
   "/history/original-platform",
@@ -158,6 +161,9 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
     ["/history", "https://beargridsolutions.com/history"],
     ["/contact?intent=project", "https://beargridsolutions.com/contact"],
     ["/history/original-platform", "https://beargridsolutions.com/history/original-platform"],
+    ["/legal", "https://beargridsolutions.com/legal"],
+    ["/privacy-policy", "https://beargridsolutions.com/privacy-policy"],
+    ["/cookie-policy", "https://beargridsolutions.com/cookie-policy"],
   ] as const;
 
   for (const [route, canonical] of canonicalRoutes) {
@@ -178,6 +184,9 @@ test("SEO metadata, crawler files and structured data are valid", async ({ page,
 
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).toContain("<loc>https://beargridsolutions.com/expertise</loc>");
+  expect(sitemap).toContain("<loc>https://beargridsolutions.com/legal</loc>");
+  expect(sitemap).toContain("<loc>https://beargridsolutions.com/privacy-policy</loc>");
+  expect(sitemap).toContain("<loc>https://beargridsolutions.com/cookie-policy</loc>");
   expect(sitemap).not.toContain("beargrid-site.vercel.app");
   expect(sitemap).not.toContain("/history/original-platform/home</loc>");
   expect(sitemap).not.toContain("/history/original-platform/history</loc>");

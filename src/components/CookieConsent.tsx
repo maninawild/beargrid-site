@@ -11,9 +11,12 @@ export function CookieConsent() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY) as Consent | null;
-    setConsent(stored);
-    setOpen(!stored);
+    const timeout = window.setTimeout(() => {
+      const stored = window.localStorage.getItem(STORAGE_KEY) as Consent | null;
+      setConsent(stored);
+      setOpen(!stored);
+    }, 0);
+    return () => window.clearTimeout(timeout);
   }, []);
 
   function save(value: Consent) {

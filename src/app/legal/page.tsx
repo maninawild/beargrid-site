@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Legal Notice | Bear Grid",
   description: "Legal terms, disclaimers and limitations applying to the Bear Grid website.",
   alternates: { canonical: "/legal" },
+  openGraph: {
+    type: "website",
+    siteName: "Bear Grid",
+    title: "Legal Notice | Bear Grid",
+    description: "Legal terms, disclaimers and limitations applying to the Bear Grid website.",
+    url: `${baseUrl}/legal`,
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice | Bear Grid",
+    description: "Legal terms, disclaimers and limitations applying to the Bear Grid website.",
+    images: ["/og.png"],
+  },
 };
 
 export default function LegalPage() {

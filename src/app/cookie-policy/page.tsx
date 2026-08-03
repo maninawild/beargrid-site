@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { baseUrl } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | Bear Grid",
   description: "Information about cookies and local storage used on the Bear Grid website.",
   alternates: { canonical: "/cookie-policy" },
+  openGraph: {
+    type: "website",
+    siteName: "Bear Grid",
+    title: "Cookie Policy | Bear Grid",
+    description: "Information about cookies and local storage used on the Bear Grid website.",
+    url: `${baseUrl}/cookie-policy`,
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookie Policy | Bear Grid",
+    description: "Information about cookies and local storage used on the Bear Grid website.",
+    images: ["/og.png"],
+  },
 };
 
 export default function CookiePolicyPage() {
