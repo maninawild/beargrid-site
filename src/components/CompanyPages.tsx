@@ -181,23 +181,19 @@ export function CompanyHome() {
             <Image src="/logos/yesdelft-logo.png" alt="YES!Delft" width={230} height={90} style={{ filter: "none" }} />
           </a>
           <a className="ecosystem-mark" href="https://www.inspirexchange.nl/" target="_blank" rel="noopener noreferrer" aria-label="Visit InspireXChange website">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://logo.clearbit.com/inspirexchange.nl?size=512" alt="InspireXChange" width="230" height="90" />
+            <img src="/logos/inspirexchange-upload.svg" alt="InspireXChange" width="230" height="90" style={{ filter: "none" }} />
           </a>
           <a className="ecosystem-mark" href="https://platformzero.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Platform Zero website">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://logo.clearbit.com/platformzero.co?size=512" alt="Platform Zero" width="230" height="90" />
+            <img src="/logos/platform-zero-upload.svg" alt="Platform Zero" width="230" height="90" style={{ filter: "none" }} />
           </a>
           <a className="ecosystem-mark" href="https://platformzero.co/sub-zero/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sub-Zero website">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://logo.clearbit.com/platformzero.co?size=512" alt="Sub-Zero by Platform Zero" width="230" height="90" />
+            <img src="/logos/platform-zero-upload.svg" alt="Sub-Zero by Platform Zero" width="230" height="90" style={{ filter: "none" }} />
           </a>
           <a className="ecosystem-mark" href="https://www.krewcommunity.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit KREW Community website">
             <Image src="/logos/krew-logo.png" alt="KREW Community" width={230} height={90} style={{ filter: "none" }} />
           </a>
           <a className="ecosystem-mark" href="https://hub.localie.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Localie Hub website">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://logo.clearbit.com/localie.co?size=512" alt="Localie Hub" width="230" height="90" />
+            <img src="/logos/localie-hub-upload.svg" alt="Localie Hub" width="230" height="90" style={{ filter: "none" }} />
           </a>
         </div>
         <p className="ecosystem-note">Shown as ecosystem and community connections only; inclusion does not imply endorsement or investment.</p>
