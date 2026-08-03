@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     title: "Cookiebeleid | Bear Grid",
     description: "Informatie over cookies en lokale opslag die op de website van Bear Grid worden gebruikt.",
     url: `https://beargridsolutions.com/nl/cookies`,
-    images: ["/brand-assets/og-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cookiebeleid | Bear Grid",
     description: "Informatie over cookies en lokale opslag die op de website van Bear Grid worden gebruikt.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

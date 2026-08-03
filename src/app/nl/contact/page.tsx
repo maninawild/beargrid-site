@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     title: "Contact opnemen met Bear Grid",
     description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
     url: `https://beargridsolutions.com/nl/contact`,
-    images: ["/brand-assets/og-contact-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact opnemen met Bear Grid",
     description: "Vertel Bear Grid welk bedrijfs- of technologievraagstuk u wilt oplossen.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

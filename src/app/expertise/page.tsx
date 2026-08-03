@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     description:
       "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
     url: `${baseUrl}/expertise`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "R&D Consultancy Services | Bear Grid",
     description:
       "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

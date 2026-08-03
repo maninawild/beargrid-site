@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     title: "Geschiedenis van Bear Grid | Bear Grid",
     description: "Van deeptech-start-up tot onafhankelijk R&D-adviesbureau.",
     url: `https://beargridsolutions.com/nl/history`,
-    images: ["/brand-assets/og-history-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Geschiedenis van Bear Grid | Bear Grid",
     description: "Van deeptech-start-up tot onafhankelijk R&D-adviesbureau.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

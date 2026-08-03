@@ -8,11 +8,11 @@ export default function manifest(): MetadataRoute.Manifest {
       "Independent Netherlands-based R&D consultancy for technology assessment, venture validation and innovation partnerships.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#ffffff",
+    background_color: "#F7F6F2",
+    theme_color: "#F7F6F2",
     icons: [
-      { src: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { src: "/icon-512.png", sizes: "512x512", type: "image/png" },
+      { src: "/brand/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { src: "/brand/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
     ],
   };
 }

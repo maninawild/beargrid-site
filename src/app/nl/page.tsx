@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: "Onafhankelijk R&D-adviesbureau in Nederland | Bear Grid",
     description: "Technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen voor oprichters, teams en investeerders.",
     url: `https://beargridsolutions.com/nl`,
-    images: ["/brand-assets/og-home-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Onafhankelijk R&D-adviesbureau in Nederland | Bear Grid",
     description: "Technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen voor oprichters, teams en investeerders.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: "Cookie Policy | Bear Grid",
     description: "Information about cookies and local storage used on the Bear Grid website.",
     url: `${baseUrl}/cookies`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cookie Policy | Bear Grid",
     description: "Information about cookies and local storage used on the Bear Grid website.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

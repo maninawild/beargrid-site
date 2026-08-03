@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Bear Grid",
     description: "How Bear Grid handles personal data under the GDPR and Dutch privacy law.",
     url: `${baseUrl}/privacy`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy | Bear Grid",
     description: "How Bear Grid handles personal data under the GDPR and Dutch privacy law.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

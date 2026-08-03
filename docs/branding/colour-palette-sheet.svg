@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <rect width="1600" height="1100" fill="#F7F6F1"/>
+  <text x="90" y="72" fill="#171917" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600">Bear Grid / Colour systems</text>
+  <text x="1510" y="70" fill="#565852" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13">THREE COMPLETE DIRECTIONS</text>
+  <line x1="90" y1="96" x2="1510" y2="96" stroke="#B9BBB5"/>
+
+  <g transform="translate(90 138)">
+    <text x="0" y="0" fill="#A64B2A" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="700">01 / ENGINEERED QUIET — RECOMMENDED</text>
+    <text x="1420" y="0" fill="#565852" text-anchor="end" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14">Copper behaves as an annotation, never a wash.</text>
+    <g transform="translate(0 28)">
+      <rect width="270" height="180" fill="#F2F0E9" stroke="#B8B8B0"/>
+      <text x="18" y="132" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" font-weight="600">Drafting Paper</text>
+      <text x="18" y="156" fill="#565852" font-family="IBM Plex Mono, monospace" font-size="12">#F2F0E9</text>
+      <rect x="284" width="270" height="180" fill="#FAF9F5" stroke="#B8B8B0"/>
+      <text x="302" y="132" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" font-weight="600">Chalk</text>
+      <text x="302" y="156" fill="#565852" font-family="IBM Plex Mono, monospace" font-size="12">#FAF9F5</text>
+      <rect x="568" width="270" height="180" fill="#191A18"/>
+      <text x="586" y="132" fill="#F2F0E9" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" font-weight="600">Graphite</text>
+      <text x="586" y="156" fill="#B8B8B0" font-family="IBM Plex Mono, monospace" font-size="12">#191A18</text>
+      <rect x="852" width="270" height="180" fill="#565852"/>
+      <text x="870" y="132" fill="#FAF9F5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" font-weight="600">Iron</text>
+      <text x="870" y="156" fill="#E4E1D8" font-family="IBM Plex Mono, monospace" font-size="12">#565852</text>
+      <rect x="1136" width="284" height="180" fill="#A64B2A"/>
+      <text x="1154" y="132" fill="#FAF9F5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" font-weight="600">Oxide Copper</text>
+      <text x="1154" y="156" fill="#F2F0E9" font-family="IBM Plex Mono, monospace" font-size="12">#A64B2A</text>
+    </g>
+  </g>
+
+  <g transform="translate(90 410)">
+    <text x="0" y="0" fill="#245B4A" font-family="Source Sans 3, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2">02 / CIVIC MODERN</text>
+    <text x="1420" y="0" fill="#565852" text-anchor="end" font-family="Source Sans 3, Arial, sans-serif" font-size="14">Institutional clarity with a warm public character.</text>
+    <g transform="translate(0 28)">
+      <rect width="270" height="180" fill="#F7F6F1" stroke="#B9BBB5"/>
+      <text x="18" y="132" fill="#171917" font-family="Source Sans 3, Arial, sans-serif" font-size="16" font-weight="700">Mineral White</text>
+      <text x="18" y="156" fill="#4E5553" font-family="IBM Plex Mono, monospace" font-size="12">#F7F6F1</text>
+      <rect x="284" width="270" height="180" fill="#E7E3DA" stroke="#B9BBB5"/>
+      <text x="302" y="132" fill="#171917" font-family="Source Sans 3, Arial, sans-serif" font-size="16" font-weight="700">Limestone</text>
+      <text x="302" y="156" fill="#4E5553" font-family="IBM Plex Mono, monospace" font-size="12">#E7E3DA</text>
+      <rect x="568" width="270" height="180" fill="#171917"/>
+      <text x="586" y="132" fill="#F7F6F1" font-family="Source Sans 3, Arial, sans-serif" font-size="16" font-weight="700">Near Black</text>
+      <text x="586" y="156" fill="#B9BBB5" font-family="IBM Plex Mono, monospace" font-size="12">#171917</text>
+      <rect x="852" width="270" height="180" fill="#245B4A"/>
+      <text x="870" y="132" fill="#F7F6F1" font-family="Source Sans 3, Arial, sans-serif" font-size="16" font-weight="700">Civic Green</text>
+      <text x="870" y="156" fill="#E7E3DA" font-family="IBM Plex Mono, monospace" font-size="12">#245B4A</text>
+      <rect x="1136" width="284" height="180" fill="#9A4035"/>
+      <text x="1154" y="132" fill="#F7F6F1" font-family="Source Sans 3, Arial, sans-serif" font-size="16" font-weight="700">Brick</text>
+      <text x="1154" y="156" fill="#F7F6F1" font-family="IBM Plex Mono, monospace" font-size="12">#9A4035</text>
+    </g>
+  </g>
+
+  <g transform="translate(90 682)">
+    <text x="0" y="0" fill="#174F50" font-family="Roboto Mono, monospace" font-size="13" font-weight="700">03 / FIELD STANDARD</text>
+    <text x="1420" y="0" fill="#565852" text-anchor="end" font-family="Archivo, Arial, sans-serif" font-size="14">Robust technical neutrals with a calibrated signal.</text>
+    <g transform="translate(0 28)">
+      <rect width="270" height="180" fill="#ECEDE8" stroke="#A7ACA7"/>
+      <text x="18" y="132" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="16" font-weight="700">Calibration Grey</text>
+      <text x="18" y="156" fill="#505653" font-family="Roboto Mono, monospace" font-size="12">#ECEDE8</text>
+      <rect x="284" width="270" height="180" fill="#F8F8F4" stroke="#A7ACA7"/>
+      <text x="302" y="132" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="16" font-weight="700">Equipment White</text>
+      <text x="302" y="156" fill="#505653" font-family="Roboto Mono, monospace" font-size="12">#F8F8F4</text>
+      <rect x="568" width="270" height="180" fill="#151716"/>
+      <text x="586" y="132" fill="#F8F8F4" font-family="Archivo, Arial, sans-serif" font-size="16" font-weight="700">Carbon</text>
+      <text x="586" y="156" fill="#A7ACA7" font-family="Roboto Mono, monospace" font-size="12">#151716</text>
+      <rect x="852" width="270" height="180" fill="#174F50"/>
+      <text x="870" y="132" fill="#F8F8F4" font-family="Archivo, Arial, sans-serif" font-size="16" font-weight="700">Deep Teal</text>
+      <text x="870" y="156" fill="#ECEDE8" font-family="Roboto Mono, monospace" font-size="12">#174F50</text>
+      <rect x="1136" width="284" height="180" fill="#D08A16"/>
+      <text x="1154" y="132" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="16" font-weight="700">Safety Ochre</text>
+      <text x="1154" y="156" fill="#151716" font-family="Roboto Mono, monospace" font-size="12">#D08A16</text>
+    </g>
+  </g>
+
+  <g transform="translate(90 968)">
+    <rect width="1420" height="70" fill="#191A18"/>
+    <rect width="14" height="70" fill="#A64B2A"/>
+    <text x="38" y="29" fill="#F2F0E9" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="600">ACCESSIBILITY PRINCIPLE</text>
+    <text x="38" y="51" fill="#B8B8B0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="13">All semantic pairs require WCAG 2.2 AA verification. Signal colours support meaning; they never carry meaning alone.</text>
+  </g>
+</svg>

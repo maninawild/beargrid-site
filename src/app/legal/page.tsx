@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: "Legal Notice | Bear Grid",
     description: "Legal terms, disclaimers and limitations applying to the Bear Grid website.",
     url: `${baseUrl}/legal`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Legal Notice | Bear Grid",
     description: "Legal terms, disclaimers and limitations applying to the Bear Grid website.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     title: "Contact Bear Grid",
     description: "Tell Bear Grid about the business or technology problem you need to solve.",
     url: `${baseUrl}/contact`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Bear Grid",
     description: "Tell Bear Grid about the business or technology problem you need to solve.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

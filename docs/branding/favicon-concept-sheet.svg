@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#E4E1D8"/>
+  <text x="90" y="72" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600">Bear Grid / Favicon concept sheet</text>
+  <text x="1510" y="70" fill="#565852" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13">16 · 32 · 64 · 180 PX TESTS</text>
+  <line x1="90" y1="96" x2="1510" y2="96" stroke="#B8B8B0"/>
+
+  <g transform="translate(90 136)">
+    <rect width="1420" height="190" rx="4" fill="#FAF9F5"/>
+    <text x="24" y="35" fill="#A64B2A" font-family="IBM Plex Mono, monospace" font-size="12">RECOMMENDED / BG DATUM</text>
+    <g transform="translate(32 62)">
+      <rect width="100" height="100" fill="#191A18"/>
+      <path d="M18 17h31c18 0 29 9 29 24 0 8-4 15-12 18 10 4 15 11 15 21 0 18-12 27-34 27H18Zm18 16v19h15c8 0 11-3 11-10s-4-9-12-9Zm0 34v23h16c9 0 13-4 13-12s-5-11-15-11Z" fill="#F2F0E9" transform="scale(.8) translate(4 2)"/>
+      <path d="M58 50h31v31H66V70h11v-8H58Z" fill="#F2F0E9"/>
+      <rect x="82" y="74" width="7" height="7" fill="#A64B2A"/>
+    </g>
+    <g transform="translate(172 87)">
+      <rect width="64" height="64" fill="#191A18"/>
+      <path d="M8 8h21c13 0 21 6 21 17 0 6-3 10-8 13 7 2 10 8 10 15 0 11-8 17-23 17H8Zm12 11v13h10c5 0 8-2 8-7s-3-6-8-6Zm0 23v16h11c6 0 9-3 9-8s-4-8-10-8Z" fill="#F2F0E9" transform="scale(.75)"/>
+      <path d="M36 32h20v20H42v-7h7v-6H36Z" fill="#F2F0E9"/>
+      <rect x="51" y="47" width="5" height="5" fill="#A64B2A"/>
+    </g>
+    <g transform="translate(278 103)">
+      <rect width="32" height="32" fill="#191A18"/>
+      <path d="M5 5h9c6 0 10 3 10 8 0 3-2 5-4 6 3 1 5 4 5 7 0 6-4 9-11 9H5Zm6 6v6h4c3 0 4-1 4-3s-1-3-4-3Zm0 11v7h4c3 0 5-1 5-4s-2-3-5-3Z" fill="#F2F0E9" transform="scale(.8)"/>
+      <path d="M18 16h10v10h-7v-3h3v-3h-6Z" fill="#F2F0E9"/>
+      <rect x="25" y="23" width="3" height="3" fill="#A64B2A"/>
+    </g>
+    <g transform="translate(347 111)">
+      <rect width="16" height="16" fill="#191A18"/>
+      <path d="M3 3h5c3 0 5 2 5 4 0 2-1 3-2 3 2 1 3 2 3 4H9v-2H6v2H3Z" fill="#F2F0E9"/>
+      <rect x="11" y="11" width="2" height="2" fill="#A64B2A"/>
+    </g>
+    <text x="420" y="96" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="600">One symbol at every scale.</text>
+    <text x="420" y="122" fill="#565852" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15">
+      <tspan x="420" dy="0">At 16 px, internal detail is deliberately removed.</tspan>
+      <tspan x="420" dy="24">The copper datum becomes one optical pixel.</tspan>
+    </text>
+    <g transform="translate(1030 55)">
+      <rect width="340" height="92" rx="8" fill="#ECEBE7" stroke="#C6C7C2"/>
+      <rect x="20" y="25" width="32" height="32" rx="2" fill="#191A18"/>
+      <path d="M27 31h10c7 0 11 4 11 9 0 3-2 5-4 6 4 1 5 4 5 7H38v-3h-5v3h-6Z" fill="#F2F0E9"/>
+      <rect x="44" y="49" width="4" height="4" fill="#A64B2A"/>
+      <text x="70" y="46" fill="#191A18" font-family="Arial, sans-serif" font-size="14">Bear Grid — Independent consultancy</text>
+      <text x="70" y="66" fill="#70716D" font-family="Arial, sans-serif" font-size="11">beargrid.eu</text>
+    </g>
+  </g>
+
+  <g transform="translate(90 362)">
+    <rect width="680" height="232" rx="4" fill="#FAF9F5"/>
+    <text x="24" y="35" fill="#565852" font-family="IBM Plex Mono, monospace" font-size="12">ALTERNATIVE / NINE-CELL BEAR</text>
+    <g transform="translate(40 70)">
+      <rect width="112" height="112" rx="4" fill="#245B4A"/>
+      <rect x="17" y="17" width="23" height="23" fill="#F7F6F1"/>
+      <rect x="72" y="17" width="23" height="23" fill="#F7F6F1"/>
+      <rect x="17" y="48" width="78" height="22" fill="#F7F6F1"/>
+      <rect x="34" y="79" width="44" height="17" fill="#F7F6F1"/>
+    </g>
+    <g transform="translate(188 94)">
+      <rect width="64" height="64" rx="2" fill="#245B4A"/>
+      <rect x="9" y="9" width="14" height="14" fill="#F7F6F1"/>
+      <rect x="41" y="9" width="14" height="14" fill="#F7F6F1"/>
+      <rect x="9" y="28" width="46" height="13" fill="#F7F6F1"/>
+      <rect x="20" y="46" width="24" height="9" fill="#F7F6F1"/>
+    </g>
+    <g transform="translate(285 110)">
+      <rect width="32" height="32" fill="#245B4A"/>
+      <rect x="5" y="5" width="7" height="7" fill="#F7F6F1"/>
+      <rect x="20" y="5" width="7" height="7" fill="#F7F6F1"/>
+      <rect x="5" y="14" width="22" height="7" fill="#F7F6F1"/>
+      <rect x="10" y="23" width="12" height="5" fill="#F7F6F1"/>
+    </g>
+    <text x="360" y="100" fill="#191A18" font-family="Source Sans 3, Arial, sans-serif" font-size="25" font-weight="700">High recognition</text>
+    <text x="360" y="130" fill="#565852" font-family="Source Sans 3, Arial, sans-serif" font-size="14">More literal bear association.</text>
+    <text x="360" y="153" fill="#565852" font-family="Source Sans 3, Arial, sans-serif" font-size="14">Risk: pixel / digital character.</text>
+  </g>
+
+  <g transform="translate(830 362)">
+    <rect width="680" height="232" rx="4" fill="#FAF9F5"/>
+    <text x="24" y="35" fill="#565852" font-family="IBM Plex Mono, monospace" font-size="12">ALTERNATIVE / FIELD INTERLOCK</text>
+    <g transform="translate(40 70)">
+      <rect width="112" height="112" fill="#151716"/>
+      <path d="M20 18h39v19H39v38h20v19H20Zm72 0H65v19h12v12H59v18h18v8H65v19h27Z" fill="#ECEDE8"/>
+      <rect x="20" y="75" width="19" height="19" fill="#D08A16"/>
+    </g>
+    <g transform="translate(188 94)">
+      <rect width="64" height="64" fill="#151716"/>
+      <path d="M11 10h23v11H22v22h12v11H11Zm42 0H38v11h7v7H34v10h11v5h-7v11h15Z" fill="#ECEDE8"/>
+      <rect x="11" y="43" width="11" height="11" fill="#D08A16"/>
+    </g>
+    <g transform="translate(285 110)">
+      <rect width="32" height="32" fill="#151716"/>
+      <path d="M5 5h13v6h-7v11h7v6H5Zm22 0h-7v6h3v4h-6v5h6v2h-3v6h7Z" fill="#ECEDE8"/>
+      <rect x="5" y="22" width="6" height="6" fill="#D08A16"/>
+    </g>
+    <text x="360" y="100" fill="#191A18" font-family="Archivo, Arial, sans-serif" font-size="25" font-weight="700">Robust and physical</text>
+    <text x="360" y="130" fill="#565852" font-family="Archivo, Arial, sans-serif" font-size="14">Excellent stamping and signage.</text>
+    <text x="360" y="153" fill="#565852" font-family="Archivo, Arial, sans-serif" font-size="14">Risk: more industrial than advisory.</text>
+  </g>
+
+  <g transform="translate(90 632)">
+    <rect width="1420" height="278" rx="4" fill="#191A18"/>
+    <text x="24" y="36" fill="#B8B8B0" font-family="IBM Plex Mono, monospace" font-size="12">REVERSED, MASKABLE &amp; APPLE TOUCH TEST</text>
+    <rect x="42" y="72" width="160" height="160" rx="28" fill="#F2F0E9"/>
+    <g transform="translate(75 103)">
+      <path d="M0 0h51c31 0 49 14 49 39 0 15-8 26-22 33 18 6 27 19 27 39 0 33-22 50-57 50H0Zm25 23v38h25c15 0 23-7 23-20 0-12-8-18-25-18Zm0 62v53h26c19 0 28-9 28-27 0-17-10-26-31-26Z" fill="#191A18" transform="scale(.7)"/>
+      <path d="M59 49h57v57H70V86h25V69H59Z" fill="#191A18"/>
+      <rect x="103" y="93" width="13" height="13" fill="#A64B2A"/>
+    </g>
+    <rect x="242" y="72" width="160" height="160" rx="80" fill="#F2F0E9"/>
+    <g transform="translate(275 103)">
+      <path d="M0 0h51c31 0 49 14 49 39 0 15-8 26-22 33 18 6 27 19 27 39 0 33-22 50-57 50H0Zm25 23v38h25c15 0 23-7 23-20 0-12-8-18-25-18Zm0 62v53h26c19 0 28-9 28-27 0-17-10-26-31-26Z" fill="#191A18" transform="scale(.7)"/>
+      <path d="M59 49h57v57H70V86h25V69H59Z" fill="#191A18"/>
+      <rect x="103" y="93" width="13" height="13" fill="#A64B2A"/>
+    </g>
+    <rect x="442" y="72" width="160" height="160" rx="4" fill="#A64B2A"/>
+    <g transform="translate(475 103)">
+      <path d="M0 0h51c31 0 49 14 49 39 0 15-8 26-22 33 18 6 27 19 27 39 0 33-22 50-57 50H0Zm25 23v38h25c15 0 23-7 23-20 0-12-8-18-25-18Zm0 62v53h26c19 0 28-9 28-27 0-17-10-26-31-26Z" fill="#F2F0E9" transform="scale(.7)"/>
+      <path d="M59 49h57v57H70V86h25V69H59Z" fill="#F2F0E9"/>
+      <rect x="103" y="93" width="13" height="13" fill="#191A18"/>
+    </g>
+    <text x="674" y="105" fill="#F2F0E9" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600">No competing identity.</text>
+    <text x="674" y="145" fill="#B8B8B0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16">
+      <tspan x="674" dy="0">The same mark should be used for browser tabs, bookmarks,</tspan>
+      <tspan x="674" dy="26">touch icons, social avatars and document metadata.</tspan>
+    </text>
+    <line x1="674" y1="201" x2="1350" y2="201" stroke="#565852"/>
+    <text x="674" y="230" fill="#A64B2A" font-family="IBM Plex Mono, monospace" font-size="12">REMOVE THE CURRENT ROUNDED-SQUARE “B” FAVICON AFTER APPROVAL.</text>
+  </g>
+</svg>

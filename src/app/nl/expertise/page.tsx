@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     description:
       "Onafhankelijke technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen.",
     url: `https://beargridsolutions.com/nl/expertise`,
-    images: ["/brand-assets/og-expertise-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "R&D-advies en technologiebeoordeling | Bear Grid",
     description:
       "Onafhankelijke technologiebeoordeling, R&D-strategie, validatie van nieuwe ondernemingen en innovatiepartnerschappen.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

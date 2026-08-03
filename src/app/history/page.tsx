@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     title: "Company History | Bear Grid",
     description: "From deep-tech startup to independent R&D consultancy.",
     url: `${baseUrl}/history`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Company History | Bear Grid",
     description: "From deep-tech startup to independent R&D consultancy.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 
@@ -85,10 +85,11 @@ export default function HistoryPage() {
           <li>
             <time dateTime="2023">2023—TODAY</time>
             <p>
-              The original startup did not reach product-market fit in 2023. Since 2024, Bear Grid
-              has evolved into a Dutch holding and services company focused on innovation consulting,
-              startup assessment, business development and practical venture-building support for
-              founders.
+              The original product demonstrated strong technical capabilities, but commercial
+              adoption did not justify further scaling. Instead of pursuing the wrong market, the
+              team made a deliberate strategic pivot. Since 2024, Bear Grid has focused on applying
+              the same engineering discipline, product thinking and execution capabilities to help
+              companies, founders and investors solve complex business and technology challenges.
             </p>
           </li>
         </ol>

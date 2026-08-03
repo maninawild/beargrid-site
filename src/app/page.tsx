@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: "Independent R&D Consultancy Netherlands | Bear Grid",
     description: "Technology assessment, R&D strategy, venture validation and innovation partnership support for founders, teams and investors.",
     url: baseUrl,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Independent R&D Consultancy Netherlands | Bear Grid",
     description: "Technology assessment, R&D strategy, venture validation and innovation partnership support for founders, teams and investors.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

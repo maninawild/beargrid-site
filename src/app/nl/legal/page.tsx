@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     title: "Juridische informatie | Bear Grid",
     description: "Juridische voorwaarden, disclaimers en beperkingen die gelden voor de website van Bear Grid.",
     url: `https://beargridsolutions.com/nl/legal`,
-    images: ["/brand-assets/og-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Juridische informatie | Bear Grid",
     description: "Juridische voorwaarden, disclaimers en beperkingen die gelden voor de website van Bear Grid.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

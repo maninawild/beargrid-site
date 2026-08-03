@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     description:
       "Onafhankelijke beoordeling van technische haalbaarheid, bewijs en uitvoeringsrisico voordat een investeerder kapitaal inzet.",
     url: `https://beargridsolutions.com/nl/investors`,
-    images: ["/brand-assets/og-investors-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Technologie- en ondernemingsbeoordeling voor investeerders | Bear Grid",
     description:
       "Onafhankelijke beoordeling van technische haalbaarheid, bewijs en uitvoeringsrisico voordat een investeerder kapitaal inzet.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

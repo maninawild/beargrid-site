@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <defs>
+    <filter id="shadow3" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity=".42"/>
+    </filter>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#A7ACA7" opacity=".28"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1100" fill="#151716"/>
+  <text x="120" y="45" fill="#ECEDE8" font-family="Roboto Mono, monospace" font-size="13" letter-spacing="2">DIRECTION 03 / FIELD STANDARD</text>
+  <text x="1480" y="45" fill="#A7ACA7" text-anchor="end" font-family="Roboto Mono, monospace" font-size="13">HOMEPAGE CONCEPT / DESKTOP</text>
+  <g filter="url(#shadow3)">
+    <rect x="120" y="72" width="1360" height="958" fill="#ECEDE8"/>
+  </g>
+  <rect x="120" y="72" width="1360" height="42" fill="#080908"/>
+  <rect x="144" y="88" width="10" height="10" fill="#D08A16"/>
+  <rect x="163" y="88" width="10" height="10" fill="#505653"/>
+  <rect x="182" y="88" width="10" height="10" fill="#505653"/>
+  <text x="800" y="98" fill="#A7ACA7" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="11">BEARGRID.EU / SECURE</text>
+
+  <g transform="translate(120 114)">
+    <rect width="1360" height="916" fill="#ECEDE8"/>
+    <rect width="1360" height="916" fill="url(#dots)"/>
+    <g>
+      <rect width="1360" height="94" fill="#F8F8F4"/>
+      <line x1="0" y1="94" x2="1360" y2="94" stroke="#151716"/>
+      <g transform="translate(40 23)">
+        <rect width="48" height="48" fill="#151716"/>
+        <path d="M10 10h12v8h-5v12h7v8H10V10Zm28 0H26v8h6v5h-8v8h8v7h6V10Z" fill="#ECEDE8"/>
+        <rect x="10" y="35" width="7" height="3" fill="#D08A16"/>
+        <text x="64" y="31" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.4">BEAR GRID</text>
+      </g>
+      <text x="708" y="33" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">REF / 2019—BG</text>
+      <text x="708" y="59" fill="#151716" font-family="Roboto Mono, monospace" font-size="12">INDEPENDENT CONSULTANCY</text>
+      <text x="1010" y="53" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="14" font-weight="600">EXPERTISE</text>
+      <text x="1122" y="53" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="14" font-weight="600">HISTORY</text>
+      <rect x="1221" y="24" width="99" height="47" fill="#151716"/>
+      <rect x="1221" y="24" width="6" height="47" fill="#D08A16"/>
+      <text x="1274" y="53" fill="#F8F8F4" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="13" font-weight="700">CONTACT</text>
+    </g>
+
+    <g transform="translate(0 94)">
+      <rect width="1360" height="462" fill="#ECEDE8"/>
+      <line x1="0" y1="51" x2="1360" y2="51" stroke="#A7ACA7"/>
+      <text x="40" y="32" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">00 / PROPOSITION</text>
+      <text x="1094" y="32" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">STATUS: READY</text>
+      <rect x="1278" y="20" width="42" height="14" fill="#D08A16"/>
+      <line x1="920" y1="51" x2="920" y2="462" stroke="#151716"/>
+      <text x="40" y="141" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="65" font-weight="700" letter-spacing="-1">
+        <tspan x="40" dy="0">WE SOLVE HARD</tspan>
+        <tspan x="40" dy="68">BUSINESS AND</tspan>
+        <tspan x="40" dy="68">TECHNOLOGY</tspan>
+        <tspan x="40" dy="68">PROBLEMS.</tspan>
+      </text>
+      <line x1="40" y1="385" x2="240" y2="385" stroke="#D08A16" stroke-width="7"/>
+      <g transform="translate(960 91)">
+        <rect width="320" height="255" fill="#F8F8F4" stroke="#151716"/>
+        <rect width="320" height="40" fill="#151716"/>
+        <text x="16" y="25" fill="#F8F8F4" font-family="Roboto Mono, monospace" font-size="11">PROJECT INTAKE / 01</text>
+        <text x="18" y="82" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="21" font-weight="700">CLEAR SCOPE.</text>
+        <text x="18" y="112" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="21" font-weight="700">SENIOR TEAM.</text>
+        <text x="18" y="152" fill="#505653" font-family="Archivo, Arial, sans-serif" font-size="14">
+          <tspan x="18" dy="0">From unclear constraint</tspan>
+          <tspan x="18" dy="22">to useful result.</tspan>
+        </text>
+        <rect x="18" y="193" width="185" height="44" fill="#151716"/>
+        <rect x="18" y="193" width="6" height="44" fill="#D08A16"/>
+        <text x="113" y="220" fill="#F8F8F4" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="13" font-weight="700">START A PROJECT</text>
+      </g>
+    </g>
+
+    <g transform="translate(0 556)">
+      <rect width="1360" height="78" fill="#174F50"/>
+      <line x1="340" y1="0" x2="340" y2="78" stroke="#ECEDE8" opacity=".5"/>
+      <line x1="680" y1="0" x2="680" y2="78" stroke="#ECEDE8" opacity=".5"/>
+      <line x1="1020" y1="0" x2="1020" y2="78" stroke="#ECEDE8" opacity=".5"/>
+      <text x="40" y="48" fill="#F8F8F4" font-family="Roboto Mono, monospace" font-size="13">01 / DIAGNOSE</text>
+      <text x="380" y="48" fill="#F8F8F4" font-family="Roboto Mono, monospace" font-size="13">02 / DESIGN</text>
+      <text x="720" y="48" fill="#F8F8F4" font-family="Roboto Mono, monospace" font-size="13">03 / BUILD</text>
+      <text x="1060" y="48" fill="#F8F8F4" font-family="Roboto Mono, monospace" font-size="13">04 / DELIVER</text>
+    </g>
+
+    <g transform="translate(0 634)">
+      <rect width="1360" height="282" fill="#F8F8F4"/>
+      <text x="40" y="47" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">01 / FIELD RECORDS</text>
+      <text x="40" y="101" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="38" font-weight="700">PRACTICAL HELP / CLEAR DELIVERABLES</text>
+      <g transform="translate(40 132)">
+        <rect width="405" height="118" fill="#ECEDE8" stroke="#151716"/>
+        <rect x="0" y="0" width="8" height="118" fill="#D08A16"/>
+        <text x="28" y="30" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">REC / 01 · DECISION</text>
+        <text x="28" y="65" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="22" font-weight="700">STRATEGY</text>
+        <text x="28" y="94" fill="#505653" font-family="Archivo, Arial, sans-serif" font-size="13">Find and remove the constraint.</text>
+        <rect x="445" y="0" width="405" height="118" fill="#ECEDE8" stroke="#151716"/>
+        <text x="473" y="30" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">REC / 02 · SYSTEM</text>
+        <text x="473" y="65" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="22" font-weight="700">DIGITAL PRODUCTS</text>
+        <text x="473" y="94" fill="#505653" font-family="Archivo, Arial, sans-serif" font-size="13">Build the useful working version.</text>
+        <rect x="890" y="0" width="390" height="118" fill="#ECEDE8" stroke="#151716"/>
+        <text x="918" y="30" fill="#505653" font-family="Roboto Mono, monospace" font-size="11">REC / 03 · ADVISORY</text>
+        <text x="918" y="65" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="22" font-weight="700">EXECUTIVE ADVICE</text>
+        <text x="918" y="94" fill="#505653" font-family="Archivo, Arial, sans-serif" font-size="13">Make the hard decision.</text>
+      </g>
+    </g>
+  </g>
+</svg>

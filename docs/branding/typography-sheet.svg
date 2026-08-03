@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+  <rect width="1600" height="1120" fill="#F2F0E9"/>
+  <text x="90" y="72" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600">Bear Grid / Typography directions</text>
+  <text x="1510" y="70" fill="#565852" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13">DISPLAY · BODY · TECHNICAL</text>
+  <line x1="90" y1="96" x2="1510" y2="96" stroke="#B8B8B0"/>
+
+  <g transform="translate(90 130)">
+    <rect width="1420" height="300" fill="#FAF9F5" stroke="#B8B8B0"/>
+    <rect width="14" height="300" fill="#A64B2A"/>
+    <text x="40" y="42" fill="#A64B2A" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="700" letter-spacing="1.4">01 / ENGINEERED QUIET — RECOMMENDED</text>
+    <text x="40" y="115" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="58" font-weight="520" letter-spacing="-1.8">Clear thinking. Useful work.</text>
+    <text x="40" y="163" fill="#565852" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">
+      <tspan x="40" dy="0">IBM Plex Sans gives Bear Grid an engineered but human voice.</tspan>
+      <tspan x="40" dy="28">It is practical at interface sizes and composed in long-form reading.</tspan>
+    </text>
+    <text x="40" y="255" fill="#191A18" font-family="IBM Plex Mono, monospace" font-size="13" letter-spacing="1.2">PROJECT 01 / CONSTRAINT → DECISION → SYSTEM → RESULT</text>
+    <line x1="820" y1="26" x2="820" y2="274" stroke="#B8B8B0"/>
+    <text x="858" y="55" fill="#565852" font-family="IBM Plex Mono, monospace" font-size="11">TYPE SCALE</text>
+    <text x="858" y="108" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="42" font-weight="520">H1 / 72</text>
+    <text x="858" y="153" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="550">H2 / 48</text>
+    <text x="858" y="190" fill="#191A18" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="600">H3 / 30</text>
+    <text x="858" y="225" fill="#565852" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16">Body / 17 × 1.65</text>
+    <text x="858" y="255" fill="#A64B2A" font-family="IBM Plex Mono, monospace" font-size="12">LABEL / 12 × .08EM</text>
+    <text x="1360" y="50" fill="#191A18" text-anchor="end" font-family="IBM Plex Sans, Arial, sans-serif" font-size="17" font-weight="600">Aa Bb Cc 0123</text>
+    <text x="1360" y="82" fill="#565852" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13">Aa Bb Cc 0123</text>
+  </g>
+
+  <g transform="translate(90 466)">
+    <rect width="1420" height="252" fill="#F7F6F1" stroke="#B9BBB5"/>
+    <rect width="14" height="252" fill="#245B4A"/>
+    <text x="40" y="42" fill="#245B4A" font-family="Source Sans 3, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">02 / CIVIC MODERN</text>
+    <text x="40" y="111" fill="#171917" font-family="Source Serif 4, Georgia, serif" font-size="54" font-weight="500" letter-spacing="-1">Clear thinking. Useful work.</text>
+    <text x="40" y="159" fill="#4E5553" font-family="Source Sans 3, Arial, sans-serif" font-size="18">
+      <tspan x="40" dy="0">Source Serif 4 adds editorial authority to key propositions.</tspan>
+      <tspan x="40" dy="28">Source Sans 3 keeps navigation, body copy and forms open and legible.</tspan>
+    </text>
+    <line x1="900" y1="26" x2="900" y2="226" stroke="#B9BBB5"/>
+    <text x="940" y="56" fill="#171917" font-family="Source Serif 4, Georgia, serif" font-size="34">Evidence before theatre.</text>
+    <text x="940" y="98" fill="#4E5553" font-family="Source Sans 3, Arial, sans-serif" font-size="17">Sentence case, generous leading, stable rhythm.</text>
+    <text x="940" y="155" fill="#245B4A" font-family="Source Sans 3, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">INDEPENDENT CONSULTANCY</text>
+    <text x="940" y="195" fill="#171917" font-family="Source Sans 3, Arial, sans-serif" font-size="16" font-weight="600">Aa Bb Cc Dd Ee 0123456789</text>
+  </g>
+
+  <g transform="translate(90 754)">
+    <rect width="1420" height="252" fill="#ECEDE8" stroke="#A7ACA7"/>
+    <rect width="14" height="252" fill="#D08A16"/>
+    <text x="40" y="42" fill="#174F50" font-family="Roboto Mono, monospace" font-size="12" font-weight="700" letter-spacing="1.2">03 / FIELD STANDARD</text>
+    <text x="40" y="111" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="51" font-weight="700" letter-spacing="-.5">CLEAR THINKING / USEFUL WORK</text>
+    <text x="40" y="159" fill="#505653" font-family="Archivo, Arial, sans-serif" font-size="18">
+      <tspan x="40" dy="0">Archivo is compact, robust and highly legible across field records.</tspan>
+      <tspan x="40" dy="28">Roboto Mono identifies status, reference, measurement and sequence.</tspan>
+    </text>
+    <line x1="900" y1="26" x2="900" y2="226" stroke="#A7ACA7"/>
+    <text x="940" y="57" fill="#151716" font-family="Roboto Mono, monospace" font-size="12">STATUS / VERIFIED</text>
+    <rect x="1088" y="43" width="63" height="18" fill="#D08A16"/>
+    <text x="940" y="105" fill="#151716" font-family="Archivo, Arial, sans-serif" font-size="29" font-weight="700">REC 01 / STRATEGY</text>
+    <text x="940" y="145" fill="#505653" font-family="Archivo, Arial, sans-serif" font-size="16">Direct forms. Compact metadata. No decoration.</text>
+    <text x="940" y="195" fill="#151716" font-family="Roboto Mono, monospace" font-size="13">Aa Bb Cc Dd Ee / 0123456789</text>
+  </g>
+
+  <g transform="translate(90 1042)">
+    <text x="0" y="0" fill="#565852" font-family="IBM Plex Mono, monospace" font-size="12">DISPLAY MAX 88 PX · BODY MIN 16 PX · LABEL MIN 12 PX · NO HEADLINE LINE HEIGHT BELOW .94</text>
+    <text x="1420" y="0" fill="#565852" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12">GOOGLE FONTS / SYSTEM FALLBACKS REQUIRED</text>
+  </g>
+</svg>

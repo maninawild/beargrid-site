@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     title: "Privacyverklaring | Bear Grid",
     description: "Hoe Bear Grid persoonsgegevens verwerkt volgens de AVG en de Nederlandse privacywetgeving.",
     url: `https://beargridsolutions.com/nl/privacy`,
-    images: ["/brand-assets/og-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacyverklaring | Bear Grid",
     description: "Hoe Bear Grid persoonsgegevens verwerkt volgens de AVG en de Nederlandse privacywetgeving.",
-    images: ["/brand-assets/twitter-default-nl.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

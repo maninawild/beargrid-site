@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     description:
       "Independent assessment of technical feasibility, evidence and execution risk before an investor commits.",
     url: `${baseUrl}/investors`,
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Technology & Venture Assessment for Investors | Bear Grid",
     description:
       "Independent assessment of technical feasibility, evidence and execution risk before an investor commits.",
-    images: ["/og.png"],
+    images: ["/brand/og-logo.png"],
   },
 };
 

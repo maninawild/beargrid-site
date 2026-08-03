@@ -3,6 +3,18 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "beargrid-site.vercel.app" }],
+        destination: "https://beargridsolutions.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.beargridsolutions.com" }],
+        destination: "https://beargridsolutions.com/:path*",
+        permanent: true,
+      },
       { source: "/services", destination: "/expertise", permanent: true },
       { source: "/bear-grid-device", destination: "/history/original-platform/bear-device", permanent: true },
       { source: "/copy-of-bear-device", destination: "/history/original-platform/bear-grid-platform", permanent: true },

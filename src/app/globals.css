@@ -125,8 +125,9 @@ img { max-width: 100%; height: auto; }
 /* Modern company layer */
 .company-header { position: sticky; top: 0; z-index: 70; height: 92px; border-bottom: 1px solid #cbc9c4; background: rgba(247, 246, 242, .96); backdrop-filter: blur(12px); }
 .company-header-inner { width: min(1320px, calc(100% - 64px)); height: 100%; margin: auto; display: flex; align-items: center; }
-.company-brand { display: inline-flex; align-items: center; gap: 13px; font-family: var(--font-inter), Arial, sans-serif; font-size: 16px; font-weight: 750; letter-spacing: .08em; }
-.company-brand img { width: 44px; height: auto; }
+.company-brand { display: inline-flex; align-items: center; font-family: var(--font-inter), Arial, sans-serif; }
+.company-logo-horizontal { display: block; width: 190px; height: auto; }
+.company-logo-mark { display: none; width: 44px; height: 44px; }
 .company-nav { display: flex; align-items: center; gap: 34px; margin-left: auto; font-family: var(--font-inter), Arial, sans-serif; font-size: 14px; }
 .company-nav a { position: relative; padding: 10px 0; }
 .company-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 4px; height: 1px; background: #111; transition: right .2s ease; }
@@ -180,7 +181,7 @@ img { max-width: 100%; height: auto; }
 .contact-topics { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 55px; }
 .contact-topics span { border: 1px solid #8b8984; padding: 9px 12px; font-size: 12px; }
 .company-footer { display: flex; justify-content: space-between; gap: 40px; padding: 60px max(32px, calc((100% - 1320px) / 2)); border-top: 1px solid #292929; background: #171717; color: #f6f4ee; font-family: var(--font-inter), Arial, sans-serif; }
-.company-footer .company-brand img { filter: invert(1); }
+.company-footer .company-logo-horizontal { width: 176px; }
 .company-footer p { margin: 18px 0 0; color: #aaa; font-size: 13px; }
 .footer-company-details { display: grid; align-content: start; gap: 5px; color: #aaa; font-size: 13px; font-style: normal; line-height: 1.45; }
 .footer-company-details strong { margin-bottom: 8px; color: #f6f4ee; font-weight: 600; }
@@ -651,6 +652,8 @@ html[lang="nl-NL"] .company-main p {
 }
 
 @media (max-width: 430px) {
+  .company-logo-horizontal { display: none; }
+  .company-logo-mark { display: block; }
   .new-hero { padding-inline: 20px; }
   .new-hero-top { flex-direction: column; gap: 12px; }
   .positioning-strip { grid-template-columns: minmax(0, 1fr); }
@@ -680,8 +683,7 @@ html[lang="nl-NL"] .company-main p {
 
 @media (max-width: 260px) {
   .company-header-inner { width: calc(100% - 24px); }
-  .company-brand { gap: 8px; font-size: 14px; letter-spacing: .05em; }
-  .company-brand img { width: 38px; }
+  .company-logo-mark { width: 38px; height: 38px; }
   .service-grid article,
   .service-grid article:nth-child(odd) { padding-right: 0; }
   .service-cta { white-space: normal; }
