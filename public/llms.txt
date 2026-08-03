@@ -1,26 +1,20 @@
 # Bear Grid
 
-Bear Grid is a Netherlands-based independent R&D consultancy founded in 2019.
+Bear Grid is a Netherlands-based independent R&D consultancy founded in 2019. It supports founders, companies, investors and institutions with technology assessment, R&D strategy, venture validation and innovation partnerships.
 
-Primary services:
-- Technology and AI assessment
-- R&D strategy
-- Venture validation
-- Innovation partnerships
+## Primary pages
 
-Primary audiences:
-- Deep-tech and AI founders
-- Corporate innovation and R&D teams
-- Investors and venture builders
-- Universities, research organisations and public institutions
-
-Canonical website: https://beargridsolutions.com
-
-Important pages:
 - Home: https://beargridsolutions.com/
+- Expertise: https://beargridsolutions.com/expertise
 - Investors: https://beargridsolutions.com/investors
-- History: https://beargridsolutions.com/history
+- Company history: https://beargridsolutions.com/history
 - Contact: https://beargridsolutions.com/contact
-- Original Bear Grid platform archive: https://beargridsolutions.com/history/original-platform
+- Original sensing-platform archive: https://beargridsolutions.com/history/original-platform
 
-The original Bear Grid company developed seismic sensing and signal-classification technology. The current company focuses on independent technology assessment, venture validation, innovation strategy and partnerships.
+## Historical context
+
+Bear Grid began as a deep-tech sensing startup in Israel in 2019 and has operated in the Netherlands since 2021. The preserved original-platform archive documents its seismic sensing, signal-classification and security-system work. Since 2024, Bear Grid has focused on independent R&D consultancy and venture support.
+
+## Contact
+
+Project and investor enquiries: https://beargridsolutions.com/contact

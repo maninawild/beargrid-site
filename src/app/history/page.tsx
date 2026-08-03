@@ -8,9 +8,11 @@ export const metadata: Metadata = {
   description: "How Bear Grid evolved from a deep-tech sensing startup into an independent Netherlands-based R&D consultancy.",
   alternates: { canonical: "/history" },
   openGraph: {
+    type: "article",
+    siteName: "Bear Grid",
     title: "Company History | Bear Grid",
     description: "From deep-tech startup to independent R&D consultancy.",
-    url: "/history",
+    url: `${baseUrl}/history`,
     images: ["/og.png"],
   },
   twitter: {
@@ -31,6 +33,16 @@ export default function HistoryPage() {
           { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
           { "@type": "ListItem", position: 2, name: "History", item: `${baseUrl}/history` },
         ],
+      }).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "@id": `${baseUrl}/history#about`,
+        name: "Bear Grid company history",
+        url: `${baseUrl}/history`,
+        description: metadata.description,
+        about: { "@id": `${baseUrl}/#organization` },
+        inLanguage: "en",
       }).replace(/</g, "\\u003c") }} />
       <section className="inner-company-hero">
         <Eyebrow>COMPANY HISTORY</Eyebrow>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "BearGrid Solutions",
+    siteName: "Bear Grid",
     title: "Independent R&D Consultancy | Bear Grid",
     description: "Independent technology assessment, R&D strategy, venture validation and innovation partnership support.",
     url: baseUrl,
@@ -30,8 +30,10 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
+        "@id": `${baseUrl}/#service`,
         name: "Bear Grid",
         url: baseUrl,
+        provider: { "@id": `${baseUrl}/#organization` },
         areaServed: "Worldwide",
         serviceType: ["Technology assessment", "R&D strategy", "Venture validation", "Innovation partnerships"],
         description: "Independent R&D consultancy for founders, companies, investors and institutions.",

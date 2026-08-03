@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 
 const routes = [
   "/",
+  "/expertise",
   "/contact",
   "/investors",
   "/history",
@@ -135,6 +136,7 @@ test("contact form validates and submits", async ({ page }) => {
 
 test("confirmed legacy routes redirect permanently", async ({ request }) => {
   for (const [source, destination] of [
+    ["/services", "/expertise"],
     ["/bear-grid-device", "/history/original-platform/bear-device"],
     ["/copy-of-bear-device", "/history/original-platform/bear-grid-platform"],
     ["/contacts", "/contact"],
@@ -142,6 +144,45 @@ test("confirmed legacy routes redirect permanently", async ({ request }) => {
     const response = await request.get(source, { maxRedirects: 0 });
     expect(response.status()).toBe(308);
     expect(response.headers().location).toBe(destination);
+  }
+});
+
+test("SEO metadata, crawler files and structured data are valid", async ({ page, request }) => {
+  const canonicalRoutes = [
+    ["/", "https://beargridsolutions.com"],
+    ["/expertise", "https://beargridsolutions.com/expertise"],
+    ["/investors", "https://beargridsolutions.com/investors"],
+    ["/history", "https://beargridsolutions.com/history"],
+    ["/contact?intent=project", "https://beargridsolutions.com/contact"],
+    ["/history/original-platform", "https://beargridsolutions.com/history/original-platform"],
+  ] as const;
+
+  for (const [route, canonical] of canonicalRoutes) {
+    await page.goto(route);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", canonical);
+    await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", canonical);
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /https:\/\/beargridsolutions\.com\//);
+    await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
+    const jsonLd = await page.locator('script[type="application/ld+json"]').allTextContents();
+    for (const payload of jsonLd) expect(() => JSON.parse(payload)).not.toThrow();
+  }
+
+  const robots = await (await request.get("/robots.txt")).text();
+  expect(robots).toContain("Sitemap: https://beargridsolutions.com/sitemap.xml");
+  for (const crawler of ["Googlebot", "Bingbot", "Applebot", "GPTBot", "ChatGPT-User", "OAI-SearchBot", "ClaudeBot", "PerplexityBot"]) {
+    expect(robots).toContain(crawler);
+  }
+
+  const sitemap = await (await request.get("/sitemap.xml")).text();
+  expect(sitemap).toContain("<loc>https://beargridsolutions.com/expertise</loc>");
+  expect(sitemap).not.toContain("beargrid-site.vercel.app");
+  expect(sitemap).not.toContain("/history/original-platform/home</loc>");
+  expect(sitemap).not.toContain("/history/original-platform/history</loc>");
+
+  expect((await request.get("/manifest.webmanifest")).status()).toBe(200);
+  expect((await request.get("/llms.txt")).status()).toBe(200);
+  for (const asset of ["/favicon.ico", "/icon.svg", "/apple-touch-icon.png", "/icon-192.png", "/icon-512.png", "/og.png"]) {
+    expect((await request.get(asset)).status()).toBe(200);
   }
 });
 

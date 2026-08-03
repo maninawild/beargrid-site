@@ -8,9 +8,11 @@ export const metadata: Metadata = {
   description: "Discuss a technology, R&D, venture or innovation project with Bear Grid.",
   alternates: { canonical: "/contact" },
   openGraph: {
+    type: "website",
+    siteName: "Bear Grid",
     title: "Contact Bear Grid",
     description: "Discuss a technology, R&D, venture or innovation project with Bear Grid.",
-    url: "/contact",
+    url: `${baseUrl}/contact`,
     images: ["/og.png"],
   },
   twitter: {

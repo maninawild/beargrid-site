@@ -12,10 +12,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    siteName: "Bear Grid",
     title: "Investors | Bear Grid",
     description:
       "Connect with Bear Grid around ambitious R&D and technology ventures.",
     url: `${baseUrl}/investors`,
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Investors | Bear Grid",
+    description:
+      "A relationship-led entry point for investors interested in carefully selected R&D and technology ventures.",
     images: ["/og.png"],
   },
 };
@@ -30,6 +38,14 @@ const investorTypes = [
 export default function InvestorsPage() {
   return (
     <main className="company-main inner-company-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+          { "@type": "ListItem", position: 2, name: "Investors", item: `${baseUrl}/investors` },
+        ],
+      }).replace(/</g, "\\u003c") }} />
       <section className="inner-company-hero investor-hero">
         <Eyebrow>INVESTORS / SELECTED TECHNOLOGY VENTURES</Eyebrow>
         <h1>Meet ambitious R&amp;D ventures.</h1>

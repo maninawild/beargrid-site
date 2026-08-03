@@ -30,13 +30,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug?: st
   const { slug } = await params;
   const page = resolve(slug);
   if (!page) return {};
-  const path = `/history/original-platform${slug?.length ? `/${slug[0]}` : ""}`;
+  const duplicateCanonical = slug?.[0] === "home"
+    ? "/history/original-platform"
+    : slug?.[0] === "history"
+      ? "/history"
+      : null;
+  const path = duplicateCanonical ?? `/history/original-platform${slug?.length ? `/${slug[0]}` : ""}`;
   const title = page.slug ? `${page.navTitle} | Original Bear Grid Platform` : "Original Bear Grid Platform";
   return {
     title,
     description: page.description,
     alternates: { canonical: path },
-    openGraph: { title, description: page.description, url: new URL(path, baseUrl).toString() },
+    robots: duplicateCanonical ? { index: false, follow: true } : undefined,
+    openGraph: {
+      type: "website",
+      siteName: "Bear Grid",
+      title,
+      description: page.description,
+      url: new URL(path, baseUrl).toString(),
+      images: [page.heroImage ?? "/og.png"],
+    },
     twitter: { card: "summary_large_image", title, description: page.description, images: [page.heroImage ?? "/media/bear-grid-system.png"] },
   };
 }

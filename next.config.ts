@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      { source: "/services", destination: "/expertise", permanent: true },
       { source: "/bear-grid-device", destination: "/history/original-platform/bear-device", permanent: true },
       { source: "/copy-of-bear-device", destination: "/history/original-platform/bear-grid-platform", permanent: true },
       { source: "/copy-of-bear-grid-platform", destination: "/history/original-platform/ai-interface", permanent: true },

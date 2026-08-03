@@ -24,7 +24,7 @@ export type SitePage = {
   form?: FormKind;
 };
 
-export const baseUrl = "https://beargrid-site.vercel.app";
+export const baseUrl = "https://beargridsolutions.com";
 
 export const navItems = [
   { label: "HOME", href: "/history/original-platform/home" },
